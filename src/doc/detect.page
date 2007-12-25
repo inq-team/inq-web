@@ -1,0 +1,26 @@
+---
+title: Detects
+inMenu: true
+orderInfo: 30
+---
+h2. Detects
+
+Inquisitor includes following detection algorithms:
+
+<table>
+
+<tr>
+<th>ID</th>
+<th>Name</th>
+<th>Description</th>
+<th>Software used</th>
+</tr>
+
+<tr>
+<td>Memory</td>
+<td></td>
+<td>Tests memory</td>
+<td>Memtest</td>
+</tr>
+
+</table>

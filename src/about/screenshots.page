@@ -1,0 +1,10 @@
+---
+title: Screenshots
+inMenu: true
+orderInfo: 40
+---
+h3. Production installations
+
+<img src="{relocatable:/images/notebook-inq-1.jpg}" width="208" height="328" alt="Testing" style="padding: 10px" />
+<img src="{relocatable:/images/notebook-inq-2.jpg}" width="176" height="408" alt="Server rack" style="padding: 10px" />
+

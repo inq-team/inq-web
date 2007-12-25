@@ -1,0 +1,28 @@
+---
+title: Home
+inMenu: false
+orderInfo: 150
+directoryName: Documentation
+---
+h2. Documentation
+
+Inquisitor is a fairly complex system, consisting of multiple
+components.
+
+h3. End-user and system administrator documentation
+
+* <a href="{relocatable:server.page}">Deploying server</a>
+** <a href="{relocatable:server-hardware-requirements.page}">Server hardware requirements</a>
+
+h3. Developer documentation
+
+* <a href="{relocatable:build-system.page}">Build system</a>
+* Available modules
+** <a href="{relocatable:booting.page}">Booting</a>
+** <a href="{relocatable:self-id.page}">Self ID</a>
+** <a href="{relocatable:detect.page}">Detects</a>
+** <a href="{relocatable:test.page}">Tests</a>
+** <a href="{relocatable:monitor.page}">Monitorings</a>
+* <a href="{relocatable:reusable.page}">Reusable components</a>
+** <a href="{relocatable:einarc/index.page}">Einarc</a> - a unified
+storage RAID command line interface and an API.

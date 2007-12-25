@@ -1,0 +1,52 @@
+---
+template: ~
+--- content, html
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="{lang:}">
+  <head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<meta name="description" content="Your description goes here..." />
+	<meta name="keywords" content="your,keywords,goes,here" />
+	<meta name="author" content="Mikhail Yakshin / Design by Andreas Viklund - http://andreasviklund.com/" />
+	<meta name="generator" content="webgen - http://webgen.rubyforge.com/" />
+	<link rel="stylesheet" type="text/css" href="{relocatable: default.css}" media="screen,projection" />
+	<link rel="stylesheet" type="text/css" href="{resource: webgen-css}" />
+	<link rel="shortcut icon" href="http://www.inquisitor.ru/favicon.ico" />
+	<title>{title: }</title>
+  </head>
+
+  <body>
+	<div id="wrap">
+
+	  <div id="header">
+		<img src="{relocatable:/images/inq-2.png}" alt="Inquisitor" style="float: right" />
+		<img src="{relocatable:/images/inq-1.png}" width="219" height="120" alt="Inquisitor" />
+		<p id="language-bar">Язык: {langbar: }</p>
+		<p id="location-bar">Путь: {breadcrumbTrail: }</p>
+	  </div>
+
+	  <div id="content">
+		{block: }
+	  </div>
+
+	  <div id="sidebar">
+		<h2>Pages:</h2>
+		{menu: {menuStyle: vertical, options: {maxLevels: 2}}}
+	  </div>
+
+	  <div id="footer">
+		<p><a href="{relocatable:/contacts.page}">Контактная информация</a> | <a href="{relocatable:/about/license.page}">Лицензия</a> | <a href="{relocatable:/sitemap.page}">Карта сайта</a><br />
+		&copy; 2004-{date: {format: %Y}} Inquisitor Team | Сгенерировано с помощью <a href="http://webgen.rubyforge.org">webgen</a> | Части дизайна <a href="http://andreasviklund.com/">Andreas Viklund</a></p>
+	  </div>
+
+	</div>
+
+<script src="http://www.google-analytics.com/urchin.js" type="text/javascript">
+</script>
+<script type="text/javascript">
+_uacct = "UA-2651806-1";
+urchinTracker();
+</script>
+</body>
+</html>

@@ -1,0 +1,75 @@
+---
+title: Build system
+inMenu: true
+orderInfo: 30
+---
+h2. Build system
+
+Inquisitor is supported with flexible build system that allows both
+straightforward quick start and long-term development comfort.
+
+For a quick start instructions, see
+<a href="{relocatable:installation.page}">installation</a>.
+
+h3. Basic build structure
+
+Inquisitor's build system is based on simple system of directories and
+Makefiles and should be portable to most build hosts.
+
+Everything starts with a */Makefile* in root Inquisitor directory. This
+Makefile contains most common build targets and defines general build
+interface. It provides the most important target: *make all*. Ideally,
+it's the only thing end-user would need.
+
+However, most of the times, end-user would like to tweak some
+configuration values. This can be done by editing */Makefile.config*, a
+coarse configuration file with a few settings.
+
+Most important of them are:
+
+* *FLAVOUR* - flavour of Inquisitor to build. Changing this setting
+dramatically changes the whole build process and the product you'll get
+in the end. Currently, two flavours are supported: *live* (that builds
+an ISO of Live CD/DVD system) and *enterprise* (that builds a full
+client/server system).
+* *TARGET* - target architecture to build a client for (i586, x86_64).
+* *CLIENT_BASE* - system to base a client image on.
+* *DEPLOY_HOST* - server host to deploy client image to.
+* *DEPLOY_PATH* - path on DEPLOY_HOST to client image that will be
+exported using NFS.
+
+h3. Summary of build targets
+
+h4. End-user build targets
+
+* *make all* - do everything, according to set configuration. In fact,
+it executes step-by-step build targets in a right sequence.
+
+h4. Step-by-step manual build targets
+
+* *make build-package* - builds a package (rpm, dpkg or possibly
+something else) with client from <b>client/</b> and configurations.
+Package is somewhere  then possibly
+* *make build-root* - builds a client root image, based on a given
+configuration.
+* *make build-boot* - prepares infrastructure needed to boot, based on a
+given flavour.
+* *make build-live* - packages everything into an live CD/DVD ISO image.
+
+h4. Developer build targets
+
+* *make update-package* - replaces pre-built client package in a
+pre-built client root image.
+
+h3. Client structure
+
+All code that would be executed on a client resides in *client/*
+directory. Client build subsystem mostly consists of simple recursive
+Makefiles. There are 3 main targets, available in every directory:
+
+* *make all* (default) - build everything;
+* *make install* - install everything;
+* *make clean* - clean up everything built.
+
+Issuing a *make && sudo make install* in *client/* would build and
+install the client right into build host.

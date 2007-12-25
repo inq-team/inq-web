@@ -1,0 +1,11 @@
+---
+title: Reusable components
+inMenu: false
+orderInfo: 30
+---
+h2. Reusable components
+
+Inquisitor includes following reusable components:
+
+* <a href="{relocatable:einarc/index.page}">Einarc</a> - a unified
+storage RAID command line interface and an API.

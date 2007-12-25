@@ -1,0 +1,50 @@
+---
+title: How does it help?
+inMenu: true
+orderInfo: 10
+---
+h2. How it can help you if you are a...?
+
+h3. ... advanced end-user
+
+It can analyse and test your home or office computer and help diagnosing
+hardware problems, if any occur. Despite being industrial-strength
+hardware testing system, Inquisitor also includes mild, non-destructive
+tests that are just as well effective, but take special care to not
+destroy the precious data on your hard disc(s).
+
+h3. ... system administrator
+
+System administrators can use Inquisitor to test computers just as
+end-users. More than that, Inquisitor can be used to track all computers
+in organization and their hardware properties and problems.
+
+h3. ... computer equipment manufacturing enterprise
+
+Inquisitor team would be glad to integrate Inquisitor in your production
+process. There are multiple successful Inquisitor installations
+worldwide, where we are involved with planning, building, installation,
+personnel training and support. Careful design of whole production
+process is a key to the success.
+
+h3. ... computer equipment design enterprise
+
+Creation of new computer equipment includes a vital step: assuring that
+new product passes multiple certifying test cases without any stability
+problems. Certified equipment is ready for mass production and is
+guaranteed to have no flaws. Inquisitor is a system that can be used to
+do such certifications easy on daily basis.
+
+h3. ... developer
+
+Inquisitor is an open-source system that anyone can contribute to.
+Thanks to modular architecture, Inquisitor platform can be used as a
+base for multiple similar projects that involve hardware detection,
+testing and monitoring.
+
+Even if you don't need to test / detect hardware directly, Inquisitor
+itself includes lots of 
+<a href="{relocatable:/doc/reusable.page}">reusable components</a> that
+can be used in other projects.
+
+<p class="readmore"><a href="{relocatable:/download.page}">Start with a download</a> &raquo;</p>

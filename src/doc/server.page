@@ -1,0 +1,129 @@
+---
+title: Deploying server
+inMenu: false
+orderInfo: 30
+---
+h2. Deploying server
+
+Deploying Inquisitor on a server is a complex process that requires
+decent knowledge of underlying server OS of your choice and
+understanding on how most of things like network boot work. Generally,
+it can be divided into several parts.
+
+h3. Planning
+
+Generally, typical Inquisitor server installation works with at least 2
+networks (and requires at least 2 network cards or ports):
+
+* Normal management port (with DHCP or statically assigned address) that you'll use to manage the server using ssh/rsync/etc. Usually it's assigned normal IP address in private network such as <code class="ip">192.168.x.x</code>.
+
+* One or more network boot ports for computers to test. It should be an isolated, large enough private network (<code class="ip">10.0.0.0/8</code> is used usually) that will have one server (Inquisitor) with statically
+assigned IP (<code class="ip">10.0.0.1</code> is a good choice) and many
+computers to test that will get their IP addresses from DHCP server.
+Isolated testing network makes physical cabling easier, reduces strain
+on normal organization's network and doesn't make Inquisitor conflict
+with normal DHCP server probably used in organization.
+
+Typical hardware requirements are as following:
+
+* One server to act as Inquisitor server. Ideally, it has to be a
+dedicated Linux machine with plenty of RAM, disc space, CPU power and at
+least 2 fast network cards. Refer to the <a href="{relocatable:server-hardware-requirements.page}">server hardware requirements</a>
+for more detailed server configuration discussion.
+* A testing stand (rack) to place testable computers on.
+* A switching Ethernet hub to organize an isolated network in which the
+testing will take place.
+* At least one "client" computer to test.
+
+h3. Basic OS install
+
+Install basic OS of your choice. Be sure to install:
+
+* Servers
+** DHCP server (dhcp-server)
+** TFTP server (tftp-server)
+** DNS server (bind)
+** NTP server (ntpd + ntpdate)
+* Misc prerequisites
+** Ruby language (ruby)
+** gnuplot (gnuplot)
+
+We'll configure all these services in the following steps.
+
+h3. Network configuration
+
+As said above, assign one network interface (usually '''eth0''') for
+management, setting it normal external address, and at least one
+interface ('''eth1''' and possibly more) with static IP addresses of
+private networks.
+
+Check that all networks work properly.
+
+h3. DHCP server
+
+Create configuration file for DHCP server. There should be one global section
+
+<pre>
+# DHCP configuration file for DHCP ISC 3.0 & BpBatch
+
+# Global options
+use-host-decl-names on;
+ddns-update-style none;
+
+# Definition of PXE-specific options
+# Code 1: Multicast IP address of bootfile
+# Code 2: UDP port that client should monitor for MTFTP responses
+# Code 3: UDP port that MTFTP servers are using to listen for MTFTP requests
+# Code 4: Number of seconds a client must listen for activity before trying
+#         to start a new MTFTP transfer
+# Code 5: Number of seconds a client must listen before trying to restart
+#         a MTFTP transfer
+option space PXE;
+option PXE.mtftp-ip    code 1 = ip-address;
+option PXE.mtftp-cport code 2 = unsigned integer 16;
+option PXE.mtftp-sport code 3 = unsigned integer 16;
+option PXE.mtftp-tmout code 4 = unsigned integer 8;
+option PXE.mtftp-delay code 5 = unsigned integer 8;
+
+option barg code 135 = text;
+</pre>
+
+And one section for every network boot interface. This is an example for
+<code class="ip">10.0.0.0/24</code> network with Inquisitor server as
+<code class="ip">10.0.0.1</code>.
+
+<pre>
+# Subnet-specific options
+subnet 10.0.0.0 netmask 255.255.255.0 {
+    option subnet-mask 255.255.255.0;
+    option domain-name-servers 10.0.0.1;
+
+    range dynamic-bootp 10.0.0.3 10.0.0.154;
+    filename "pxelinux.0";
+    default-lease-time 216040;
+    max-lease-time 43200;
+    next-server 10.0.0.1;
+
+    #option barg "start";
+
+    class "pxeclients"
+    {
+     match if substring (option vendor-class-identifier, 0, 9) =
+        "PXEClient";
+     option vendor-class-identifier "PXEClient";
+     # At least one of the vendor-specific option must be set.
+     # We set the MCAST IP address to 0.0.0.0 to be PXE compliant
+     option PXE.mtftp-ip 0.0.0.0;
+     vendor-option-space PXE;
+    }
+}
+</pre>
+
+
+
+h3. TFTP server
+
+h3. NFS server
+
+h3. NTP server
+

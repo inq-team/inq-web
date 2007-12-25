@@ -1,0 +1,18 @@
+---
+title: Download
+inMenu: true
+orderInfo: 50
+---
+h2. Download
+
+Inquisitor is under active development now, we're going to release a
+full version soon.
+
+For now, you can:
+
+* Check out the Subversion repository using command: <p><code>svn co https://inq.svn.sourceforge.net/svnroot/inq/trunk inq</code></p>
+
+* Visit <a href="{relocatable:doc/einarc}">Einarc</a>, a unified storage
+management Inquisitor sub-project.
+
+* Read the <a href="{relocatable:/doc/index.page}">documentation</a>.
