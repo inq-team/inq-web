@@ -9,7 +9,7 @@ Scheduler in Inquisitor is a program that concludes the decisions on
 what tests to do, in what sequence, what parameters should be used for
 each one, thus controlling the overall testing flow.
 
-Scheduler involes a complex algorithm and should be tested throughly and
+Scheduler invokes a complex algorithm and should be tested throughly and
 changed with care.
 
 Constant data:

@@ -57,7 +57,7 @@ should include:
 * *TAGS* is a comma-separated list of tags that would be used in UI to
 navigate in tests. Examples of tags: hdd, ram, cpu, legacy, benchmark.
 
-* *VERSION* is a version of test; if test changes significiantly, it
+* *VERSION* is a version of test; if test changes significantly, it
 should be pumped, thus it's possible to distinguish older test results
 from newer ones in the database.
 
@@ -96,7 +96,7 @@ the calling environment that would provide these services):
 
 * Test scripts always get all the variables they have declared in
 meta-information, properly typed, etc.
-* Test scripts are always ran as separate process, not sourced. Thus
+* Test scripts are always run as separate process, not sourced. Thus
 it's acceptable to use @exit@ to stop execution, it's safe to trap
 signals to do cleanup on script exits, etc.
 
