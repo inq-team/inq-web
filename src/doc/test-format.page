@@ -1,0 +1,109 @@
+---
+title: Test format
+inMenu: true
+orderInfo: 30
+---
+h2. Test format
+
+Inquisitor's test files are essentially Unix shell scripts that act as
+launchers to run and control real (usually binary) test programs. Test
+scripts also include some meta-information in specially formatted header
+comments.
+
+h3. General requirements
+
+There are some requirements that test scripts must meet:
+
+* First non-comment, non-empty line of the script should be a call to
+source test library functions:
+
+<pre>
+. /usr/share/inquisitor/functions-test
+</pre>
+
+* Scripts must include the following comments with meta-information
+right after shebang:
+
+<pre>
+# NAME=USB GPRS modem
+# DESCRIPTION=Test GPRS modem, connected using USB
+# DESTROYS_HDD=false
+# IS_INTERACTIVE=false
+# POWEROFF_DURING_TEST=false
+# VERSION=0.1
+# VAR=DEV:string:/dev/ttyUSB0:Name of device to test
+# VAR=ANSWER_ATI:string:OK:String to get after ATI
+# VAR=CHAT_TIMEOUT:int:5:Timeout for waiting for answer
+</pre>
+
+The format of meta-information is detailed below.
+
+h3. Meta-information
+
+Meta-information is given in key=value pairs, screened in shell comments
+(@# @). Following keys must be defined:
+
+* *NAME* is a short, human-readable name of test that would be displayed
+in all kinds of user interfaces. Approximate limit is 50 characters.
+Word "test" shouldn't be used in NAME, as it would appear somewhere near
+these string in UI anyway, but words like "benchmark" would be helpful.
+
+* *DESCRIPTION* is a long, reasonably full description of test. It
+should include:
+** what precisely test does,
+** what steps in what sequence would it take to do it,
+** what results would it generate, if any.
+
+* *TAGS* is a comma-separated list of tags that would be used in UI to
+navigate in tests. Examples of tags: hdd, ram, cpu, legacy, benchmark.
+
+* *VERSION* is a version of test; if test changes significiantly, it
+should be pumped, thus it's possible to distinguish older test results
+from newer ones in the database.
+
+Also, following keys may be used optionally:
+
+* *DESTROYS_HDD* (possible values: false, true; default value: false) -
+test destroys contents of one or all hard disc drives in process. This
+test should not be ran if HDDs contain any important data.
+
+* *IS_INTERACTIVE* (possible values: false, true; default value: false)
+- test is interactive, i.e. it requires user interaction in process.
+
+* *POWEROFF_DURING_TEST* (possible values: false, true; default value:
+false) - system under test would normally poweroff during this test;
+it's not a sign of faulty hardware, but a normal course of test.
+Watchdog should act accordingly.
+
+* *VAR* defines an input variable for the test. Value must be defined as
+following: @VAR=name:type:default-value:description@:
+** *name* is a name of variable that would be requested from user or
+received from the profile and defined for the script.
+** *type* is a type name from XSD, for example:
+*** int - 32-bit integer value
+*** string - string value
+*** hexBinary - hexadecimal string
+*** boolean - a boolean value ("false" or "true")
+** *description* is a human-readable description that would be shown to
+users in command-line / graphical / web interfaces. It's recommended to
+limit this string to approximately 50 characters.
+
+h3. Assumptions
+
+There are some assumptions that could be used when writing such scripts
+(i.e. scripts should not check for these things themselves and can trust
+the calling environment that would provide these services):
+
+* Test scripts always get all the variables they have declared in
+meta-information, properly typed, etc.
+* Test scripts are always ran as separate process, not sourced. Thus
+it's acceptable to use @exit@ to stop execution, it's safe to trap
+signals to do cleanup on script exits, etc.
+
+h3. Recommendations
+
+Recommended, but not mandatory things:
+
+* Scripts should use @/bin/sh@ as an interpreter.
+* Scripts should use @-e@ (exit on non-zero exit statuses, i.e. fail on
+errors) and @-f@ (disable globbing) options of an interpreter.

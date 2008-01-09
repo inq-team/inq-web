@@ -21,8 +21,10 @@ font-weight:bold;
 a:hover{text-decoration:underline;}
 a img{border:0;}
 p{margin:0 0 18px 10px;}
+/*
 ul,ol,dl{font-size:0.9em; margin:2px 0 16px 35px;}
 ul ul,ol ol{margin:4px 0 4px 35px;}
+*/
 
 h1{
 font-size:4.2em;

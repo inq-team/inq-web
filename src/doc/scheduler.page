@@ -1,0 +1,46 @@
+---
+title: Scheduler
+inMenu: true
+orderInfo: 30
+---
+h2. Scheduler
+
+Scheduler in Inquisitor is a program that concludes the decisions on
+what tests to do, in what sequence, what parameters should be used for
+each one, thus controlling the overall testing flow.
+
+Scheduler involes a complex algorithm and should be tested throughly and
+changed with care.
+
+Constant data:
+
+* Test shootout tables (depending on hardware delta).
+* Metadata on all tests included in current chroot.
+
+It operates using following input:
+
+* Computer ID;
+* How many tests to generate (one or many);
+
+While preparing for schedule calculation, it obtains following data:
+
+* A list of detected components for the last testing and pre-last
+testing, if it exists.
+* Testing profile data (which it can get by profile ID, which, in turn,
+can be determined from computer).
+
+It generates following output:
+
+* Shall we start a new testing or not;
+* One or multiple tests that should be run next, supplied with:
+  * ID of testing stage,
+  * Name of script to call,
+  * Parameters to pass to script.
+
+Output can be formatted in various manners:
+
+* As a script to execute on client system under test,
+* As a viewable list of further tests that will show up on
+computer-related pages of web-site.
+* As a throughly explained list of decisions that the scheduler had
+made, for debugging.
