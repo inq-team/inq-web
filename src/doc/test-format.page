@@ -55,7 +55,8 @@ should include:
 ** what results would it generate, if any.
 
 * *TAGS* is a comma-separated list of tags that would be used in UI to
-navigate in tests. Examples of tags: hdd, ram, cpu, legacy, benchmark.
+navigate in tests. Examples of individual tags: hdd, ram, cpu, legacy,
+benchmark.
 
 * *VERSION* is a version of test; if test changes significantly, it
 should be pumped, thus it's possible to distinguish older test results
@@ -107,3 +108,61 @@ Recommended, but not mandatory things:
 * Scripts should use @/bin/sh@ as an interpreter.
 * Scripts should use @-e@ (exit on non-zero exit statuses, i.e. fail on
 errors) and @-f@ (disable globbing) options of an interpreter.
+
+h3. Test execution
+
+Test can use the following API to report test progress and
+intermediate/final results, log data and make comments.
+
+h4. Starting the test
+
+There are not special requirements to start the test. However, if the
+test can calculate how much time it would take from the very beginning 
+and doesn't want to report the progress periodically using special
+calls, it can set estimated execution time using *test_promise_time (seconds)*.
+
+h4. Reporting progress periodically
+
+Test can report its progress periodically using call *test_progress (steps_completed) (steps_total)*.
+It is incompatible with time estimation on test start, these two methods
+can't be used simultaneously.
+
+h4. Reporting values
+
+h4. Finishing the test
+
+Test can always interrupt its execution. Overall test result (success or
+failure) would be determined using its exit status: zero = success,
+non-zero = failure.
+
+There are 2 helper functions that set a comment to leave and then exit:
+
+* *test_succeeded (comment)* - leave comment and exit status 0
+* *test_failed (comment)* - leave comment and exit status 1
+
+It's normal to exit by just reaching the end of the script.
+
+If test changes the state of system under test somehow, it's test's
+responsibility to clean it all up before exiting. Standard signal trap
+mechanism can be used to do that, something like:
+
+<pre>
+# Cleanup
+exit_handler()
+{
+	local rc=$?
+	trap - EXIT
+
+	# Do cleanup here
+
+	exit $rc
+}
+trap exit_handler HUP PIPE INT QUIT TERM EXIT
+</pre>
+
+Cleanup includes, but not limited to:
+
+* Deleting temporary files and directories
+* Killing running background processes
+* Revert any system parameters change
+* Unmount any mounted filesystems
