@@ -1,0 +1,187 @@
+---
+title: Database structure
+inMenu: true
+orderInfo: 30
+---
+h2. Database structure
+
+Inquisitor maintains a somewhat complex database of computers under
+test. The following document describes basic entities and relationships
+of this database.
+
+<img src="{relocatable:database.png}" width="663" height="445" alt="Database structure image" />
+
+h3. computers
+
+Computer is a basic unit of testing, any system under test. Computer has
+the following permanent properties:
+
+* *id* - obviously, an integer internal ID to reference computer.
+* *model_id* - a link to @model@
+* *order_id* - a link to @order@, if it exists, otherwise NULL.
+
+and the following mutable properties (that change during test process):
+
+* *profile_id* - a link to @profile@ that all future tests would take;
+determined and set semi-automatically on computer creation, depending on
+model, available profiles, permissions of the one who creates computers,
+etc.
+* *shelf* - a symbolic name of shelf that computer is placed on.
+* *ip* - a current primary IP address, if the system is active and
+obtained an IP address, NULL otherwise.
+* *last_ping* - a timestamp of last ping by watchdog - if
+@NOW()-last_ping@ becomes more than a timeout constant, watchdog on the
+server side would mark current testing as failed (stopped responding)
+because of lost watchdog.
+
+Computers can be created manually (inserting a row into database) or
+based on some sort of @order@, using a web interface.
+
+Computer life cycle is tracked in the database as several events
+(@computer_stages@ rows). Computer stages describe events related to
+paricular computer (whereas there may be events related to larger groups
+of computers, i.e. @order@, and smaller entities, i.e. individual
+@testing@). Computer stages have the following fields:
+
+* *id*
+* *computer_id* - obviously, a link to computer
+* *stage* - a name of stage, one of:
+** assembling
+** testing
+** debugging
+** packing
+* *start* - timestamp of stage start
+* *end* - NULL if this stage is still active, timestamp of stage
+finish otherwise
+* *person_id* - link to person responsible for this stage
+* *comment* - a text comment for the stage
+
+Note that *testing* is a more complex stage that is described in
+separate table @testings@.
+
+Computers are never deleted.
+
+h3. testings
+
+Testings are sub-stages of computer stage *testing* with lots of extra
+attributes. There can be multiple testings in single computer stage
+named *testing*.
+
+* *id*
+* *computer_id* - obviously, a link to computer
+* *test_start* - timestamp of testing's start
+* *test_end* - NULL if this testing is still active, timestamp of
+testing's finish otherwise.
+* *profile_id* - a profile that this particular testing uses/used;
+computer's profile can be changed later, but this one will stay for
+historical purposes.
+* *progress_complete*, *progress_total*, *progress_promised_time*
+- optional progress measurement fields; they may be filled by a long
+test script that wants to report its progress. 
+
+Testings are created by a resolution of <a href="{relocatable:scheduler.page}">scheduler</a>,
+based on complex algorithm that determines if we should create a new
+testing or resume the last one. *test_start*, *profile_id*,
+*computer_id* are assigned on creation.
+
+Testings gets its *test_end* timestamp when it's considered finished.
+It can happen in the following cases:
+
+* Computer finishes whole testing normally and closes its own test
+automatically with success report.
+* Computer finishes some testing stage(s) with errors and thus marks
+@testing_stage@ and @testing@ as finished with failure.
+* Computer hangs / loses connection somewhere during testing - watchdog
+daemon would detect this during next ping check and will fill
+@testing_stage@ and @testing@ accordingly.
+
+A finished testing won't be reopened again and it can be assumed that a
+finished @testing@ and it's related @testing_stages@ won't change later.
+
+Testings are never deleted.
+
+h3. testing_stages
+
+Testings in its turn are divided into @testing_stages@, which is an
+atomic testing event tracked in the database. A single testing usually
+has multiple @testing_stages@ (note that they can run /simultaneously/).
+Testing stage has the following fields:
+
+* *id*
+* *testing_id* - a link to testing
+* *stage* - a unique (per single testing) string ID of testing stage
+* *start* - start timestamp
+* *end* - NULL if stage is still in progress, finish timestamp is it is
+finished
+* *result* - result code:
+** 1 - success
+** 2 - failure
+** 3 - hanging (determined by watchdog)
+* *comment* - optional text comment on test result, may be generated
+after completion by test script.
+
+Testing stage is created by communication automatics when particular
+test script is called and started.
+
+Testing stage gets its *end*, *result* and *comment* in one of the
+following cases:
+
+* Test script reports success and communication automatics finishes
+testing_stage.
+* Test script reports failure and communication automatics finishes
+testing_stage with error.
+* Computer hangs / loses connection somewhere during testing - watchdog
+daemon would detect this during next ping check and will fill
+@testing_stage@ and @testing@ accordingly.
+
+Testing stages are never deleted.
+
+h3. orders
+
+Orders are groups of computers that have something in common. 
+
+TODO
+
+h2. Common questions
+
+h4. How to determine which computers are under test?
+
+* Status "in progress": find all computers which have active testing,
+i.e. testing.test_end IS NULL.
+
+* Status "failure": find all computers which are still online
+(@NOW()-last_ping < timeout@) and last testing has a failed test stage
+(testing_stage.result = 1).
+
+* Status "hanging": find all computers which are not online
+(@NOW()-last_ping > timeout@) and last_ping IS NOT NULL.
+
+* Status "passed": find all computers which are still online
+(@NOW()-last_ping < timeout@), last testing is closed (testing.test_end
+IS NOT NULL), all testings stages in last test have
+@testing_stages.result = 1@.
+
+* Status "attention": TODO
+
+h4. How to determine current testing for a computer #ID?
+
+Find first testing with testings.computer_id = ID and @testings.test_end
+IS NULL@. If none found, then it means that there are no testing
+currently in progress.
+
+Last testing and its results can be obtained by ordering all testings by
+timestamp of start (@testing.test_start@) and selecting the latest.
+
+h4. How to calculate an average testing time for a given computer model
+for a particular testing stage, for a particular profile?
+
+Find all completed, successful testing stages (result = 1), connected to
+the testings with required profile_id, connected to the computers with
+required model_id, calculate an average of @(testing_stage.end -
+testing_stage.start)@.
+
+h4. How to determine assembling / testing responsible person for a
+particular computer?
+
+Find corresponding stage in computer_stages (@stage = 'assembling'@ or
+@stage = 'testing'@) and use person_id from it.
