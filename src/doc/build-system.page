@@ -29,9 +29,9 @@ Most important of them are:
 
 * *FLAVOUR* - flavour of Inquisitor to build. Changing this setting
 dramatically changes the whole build process and the product you'll get
-in the end. Currently, two flavours are supported: *live* (that builds
-an ISO of Live CD/DVD system) and *enterprise* (that builds a full
-client/server system).
+in the end. Currently, two flavours are supported:
+** *live* - builds an ISO of Live CD/DVD system,
+** *enterprise* - builds a full client/server system.
 * *TARGET* - target architecture to build a client for (i586, x86_64).
 * *CLIENT_BASE* - system to base a client image on.
 * *DEPLOY_HOST* - server host to deploy client image to.
@@ -49,7 +49,8 @@ h4. Step-by-step manual build targets
 
 * *make build-package* - builds a package (rpm, dpkg or possibly
 something else) with client from <b>client/</b> and configurations.
-Package is somewhere  then possibly
+Resulting package usually goes to local repository (<b>repo/</b>) then,
+to be used in further client root build process.
 * *make build-root* - builds a client root image, based on a given
 configuration.
 * *make build-boot* - prepares infrastructure needed to boot, based on a
@@ -60,6 +61,8 @@ h4. Developer build targets
 
 * *make update-package* - replaces pre-built client package in a
 pre-built client root image.
+* *make update-package-remote* - replaces pre-built client package in a
+pre-built client root image, deployed remotely on DEPLOY_HOST server.
 
 h3. Client structure
 
