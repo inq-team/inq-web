@@ -3,6 +3,17 @@ title: News
 inMenu: true
 orderInfo: 8
 ---
+h2. 2008-02-19: Inquisitor 3.0-beta Live CD released
+
+The first public release of beta version of Live CD for Inquisitor v3.0.
+
+WARNING! This is a beta quality software! Don't use it in production
+systems and in systems where you have any valuable data. It can destroy
+both your data on hard drives and serious stress it places on hardware
+can destroy your hardware!
+
+<p class="readmore"><a href="{relocatable: download.page}">Download now!</a></p>
+
 h2. 2007-11-21: Einarc v1.1 released
 
 <a href="{relocatable:doc/einarc/}">Einarc</a> is a subproject of
