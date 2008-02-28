@@ -4,6 +4,11 @@ inMenu: true
 orderInfo: 0
 directoryName: About
 ---
+<div id="newsbar">
+<a href="{relocatable:/news.page}" class="header">News</a>
+<div class="contents">{news: {filename: src/news.yaml, dateTag: h3, options: {maxEntries: 3, maxParagraphs: 2}}}</div>
+</div>
+
 h2. Inquisitor
 
 Inquisitor is an open-source hardware testing and certification system,
