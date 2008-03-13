@@ -41,9 +41,10 @@ Install basic OS of your choice. Be sure to install:
 
 * Servers
 ** DHCP server (dhcp-server)
-** TFTP server (tftp-server)
+** TFTP server (our version of tftp-hpa)
 ** DNS server (bind)
 ** NTP server (ntpd + ntpdate)
+** Syslog server (syslog-ng)
 * Misc prerequisites
 ** Ruby language (ruby)
 ** gnuplot (gnuplot)
@@ -123,7 +124,25 @@ subnet 10.0.0.0 netmask 255.255.255.0 {
 
 h3. TFTP server
 
+We included tftp-hpa server and a patch for it. You have to apply it,
+build and install at least tftpd. After installation you can run it as
+you wish: as a standalone or through (x)inetd service. You can safely
+replace your standart tftpd with it, but remember that it logs all
+files sent.
+
 h3. NFS server
 
 h3. NTP server
 
+h3. Syslog server
+
+One of important configuration options is correct redirection of
+tftpd's log messages directly to our tftpd-log-parser.sh script.
+
+Example configuration lines for performing this:
+
+<pre>
+destination tftp_log { program("/var/lib/tftpd-log-parser.sh"); };
+filter f_tftpd { program("tftpd"); };
+log { source(sys); filter(f_tftpd); destination(tftp_log); };
+</pre>
