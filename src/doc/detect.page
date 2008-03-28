@@ -24,3 +24,44 @@ Inquisitor includes following detection algorithms:
 </tr>
 
 </table>
+
+h3. API
+
+Detect results are collected in a single XML file in the following
+format:
+
+<pre>
+<?xml version='1.0'?>
+<list xmlns='http://www.w3.org/1999/xhtml'>
+  <component>
+    <type>Motherboard</type>
+    <vendor>Alpha</vendor>
+    <model>Beta</model>
+  </component>
+  <component>
+    <type>HDD</type>
+    <vendor>Gamma</vendor>
+    <model>Delta</model>
+  </component>
+  ...
+</list>
+</pre>
+
+This file can be submitted to Inquisitor application server using the
+following POST-query. URL:
+
+ http://$REST_SERVER/computers/submit_components/$COMPUTER_ID.xml
+
+where
+
+* $REST_SERVER - an host and port where Inquisitor application server is running.
+* $COMPUTER_ID - an ID of computer to add the components to.
+
+There should be one form parameter submitted along named "list", that
+will include contents of XML file with components.
+
+This can be accomplished using following curl call:
+
+ curl -f --data list=\""`cat $FILENAME`"\" -X POST "$REST_SERVER/computers/submit_components/$COMPUTER_ID.xml"
+
+where $FILENAME is a name of file with components.
