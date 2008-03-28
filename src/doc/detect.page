@@ -37,11 +37,13 @@ format:
     <type>Motherboard</type>
     <vendor>Alpha</vendor>
     <model>Beta</model>
+    <serial>123456</serial>
   </component>
   <component>
     <type>HDD</type>
     <vendor>Gamma</vendor>
     <model>Delta</model>
+    <serial>vieg3to3ichogeif3rauphoo9gohnaevieBaeThae7</serial>
   </component>
   ...
 </list>
