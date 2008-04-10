@@ -11,7 +11,7 @@
 	<link rel="stylesheet" type="text/css" href="{relocatable: default.css}" media="screen,projection" />
 	<link rel="stylesheet" type="text/css" href="{resource: webgen-css}" />
 	<link rel="shortcut icon" href="http://www.inquisitor.ru/favicon.ico" />
-	<title>{title: }</title>
+	<title>Inquisitor hardware testing platform: {title: }</title>
   </head>
 
   <body>
