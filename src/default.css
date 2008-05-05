@@ -258,3 +258,21 @@ h6 {
 	margin:0 10px 10px 0;
 	letter-spacing:-1px;
 }
+
+.toc {
+	border-collapse: collapse;
+	margin-bottom: 2em;
+}
+
+.toc th, .toc td {
+	border: 1px solid #dadada;
+	padding: 0em 1em;
+}
+
+.toc th {
+	background: #dadada;
+}
+
+.infobox {
+	float: right;
+}
