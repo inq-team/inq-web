@@ -27,3 +27,10 @@ h3. Developer documentation
 * <a href="{relocatable:reusable.page}">Reusable components</a>
 ** <a href="{relocatable:einarc/index.page}">Einarc</a> - a unified
 storage RAID command line interface and an API.
+
+Permission is granted to copy, distribute and/or modify this documents
+under the terms of the GNU Free Documentation License, Version 1.2
+or any later version published by the Free Software Foundation;
+with no Invariant Sections, no Front-Cover Texts, and no Back-Cover Texts.
+A copy of the license is included 
+<a href="{relocatable:/about/license-documentation.page}">there</a>.

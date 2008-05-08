@@ -35,7 +35,7 @@ template: ~
 	  </div>
 
 	  <div id="footer">
-		<p><a href="{relocatable:/contacts.page}">Контактная информация</a> | <a href="{relocatable:/about/license.page}">Лицензия</a> | <a href="{relocatable:/sitemap.page}">Карта сайта</a><br />
+		<p><a href="{relocatable:/contacts.page}">Контактная информация</a> | <a href="{relocatable:/about/license.page}">Лицензия</a> | <a href="{relocatable:/about/license-documentation.page}">Лицензия На Документацию</a> | <a href="{relocatable:/sitemap.page}">Карта сайта</a><br />
 		&copy; 2004-{date: {format: %Y}} Inquisitor Team | Сгенерировано с помощью <a href="http://webgen.rubyforge.org">webgen</a> | Части дизайна <a href="http://andreasviklund.com/">Andreas Viklund</a></p>
 	  </div>
 
