@@ -4,6 +4,10 @@
  After a half of year development cycle, new version of Einarc gets
  released today.
 
+ <a href="{relocatable:/doc/einarc/}">Einarc</a> is a subproject of
+ Inquisitor that provides unified interface to all proprietary RAID
+ (storage) controllers. 
+
  h3. What's new
 
  * Support for new RAID devices: newer Adaptec adapters using *arcconf*.
