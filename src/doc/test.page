@@ -20,7 +20,7 @@ Current version of Inquisitor includes the following tests:
 <tr><th>#</th><th>Script</th><th>Title</th><th>Components tested</th></tr>
 <tr><td style="text-align: right">1</td><td>bonnie</td><td><a href="#bonnie">Bonnie</a></td><td>HDD</td></tr>
 <tr><td style="text-align: right">2</td><td>bytemark</td><td><a href="#bytemark">BYTEmark</a></td><td>CPU, Memory, Mainboard</td></tr>
-<tr><td style="text-align: right">3</td><td>cpu</td><td><a href="#cpu">CPU burning</a></td><td>CPU</td></tr>
+<tr><td style="text-align: right">3</td><td>cpu</td><td><a href="#cpu">CPU burn</a></td><td>CPU</td></tr>
 <tr><td style="text-align: right">4</td><td>db_comparison</td><td><a href="#db_comparison">DB to Detects comparison</a></td><td>BMC, CPU, Chassis, Disk Controller, Floppy, HDD, Mainboard, Memory, NIC, OSD, Platform, USB, Video</td></tr>
 <tr><td style="text-align: right">5</td><td>dhrystone</td><td><a href="#dhrystone">Dhrystone</a></td><td>CPU</td></tr>
 <tr><td style="text-align: right">6</td><td>fdd</td><td><a href="#fdd">FDD read/write</a></td><td>Floppy</td></tr>
@@ -31,25 +31,24 @@ Current version of Inquisitor includes the following tests:
 <tr><td style="text-align: right">11</td><td>gprs-modem-level</td><td><a href="#gprs-modem-level">USB GPRS modem signal level</a></td><td></td></tr>
 <tr><td style="text-align: right">12</td><td>hdd-array</td><td><a href="#hdd-array">HDD array stress</a></td><td>CPU, HDD, Memory, Mainboard, Disk Controller</td></tr>
 <tr><td style="text-align: right">13</td><td>hdd-passthrough</td><td><a href="#hdd-passthrough">HDD passthrough</a></td><td>CPU, HDD, Memory, Mainboard, Disk Controller</td></tr>
-<tr><td style="text-align: right">14</td><td>hdd-smart</td><td><a href="#hdd-smart">HDD SMART</a></td><td>HDD, Disk Controller</td></tr>
-<tr><td style="text-align: right">15</td><td>hdparm</td><td><a href="#hdparm">HDD speed benchmark: hdparm</a></td><td>Disk Controller, HDD</td></tr>
-<tr><td style="text-align: right">16</td><td>memory</td><td><a href="#memory">Memory test: memtester</a></td><td>Memory</td></tr>
-<tr><td style="text-align: right">17</td><td>mencoder</td><td><a href="#mencoder">Mencoder</a></td><td>CPU, Memory, Mainboard</td></tr>
-<tr><td style="text-align: right">18</td><td>net</td><td><a href="#net">Network interface</a></td><td>NIC</td></tr>
-<tr><td style="text-align: right">19</td><td>odd_read</td><td><a href="#odd_read">ODD read</a></td><td>OSD</td></tr>
-<tr><td style="text-align: right">20</td><td>odd_write</td><td><a href="#odd_write">odd_write</a></td><td>ODD</td></tr>
-<tr><td style="text-align: right">21</td><td>stream</td><td><a href="#stream">Stream</a></td><td>Memory</td></tr>
-<tr><td style="text-align: right">22</td><td>unixbench</td><td><a href="#unixbench">Unixbench</a></td><td>CPU, Memory, Mainboard</td></tr>
-<tr><td style="text-align: right">23</td><td>usb-device</td><td><a href="#usb-device">USB presence</a></td><td>USB</td></tr>
-<tr><td style="text-align: right">24</td><td>usb-flash-drive</td><td><a href="#usb-flash-drive">USB Flash Drive</a></td><td>USB</td></tr>
-<tr><td style="text-align: right">25</td><td>whetstone</td><td><a href="#whetstone">Whetstone</a></td><td>CPU</td></tr>
+<tr><td style="text-align: right">14</td><td>hdparm</td><td><a href="#hdparm">HDD speed benchmark: hdparm</a></td><td>Disk Controller, HDD</td></tr>
+<tr><td style="text-align: right">15</td><td>memory</td><td><a href="#memory">Memory test: memtester</a></td><td>Memory</td></tr>
+<tr><td style="text-align: right">16</td><td>mencoder</td><td><a href="#mencoder">Mencoder</a></td><td>CPU, Memory, Mainboard</td></tr>
+<tr><td style="text-align: right">17</td><td>net</td><td><a href="#net">Network interface</a></td><td>NIC</td></tr>
+<tr><td style="text-align: right">18</td><td>odd_read</td><td><a href="#odd_read">ODD read</a></td><td>ODD</td></tr>
+<tr><td style="text-align: right">19</td><td>odd_write</td><td><a href="#odd_write">odd_write</a></td><td>ODD</td></tr>
+<tr><td style="text-align: right">20</td><td>stream</td><td><a href="#stream">Stream</a></td><td>Memory</td></tr>
+<tr><td style="text-align: right">21</td><td>unixbench</td><td><a href="#unixbench">Unixbench</a></td><td>CPU, Memory, Mainboard</td></tr>
+<tr><td style="text-align: right">22</td><td>usb-device</td><td><a href="#usb-device">USB presence</a></td><td>USB</td></tr>
+<tr><td style="text-align: right">23</td><td>usb-flash-drive</td><td><a href="#usb-flash-drive">USB Flash Drive</a></td><td>USB</td></tr>
+<tr><td style="text-align: right">24</td><td>whetstone</td><td><a href="#whetstone">Whetstone</a></td><td>CPU</td></tr>
 </table>
 
 h3. <a name="bonnie"></a>Bonnie (bonnie)
 
 <div class="infobox"><img src="{relocatable:/images/hdd-destructive.png}" width="64" height="64" title="Test destroys contents of HDD" alt="Test destroys contents of HDD" /></div>
 
-Bonnie HDD performance benchmark
+This test uses bonnie++ benchmark to test hard drives (with ext2 filesystem) performance. There are two sections to the program's operations, but we are using only first one: the  IO throughput in a fashion that is designed to simulate some types of database applications. It uses double memory sized single test file. As a benchmark's results we get output/rewrite/input of char/block speed and CPU load.
 
 * *Components tested:* HDD
 
@@ -60,10 +59,10 @@ BYTEmark native mode benchmark
 
 * *Components tested:* CPU, Memory, Mainboard
 
-h3. <a name="cpu"></a>CPU burning (cpu)
+h3. <a name="cpu"></a>CPU burn (cpu)
 
 
-CPU burn-in testing
+Basic CPU burn test makes the CPUs execute instructions that rapidly increase processor's temperature in an infinite loop. Test makes special care about used instruction set (to make load as high as possible).
 
 * *Components tested:* CPU
 * *Variables:*
@@ -72,14 +71,14 @@ CPU burn-in testing
 h3. <a name="db_comparison"></a>DB to Detects comparison (db_comparison)
 
 
-Pauses testing until comparison has been completed on application server
+Pauses testing until comparison has been completed on the application server.
 
 * *Components tested:* BMC, CPU, Chassis, Disk Controller, Floppy, HDD, Mainboard, Memory, NIC, OSD, Platform, USB, Video
 
 h3. <a name="dhrystone"></a>Dhrystone (dhrystone)
 
 
-Dhrystone integer calculations benchmark
+A synthetic computing benchmark that measures CPU integer performance. Inquisitor uses a C version and runs the specified number of loops, testing each CPU separately, with testing process running affined to particular CPU. Performance rating is in terms of MIPS.
 
 * *Components tested:* CPU
 * *Variables:*
@@ -88,7 +87,7 @@ Dhrystone integer calculations benchmark
 h3. <a name="fdd"></a>FDD read/write (fdd)
 
 
-Floppy drive read/write test
+A simple test to determine wheter the floppy drive work or not. It asks a user to insert a floppy disk into drive, then writes some random data on a diskette, clears the cache, reads the data back and compares it to what was written. Process repeats for every FDD available.
 
 * *Components tested:* Floppy
 * *Variables:*
@@ -153,7 +152,7 @@ h3. <a name="hdd-array"></a>HDD array stress (hdd-array)
 
 <div class="infobox"><img src="{relocatable:/images/hdd-destructive.png}" width="64" height="64" title="Test destroys contents of HDD" alt="Test destroys contents of HDD" /></div>
 
-HDD array stress test
+HDD array is a stress test that causes high load on HDD array subsystem. First of all, it creates optimally configured arrays (if possible, otherwise it will use single hard drives) using einarc's raid-wizard-optimal utility. Then it creates a filesystem on each array and unpacks and compiles there a large source tree for a specified time. Test distributes specified test duration among created arrays equally. Compilation, as in hdd-passthrough test, goes with 16 simultaneous jobs (by default). Test would end successfully if there wouldn't be any errors in filesystem creation and source code compilation runs. Usually this test starts after the CPU burning, memory and hdd-passthrough ones, and thus failing of this test (considering successful previous tests) usually identifies a broken RAID controller.
 
 * *Components tested:* CPU, HDD, Memory, Mainboard, Disk Controller
 * *Variables:*
@@ -166,7 +165,7 @@ h3. <a name="hdd-passthrough"></a>HDD passthrough (hdd-passthrough)
 
 <div class="infobox"><img src="{relocatable:/images/hdd-destructive.png}" width="64" height="64" title="Test destroys contents of HDD" alt="Test destroys contents of HDD" /></div>
 
-HDD passthrough is a stress test that imposes heavy load on main system components. First, it tries to make all HDDs present in system to appear as separate device nodes - it checks all available RAID controllers, deletes all arrays / disk groups and creates passthrough devices to access individual HDDs if required. Second, it runs badblocks test on every available HDD, separating them in groups for simultaneous badblocks (8 HDDs doing badblocks simultaneously by default). Third, it makes a ramdisk filesystem and starts infinite compilation loop in memory, doing so with 16 simulatenous jobs (by default). Test ends successfully after both 1) minimal required stress time passes, 2) all HDDs get checked with badblocks. Test would fail if any bad blocks would be detected on any HDD. Test will usually hang or crash the system on unstable hardware.
+HDD passthrough is a stress test that imposes heavy load on main system components. First, it tries to make all HDDs present in the system to appear as separate device nodes - it checks all available RAID controllers, deletes all arrays / disk groups and creates passthrough devices to access individual HDDs if required. Second, it runs badblocks test on every available HDD, running them simulatenously in groups of 8 HDDs by default. Third, it makes a ramdisk filesystem and starts infinite compilation loop in memory, doing so with 16 simultaneous jobs (by default). Test ends successfully after both 1) minimal required stress time passes, 2) all HDDs are checked with badblocks. Test would fail if any bad blocks would be detected on any HDD. Test will usually hang or crash the system on the unstable hardware.
 
 * *Components tested:* CPU, HDD, Memory, Mainboard, Disk Controller
 * *Variables:*
@@ -176,17 +175,10 @@ HDD passthrough is a stress test that imposes heavy load on main system componen
 ** *RAMDISK_SIZE* (int, default: @400@) &mdash; Size of memory disk for stress tree building, MB
 ** *STRESS_TREE* (string, default: @linux-2.6.22.5-31-stress.tar.gz@) &mdash; Tarball file containing stress test tree
 
-h3. <a name="hdd-smart"></a>HDD SMART (hdd-smart)
-
-
-This test starts internal SMART tests for every HDD available. These tests usually put heavy load on drive with lots of internal block reading/writing operations, though it's all done transparently by HDD's firmware in background. This test does not destroy any data on HDDs.
-
-* *Components tested:* HDD, Disk Controller
-
 h3. <a name="hdparm"></a>HDD speed benchmark: hdparm (hdparm)
 
 
-This benchmark runs on all hard drives in the system sequentally. Every hard drive is benchmarked for buffered speed and cached speed using basic hdparm test several times. The results for every HDD are averaged and submitted as benchmark results.
+This benchmark runs on all hard drives in the system sequentially. Every hard drive is benchmarked for the buffered speed and the cached speed using basic hdparm -t and -T tests for several times. The results for every HDD are averaged and presented as benchmark results.
 
 * *Components tested:* Disk Controller, HDD
 * *Variables:*
@@ -215,7 +207,7 @@ Mencoder encoding time benchmark
 h3. <a name="net"></a>Network interface (net)
 
 
-Network interfaces testing
+This test must load every network interface in system and measure it's download speed. Main requirement: all network interfaces must be connected to one common network. Testing sequence is: 1) Detect and remember what interface is default (from what we are booted up (as common)); 2) Consecutively choosing each interface, check if it's MAC address doesn't exist in "exclude macs" test parameter, then either skip it, continuing with another one, or continue to test current inteface; 3) Bring testing interface up, configuring network on it and setting it as a default gateway; 4) Bring down all other interfaces; 5) Get test file from specified URL, measuring download speed; 6) Calculate it's checksum and compare with needed (specified by test parameter). Here, test can fail if an error occurs, otherwise it submits speed benchmarking result and continues to test remaining interfaces; 7) After all interfaces (except the first one) are tested, default interface starts testing: there is no real need in it, when we are booting from network - but it is a simplest way to restore default parameters.
 
 * *Components tested:* NIC
 * *Variables:*
@@ -229,7 +221,7 @@ h3. <a name="odd_read"></a>ODD read (odd_read)
 
 Optical Disc Drive read test
 
-* *Components tested:* OSD
+* *Components tested:* ODD
 * *Variables:*
 ** *FORCE_NON_INTERACTIVE* (boolean, default: @false@) &mdash; Force non-interactive mode for already prepared system
 ** *MESH_POINTS* (int, default: @1024@) &mdash; Points for meshes for monitoring drive's speed
@@ -254,7 +246,7 @@ Optical Disc Drive write test
 h3. <a name="stream"></a>Stream (stream)
 
 
-STREAM memory throughput benchmark
+The STREAM benchmark is a simple synthetic benchmark program that measures sustainable memory bandwidth (in MiB/s) and the corresponding computation rate for simple vector kernels. A version written in C language and optimized for single processor systems is used.
 
 * *Components tested:* Memory
 
@@ -268,7 +260,7 @@ UNIX Bench Multi-CPU benchmark
 h3. <a name="usb-device"></a>USB presence (usb-device)
 
 
-Tests presence of designated USB device
+Tests the presence of designated USB devices. It checks for a count of USB devices that match specified idVendor and idProduct and gives a success if they're equal to COUNT parameter or failure if they're not.
 
 * *Components tested:* USB
 * *Variables:*
@@ -280,7 +272,7 @@ h3. <a name="usb-flash-drive"></a>USB Flash Drive (usb-flash-drive)
 
 <div class="infobox"><img src="{relocatable:/images/hdd-destructive.png}" width="64" height="64" title="Test destroys contents of HDD" alt="Test destroys contents of HDD" /></div>
 
-USB Flash Drive working ability test with speed measurement
+This test allows to check the working ability of USB ports and/or plugged USB storage devices. A user has to plug the USB storage devices (such as USB flash drives) in every USB port of system under test. A number of USB storage drives is passed then as a COUNT parameter to this test script. First of all, it checks if a required number of USB devices is plugged in: the test won't start if it's not so. This way, a non-working USB port would be diagnosed. The test itself does the following for every detected USB storage device: it writes a number of blocks wit random data (start position is choosen randomly to increase an USB drive's lifetime) and remembers their checksum, then it clears the disk cache and reads these blocks back, calculating checksum. If checksums match, USB device and port work properly. This test also acts as a benchmark: it measures write and read speeds. This metric can be used  to diagnose bad ports/USB devices (due to speed lower than required minimum).
 
 * *Components tested:* USB
 * *Variables:*
@@ -291,7 +283,7 @@ USB Flash Drive working ability test with speed measurement
 h3. <a name="whetstone"></a>Whetstone (whetstone)
 
 
-Whetstone floating-point calculations benchmark
+A synthetic computing benchmark that measures CPU floating-point performance. Inquisitor uses a C version and runs the specified number of loops, testing each CPU separately, with testing process running affined to particular CPU. Performance rating is in terms of MIPS.
 
 * *Components tested:* CPU
 * *Variables:*
