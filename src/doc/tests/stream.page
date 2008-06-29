@@ -1,0 +1,10 @@
+---
+title: "Stream"
+inMenu: true
+---
+h2. Stream (stream)
+
+
+The STREAM benchmark is a simple synthetic benchmark program that measures sustainable memory bandwidth (in MiB/s) and the corresponding computation rate for simple vector kernels. A version written in C language and optimized for single processor systems is used.
+
+* *Components tested:* Memory

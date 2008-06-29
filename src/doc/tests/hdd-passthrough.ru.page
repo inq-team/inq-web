@@ -1,0 +1,17 @@
+---
+title: "HDD passthrough"
+inMenu: true
+---
+h2. HDD passthrough (hdd-passthrough)
+
+<div class="infobox"><img src="{relocatable:/images/hdd-destructive.png}" width="64" height="64" title="Test destroys contents of HDD" alt="Test destroys contents of HDD" /></div>
+
+HDD passthrough is a stress test that imposes heavy load on main system components. First, it tries to make all HDDs present in the system to appear as separate device nodes - it checks all available RAID controllers, deletes all arrays / disk groups and creates passthrough devices to access individual HDDs if required. Second, it runs badblocks test on every available HDD, running them simulatenously in groups of 8 HDDs by default. Third, it makes a ramdisk filesystem and starts infinite compilation loop in memory, doing so with 16 simultaneous jobs (by default). Test ends successfully after both 1) minimal required stress time passes, 2) all HDDs are checked with badblocks. Test would fail if any bad blocks would be detected on any HDD. Test will usually hang or crash the system on the unstable hardware.
+
+* *Тестируемые компоненты:* CPU, HDD, Memory, Mainboard, Disk Controller
+* *Переменные:*
+** *DISK_GROUP_SIZE* (int, по умолчанию: @8@) &mdash; Number of disks per group for testing
+** *JOBS* (int, по умолчанию: @16@) &mdash; Number of parallely running jobs during stress test tree compile
+** *MINIMAL_STRESS_TIME* (int, по умолчанию: @600@) &mdash; Minimal time of stress testing
+** *RAMDISK_SIZE* (int, по умолчанию: @400@) &mdash; Size of memory disk for stress tree building, MB
+** *STRESS_TREE* (string, по умолчанию: @linux-2.6.22.5-31-stress.tar.gz@) &mdash; Tarball file containing stress test tree

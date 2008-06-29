@@ -1,0 +1,12 @@
+---
+title: "HDD speed benchmark: hdparm"
+inMenu: true
+---
+h2. HDD speed benchmark: hdparm (hdparm)
+
+
+This benchmark runs on all hard drives in the system sequentially. Every hard drive is benchmarked for the buffered speed and the cached speed using basic hdparm -t and -T tests for several times. The results for every HDD are averaged and presented as benchmark results.
+
+* *Components tested:* Disk Controller, HDD
+* *Variables:*
+** *AVG_SAMPLES* (int, default: @5@) &mdash; Number of tests per disc to average for result

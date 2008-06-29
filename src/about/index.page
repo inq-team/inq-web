@@ -16,7 +16,7 @@ network boot production system.
 <div class="contents">{news: {filename: src/news.yaml, dateTag: h3, options: {maxEntries: 3, maxParagraphs: 2}}}</div>
 </div>
 
-It can <a href="{relocatable: /doc/detect.page}">analyse</a> and <a href="{relocatable: /doc/test.page}">test</a>
+It can <a href="{relocatable: /doc/detect.page}">analyse</a> and <a href="{relocatable: /doc/test/index.page}">test</a>
 your hardware from top to the bottom and assure that it won't fail easily under the production
 stress.
 

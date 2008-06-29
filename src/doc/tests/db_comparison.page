@@ -1,0 +1,10 @@
+---
+title: "DB to Detects comparison"
+inMenu: true
+---
+h2. DB to Detects comparison (db_comparison)
+
+
+Pauses testing until comparison has been completed on the application server.
+
+* *Components tested:* BMC, CPU, Chassis, Disk Controller, Floppy, HDD, Mainboard, Memory, NIC, OSD, Platform, USB, Video

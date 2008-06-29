@@ -1,0 +1,15 @@
+---
+title: "ODD read"
+inMenu: true
+---
+h2. ODD read (odd_read)
+
+
+Optical Disc Drive read test
+
+* *Тестируемые компоненты:* ODD
+* *Переменные:*
+** *FORCE_NON_INTERACTIVE* (boolean, по умолчанию: @false@) &mdash; Force non-interactive mode for already prepared system
+** *MESH_POINTS* (int, по умолчанию: @1024@) &mdash; Points for meshes for monitoring drive's speed
+** *TEST_IMAGE_BLOCKS* (int, по умолчанию: @332800@) &mdash; This images size in blocks (2048 bytes each)
+** *TEST_IMAGE_HASH* (string, по умолчанию: @6fa7786eef2e11d36e8bc1663679f161@) &mdash; Default image for comparison hash

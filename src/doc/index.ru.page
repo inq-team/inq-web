@@ -1,0 +1,30 @@
+---
+title: Home
+inMenu: false
+orderInfo: 150
+directoryName: Документация
+---
+h2. Документация
+
+Inquisitor - достаточно сложная система, состоящая из нескольких компонентов.
+
+h3. Документация для конечного пользователя и системного администратора
+
+* <a href="{relocatable:flavours.page}">Выбор варианта Inquisitor</a>
+* <a href="{relocatable:installation.page}">Быстрая инсталляция</a>
+* <a href="{relocatable:server.page}">Развертывание сервера</a>
+** <a href="{relocatable:server-hardware-requirements.page}">Требования к серверу</a>
+
+h3. Документация разработчика
+
+* <a href="{relocatable:build-system.page}">Система сборки</a>
+* Доступные модули
+** <a href="{relocatable:booting.page}">Загрузка</a>
+** <a href="{relocatable:self-id.page}">Самоидентификация</a>
+** <a href="{relocatable:detect.page}">Детекты</a>
+** <a href="{relocatable:tests/index.page}">Тесты</a>
+** <a href="{relocatable:monitor.page}">Мониторинги</a>
+* <a href="{relocatable:reusable.page}">Повторно используемые компоненты</a>
+** <a href="{relocatable:einarc/index.page}">Einarc</a> -
+унифицированный интерфейс командной строки и API для доступа к
+аппаратным устройствам хранения/RAID.

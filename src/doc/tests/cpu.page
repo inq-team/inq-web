@@ -1,0 +1,12 @@
+---
+title: "CPU burn"
+inMenu: true
+---
+h2. CPU burn (cpu)
+
+
+Basic CPU burn test makes the CPUs execute instructions that rapidly increase processor's temperature in an infinite loop. Test makes special care about used instruction set (to make load as high as possible).
+
+* *Components tested:* CPU
+* *Variables:*
+** *TESTTIME* (int, default: @1800@) &mdash; Total time of CPU testing, sec

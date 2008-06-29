@@ -1,0 +1,15 @@
+---
+title: "Network interface"
+inMenu: true
+---
+h2. Network interface (net)
+
+
+This test must load every network interface in system and measure it's download speed. Main requirement: all network interfaces must be connected to one common network. Testing sequence is: 1) Detect and remember what interface is default (from what we are booted up (as common)); 2) Consecutively choosing each interface, check if it's MAC address doesn't exist in "exclude macs" test parameter, then either skip it, continuing with another one, or continue to test current inteface; 3) Bring testing interface up, configuring network on it and setting it as a default gateway; 4) Bring down all other interfaces; 5) Get test file from specified URL, measuring download speed; 6) Calculate it's checksum and compare with needed (specified by test parameter). Here, test can fail if an error occurs, otherwise it submits speed benchmarking result and continues to test remaining interfaces; 7) After all interfaces (except the first one) are tested, default interface starts testing: there is no real need in it, when we are booting from network - but it is a simplest way to restore default parameters.
+
+* *Components tested:* NIC
+* *Variables:*
+** *EXCLUDE_MAC* (string, default: _empty_) &mdash; Exclude NICs with MAC addresses that match this regexp from testing
+** *MD5* (string, default: @805414334eb1d3ff4fdca507ec82098f@) &mdash; MD5 checksum for checking
+** *TIMEOUT* (int, default: @15@) &mdash; Wait timeout while test file retrieving, sec
+** *URL* (string, default: @3000/test_file@) &mdash; Relative to server PORT:URL to be fetched and checked

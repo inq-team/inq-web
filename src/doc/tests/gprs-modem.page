@@ -1,0 +1,13 @@
+---
+title: "USB GPRS modem"
+inMenu: true
+---
+h2. USB GPRS modem (gprs-modem)
+
+
+Test GPRS modem, connected using USB
+
+* *Variables:*
+** *ANSWER_ATI* (string, default: @OK@) &mdash; String to get after ATI
+** *CHAT_TIMEOUT* (int, default: @5@) &mdash; Timeout for waiting for answer
+** *DEV* (string, default: @/dev/ttyUSB0@) &mdash; Name of device to test

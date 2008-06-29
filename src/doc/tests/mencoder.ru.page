@@ -1,0 +1,13 @@
+---
+title: "Mencoder"
+inMenu: true
+---
+h2. Mencoder (mencoder)
+
+
+Mencoder encoding time benchmark
+
+* *Тестируемые компоненты:* CPU, Memory, Mainboard
+* *Переменные:*
+** *ENCODE_OPTIONS* (string, по умолчанию: @-ovc lavc -lavcopts vcodec=mpeg4 -oac mp3lame -lameopts vbr=3@) &mdash; Encoding options
+** *FILE_TO_ENCODE* (string, по умолчанию: @/usr/share/inquisitor/movie.avi@) &mdash; Path to file need to be encoded

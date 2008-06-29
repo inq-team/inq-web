@@ -18,6 +18,53 @@ flavours to work-around this issue.
 
 h3. Standalone
 
+The simplest way is to just ignore such destructive tests. This way,
+Inquisitor can be installed right into your normal Linux OS
+installation. If a standalone package is built for your distribution,
+you can just find an @inquisitor-standalone@ package in your package
+repository, install it (it's usually a fairly small download), and try
+Inquisitor in a matter of seconds.
+
+However, you'll need to be extra careful with it: of course, there are
+warning signs in destructive tests, but you may ruin your system if you
+don't read it. Moreover, some tests can't be executed at all if you have
+a modern full-blown desktop running, as it won't let Inquisitor to
+access some of hardware resources it would need to test.
+
+Bottom line: *Standalone* flavour is a good thing for demonstration and
+learning Inquisitor, but it's not really useful for any serious testing
+work. In fact, if you have a new shiny computer that you want to test,
+installing a Linux OS manually there and then installing Inquisitor in
+it is an overkill. Most probably you'll want one of other 2 flavours.
+
 h3. Live
 
+*Live* flavour is a Linux <a href="http://en.wikipedia.org/wiki/Live_CD">Live
+CD</a> (or DVD) that you can just boot from and get
+<a href="{relocatable:/doc/tests/index.page}">all the tests</a> and
+features in a sterile environment. It doesn't require you to have an
+installed Linux system, in fact, just the opposite: it's best to have
+your HDDs blank - this way they could be tested throughly with
+read/write operations.
+
+That's the flavour most people would use.
+
 h3. Enterprise
+
+If you have multiple computers and want to test them simultaneously in a
+controlled environment, then even Live CD is a bad option: you'll have
+to burn and insert into drives multiple copies of it - that's a lot of
+hard labour, you'll have to run tests manually on each machine, you'll
+have to gather testings results manually, etc.
+
+*Enterprise* version alleviates these problems. If you have to test
+multiple computers on regular basis, it's possible to
+<a href="{relocatable:server.page}">set up a dedicated testing server</a>
+that would allow any computer to boot from network using
+<a href="http://en.wikipedia.org/wiki/Preboot_Execution_Environment">PXE protocol</a>
+and then would control it to execute the tests you'd want,
+according to prepare test profile. All results are automatically
+gathered and memorized in a central database on this server. Everything
+can be controlled using a friendly web interface.
+
+That's the most advanced flavour of Inquisitor.

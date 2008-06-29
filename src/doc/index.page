@@ -23,7 +23,7 @@ h3. Developer documentation
 ** <a href="{relocatable:booting.page}">Booting</a>
 ** <a href="{relocatable:self-id.page}">Self ID</a>
 ** <a href="{relocatable:detect.page}">Detects</a>
-** <a href="{relocatable:test.page}">Tests</a>
+** <a href="{relocatable:test/index.page}">Tests</a>
 ** <a href="{relocatable:monitor.page}">Monitorings</a>
 * <a href="{relocatable:reusable.page}">Reusable components</a>
 ** <a href="{relocatable:einarc/index.page}">Einarc</a> - a unified

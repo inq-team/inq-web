@@ -1,0 +1,12 @@
+---
+title: "Whetstone"
+inMenu: true
+---
+h2. Whetstone (whetstone)
+
+
+A synthetic computing benchmark that measures CPU floating-point performance. Inquisitor uses a C version and runs the specified number of loops, testing each CPU separately, with testing process running affined to particular CPU. Performance rating is in terms of MIPS.
+
+* *Components tested:* CPU
+* *Variables:*
+** *LOOPS* (int, default: @20000@) &mdash; Loop count

@@ -2,10 +2,10 @@
 
 require '../trunk/server/web/lib/planner/meta'
 
-File.open('src/doc/test.page', 'w') { |f|
+File.open('src/doc/tests/index.page', 'w') { |f|
 	f.puts <<__EOF__
 ---
-title: Tests
+title: Test directory
 inMenu: true
 orderInfo: 30
 ---
@@ -14,11 +14,11 @@ h2. Tests
 Tests are modules of Inquisitor that do the real work. They usually do
 one specific action and can return binary result: passed or failed.
 Tests are usually ran automatically by
-<a href="{relocatable: scheduler.page}">scheduler</a>, but can be
-<a href="{relocatable: manual-invocation.page}">invoked manually</a>,
+<a href="{relocatable:/doc/scheduler.page}">scheduler</a>, but can be
+<a href="{relocatable:/doc/manual-invocation.page}">invoked manually</a>,
 as a regular executable with parameters. All tests follow the
 same format (which is described in
-<a href="{relocatable: test-format.page}">test format</a> section).
+<a href="{relocatable:/doc/test-format.page}">test format</a> section).
 
 Current version of Inquisitor includes the following tests:
 
@@ -30,30 +30,96 @@ __EOF__
 	$TESTS.keys.sort.each { |k|
 		v = $TESTS[k]
 		n += 1
-		f.puts "<tr><td style=\"text-align: right\">#{n}</td><td>#{k}</td><td><a href=\"##{k}\">#{v[:name]}</a></td><td>#{v[:depends].join(', ') if v[:depends]}</td></tr>"
+		f.puts "<tr><td style=\"text-align: right\">#{n}</td><td>#{k}</td><td><a href=\"{relocatable:#{k}.page}\">#{v[:name]}</a></td><td>#{v[:depends].join(', ') if v[:depends]}</td></tr>"
 	}
 	f.puts "</table>\n\n"
+}
 
+File.open('src/doc/tests/index.ru.page', 'w') { |f|
+	f.puts <<__EOF__
+---
+title: Каталог тестов
+directoryName: Тесты
+inMenu: true
+orderInfo: 30
+---
+h2. Тесты
+
+Тесты - модули Inquisitor, которые занимаются непосредственно
+тестированием. Обычно они делают какую-то одну простую проверку и
+возвращают результат: тест пройден или нет. Тесты обычно запускаются
+автоматически с помощью <a href="{relocatable:/doc/scheduler.page}">планировщика</a>, но, кроме
+того, их можно <a href="{relocatable:/doc/manual-invocation.page}">запускать вручную</a>,
+как обычный исполнямый файл. Все тесты написаны в одном и том же формате
+(который описывается в  секции <a href="{relocatable:/doc/test-format.page}">формат тестов</a>).
+
+Текущая версия Inquisitor включает в себя следующие тесты:
+
+<table class="toc">
+<tr><th>#</th><th>Скрипт</th><th>Название</th><th>Тестируемые компоненты</th></tr>
+__EOF__
+
+	n = 0
 	$TESTS.keys.sort.each { |k|
 		v = $TESTS[k]
-		f.puts "h3. <a name=\"#{k}\"></a>#{v[:name]} (#{k})"
-		f.puts
-		f.puts "<div class=\"infobox\"><img src=\"{relocatable:/images/hdd-destructive.png}\" width=\"64\" height=\"64\" title=\"Test destroys contents of HDD\" alt=\"Test destroys contents of HDD\" /></div>" if v[:destroys_hdd]
-		f.puts
-		f.puts "#{v[:description]}"
-		f.puts
+		n += 1
+		f.puts "<tr><td style=\"text-align: right\">#{n}</td><td>#{k}</td><td><a href=\"{relocatable:#{k}.page}\">#{v[:name]}</a></td><td>#{v[:depends].join(', ') if v[:depends]}</td></tr>"
+	}
+	f.puts "</table>\n\n"
+}
+
+$TESTS.keys.sort.each { |k|
+	v = $TESTS[k]
+	File.open("src/doc/tests/#{k}.page", 'w') { |ft|
+		ft.puts <<__EOF__
+---
+title: "#{v[:name]}"
+inMenu: true
+---
+__EOF__
+		ft.puts "h2. #{v[:name]} (#{k})"
+		ft.puts
+		ft.puts "<div class=\"infobox\"><img src=\"{relocatable:/images/hdd-destructive.png}\" width=\"64\" height=\"64\" title=\"Test destroys contents of HDD\" alt=\"Test destroys contents of HDD\" /></div>" if v[:destroys_hdd]
+		ft.puts
+		ft.puts "#{v[:description]}"
+		ft.puts
 		if v[:depends] and not v[:depends].empty? then
-			f.puts "* *Components tested:* #{v[:depends].join(', ')}"
+			ft.puts "* *Components tested:* #{v[:depends].join(', ')}"
 		end
 		if v[:var] and not v[:var].empty? then
-			f.puts "* *Variables:*"
+			ft.puts "* *Variables:*"
 			v[:var].keys.sort.each { |name|
 				var = v[:var][name]
-				f.print "** *#{name}* (#{var[:type]}, default: "
-				f.print var[:default].empty? ? '_empty_' : "@#{var[:default]}@"
-				f.puts ") &mdash; #{var[:comment]}"
+				ft.print "** *#{name}* (#{var[:type]}, default: "
+				ft.print var[:default].empty? ? '_empty_' : "@#{var[:default]}@"
+				ft.puts ") &mdash; #{var[:comment]}"
 			}
 		end
-		f.puts
+	}
+	File.open("src/doc/tests/#{k}.ru.page", 'w') { |ft|
+		ft.puts <<__EOF__
+---
+title: "#{v[:name]}"
+inMenu: true
+---
+__EOF__
+		ft.puts "h2. #{v[:name]} (#{k})"
+		ft.puts
+		ft.puts "<div class=\"infobox\"><img src=\"{relocatable:/images/hdd-destructive.png}\" width=\"64\" height=\"64\" title=\"Test destroys contents of HDD\" alt=\"Test destroys contents of HDD\" /></div>" if v[:destroys_hdd]
+		ft.puts
+		ft.puts "#{v[:description]}"
+		ft.puts
+		if v[:depends] and not v[:depends].empty? then
+			ft.puts "* *Тестируемые компоненты:* #{v[:depends].join(', ')}"
+		end
+		if v[:var] and not v[:var].empty? then
+			ft.puts "* *Переменные:*"
+			v[:var].keys.sort.each { |name|
+				var = v[:var][name]
+				ft.print "** *#{name}* (#{var[:type]}, по умолчанию: "
+				ft.print var[:default].empty? ? '_empty_' : "@#{var[:default]}@"
+				ft.puts ") &mdash; #{var[:comment]}"
+			}
+		end
 	}
 }

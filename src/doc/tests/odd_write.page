@@ -1,0 +1,18 @@
+---
+title: "odd_write"
+inMenu: true
+---
+h2. odd_write (odd_write)
+
+
+Optical Disc Drive write test
+
+* *Components tested:* ODD
+* *Variables:*
+** *FORCE_NON_INTERACTIVE* (boolean, default: @false@) &mdash; Force non-interactive mode for already prepared system
+** *TEST_IMAGE* (string, default: @iso/testimage.iso@) &mdash; ISO image path (absolute or relative)
+** *TEST_IMAGE_BLOCKS* (int, default: @332800@) &mdash; This images size in blocks (2048 bytes each)
+** *TEST_IMAGE_MD5* (string, default: @ffffffffffffffffffffffffffffffff@) &mdash; Test image MD5 hash
+** *WRITE_MESSAGE* (string, default: @Writing test disc@) &mdash; Message to print when test will start
+** *WRITE_SPEED* (int, default: @10@) &mdash; Default write speed if it won't detect
+** *WRITE_SPEED_FORCE* (boolean, default: @true@) &mdash; Force write speed using

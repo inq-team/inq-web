@@ -1,0 +1,14 @@
+---
+title: "USB presence"
+inMenu: true
+---
+h2. USB presence (usb-device)
+
+
+Tests the presence of designated USB devices. It checks for a count of USB devices that match specified idVendor and idProduct and gives a success if they're equal to COUNT parameter or failure if they're not.
+
+* *Components tested:* USB
+* *Variables:*
+** *COUNT* (int, default: @1@) &mdash; There should be this many devices
+** *IDPRODUCT* (string, default: @6001@) &mdash; Filter in only devices with this idProduct (match all if empty)
+** *IDVENDOR* (string, default: @0403@) &mdash; Filter in only devices with this idVendor (match all if empty)

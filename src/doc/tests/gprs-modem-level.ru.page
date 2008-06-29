@@ -1,0 +1,12 @@
+---
+title: "USB GPRS modem signal level"
+inMenu: true
+---
+h2. USB GPRS modem signal level (gprs-modem-level)
+
+
+Measure signal level, received by GPRS modem, connected via USB
+
+* *Переменные:*
+** *CHAT_TIMEOUT* (int, по умолчанию: @5@) &mdash; Timeout for waiting for answer
+** *DEV* (string, по умолчанию: @/dev/ttyUSB0@) &mdash; Name of device to test

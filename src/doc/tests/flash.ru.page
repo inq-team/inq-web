@@ -1,0 +1,12 @@
+---
+title: "Flash disk"
+inMenu: true
+---
+h2. Flash disk (flash)
+
+<div class="infobox"><img src="{relocatable:/images/hdd-destructive.png}" width="64" height="64" title="Test destroys contents of HDD" alt="Test destroys contents of HDD" /></div>
+
+Flash disk badblocks test
+
+* *Переменные:*
+** *SIZE_LIMIT* (int, по умолчанию: @2048@) &mdash; That is less than this amount is an IDE flash, MiB

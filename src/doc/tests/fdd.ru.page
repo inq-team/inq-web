@@ -1,0 +1,12 @@
+---
+title: "FDD read/write"
+inMenu: true
+---
+h2. FDD read/write (fdd)
+
+
+A simple test to determine wheter the floppy drive work or not. It asks a user to insert a floppy disk into drive, then writes some random data on a diskette, clears the cache, reads the data back and compares it to what was written. Process repeats for every FDD available.
+
+* *Тестируемые компоненты:* Floppy
+* *Переменные:*
+** *FLOPPY_SIZE* (int, по умолчанию: @1440@) &mdash; Size of testing floppy, KiB

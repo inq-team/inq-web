@@ -1,0 +1,16 @@
+---
+title: "HDD array stress"
+inMenu: true
+---
+h2. HDD array stress (hdd-array)
+
+<div class="infobox"><img src="{relocatable:/images/hdd-destructive.png}" width="64" height="64" title="Test destroys contents of HDD" alt="Test destroys contents of HDD" /></div>
+
+HDD array is a stress test that causes high load on HDD array subsystem. First of all, it creates optimally configured arrays (if possible, otherwise it will use single hard drives) using einarc's raid-wizard-optimal utility. Then it creates a filesystem on each array and unpacks and compiles there a large source tree for a specified time. Test distributes specified test duration among created arrays equally. Compilation, as in hdd-passthrough test, goes with 16 simultaneous jobs (by default). Test would end successfully if there wouldn't be any errors in filesystem creation and source code compilation runs. Usually this test starts after the CPU burning, memory and hdd-passthrough ones, and thus failing of this test (considering successful previous tests) usually identifies a broken RAID controller.
+
+* *Тестируемые компоненты:* CPU, HDD, Memory, Mainboard, Disk Controller
+* *Переменные:*
+** *JOBS* (int, по умолчанию: @16@) &mdash; Number of parallely running jobs during compile
+** *LOGTIME* (int, по умолчанию: @120@) &mdash; Time between progress updates, sec
+** *STRESS_TREE* (string, по умолчанию: @linux-2.6.22.5-31-stress.tar.gz@) &mdash; Tarball file containing stress test tree
+** *TESTTIME* (int, по умолчанию: @3600@) &mdash; Total time of HDD array testing, sec

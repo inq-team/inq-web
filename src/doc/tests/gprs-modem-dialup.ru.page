@@ -1,0 +1,23 @@
+---
+title: "USB GPRS Modem Dialup"
+inMenu: true
+---
+h2. USB GPRS Modem Dialup (gprs-modem-dialup)
+
+
+Test GPRS modem, connected using USB
+
+* *Переменные:*
+** *APN* (string, по умолчанию: @internet.mts.ru@) &mdash; Cell service provider's Internet APN
+** *DEV* (string, по умолчанию: @/dev/ttyUSB0@) &mdash; Name of device to test
+** *DOWNLOAD_MAX_TIME* (int, по умолчанию: @60@) &mdash; Timeout for the whole download, sec
+** *DOWNLOAD_TRIES* (int, по умолчанию: @3@) &mdash; Number of tries to download the file
+** *MD5* (string, по умолчанию: @ca530886183b06d0047e0655537327aa@) &mdash; MD5 of downloaded file
+** *PPPD_TRIES* (int, по умолчанию: @4@) &mdash; Number of tries to bring pppd up
+** *PPPD_USERNAME* (string, по умолчанию: @mts@) &mdash; Cell service provider's pppd username
+** *SPEED* (int, по умолчанию: @115200@) &mdash; Line speed
+** *UPLOAD_FILE* (string, по умолчанию: @/etc/ld.so.cache@) &mdash; File to upload
+** *UPLOAD_MAX_TIME* (int, по умолчанию: @120@) &mdash; Timeout for file upload, sec
+** *UPLOAD_TRIES* (int, по умолчанию: @3@) &mdash; Number of tries to upload the file
+** *UPLOAD_URL* (string, по умолчанию: _empty_) &mdash; URL to upload (without http)
+** *URL* (string, по умолчанию: @img-fotki.yandex.ru/getx/10/photoface.359/sevastopol-foto_34661_L@) &mdash; URL to download (without http)
