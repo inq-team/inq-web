@@ -15,7 +15,7 @@ Tests are modules of Inquisitor that do the real work. They usually do
 one specific action and can return binary result: passed or failed.
 Tests are usually ran automatically by
 <a href="{relocatable: scheduler.page}">scheduler</a>, but can be
-<a href="{relocatable: manual-invokation.page}">invoked manually</a>,
+<a href="{relocatable: manual-invocation.page}">invoked manually</a>,
 as a regular executable with parameters. All tests follow the
 same format (which is described in
 <a href="{relocatable: test-format.page}">test format</a> section).

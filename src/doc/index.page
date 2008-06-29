@@ -12,7 +12,8 @@ components.
 h3. End-user and system administrator documentation
 
 * <a href="{relocatable:flavours.page}">Choosing the right flavour</a>
-* <a href="{relocatable:server.page}">Deploying server</a>
+* <a href="{relocatable:installation.page}">Quick-start installation</a>
+* <a href="{relocatable:server.page}">Deploying a server</a>
 ** <a href="{relocatable:server-hardware-requirements.page}">Server hardware requirements</a>
 
 h3. Developer documentation
