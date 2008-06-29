@@ -1,0 +1,64 @@
+---
+title: Quick-start installation
+inMenu: true
+orderInfo: 20
+---
+h2. Quick-start installation
+
+This section gives quick hints to those who wants to build Inquisitor
+from source. Note that you don't <em>have</em> to do it: you can
+<a href="{relocatable:/download.page}">download and run a pre-built Live CD</a>.
+
+For complete build system documentation, see
+<a href="{relocatable:build-system.page}">build system</a>.
+
+h3. Requirements
+
+* A Linux system; the following software is required for a succesful
+build:
+** GNU make
+** gcc v4 or later
+** ruby v1.8.6 or later
+** wget
+** rpm or deb development set
+* For <b>Live</b> and <b>Enterprise</b> - a properly configured access
+to repositories that you want to build your distribution from; a local
+mirror copy is preferred, as it would be much faster to install from.
+* A system to test (it can be the same system).
+
+h3. Configure
+
+Untar Inquisitor source code. Edit @Makefile.config@ to choose:
+
+* *FLAVOUR* - one of three <a href="{relocatable:flavours.page}">flavours</a>.
+* *TARGET* - set your target architecture to build a client for (i586,
+x86_64).
+* *CLIENT_BASE* - which distribution would should we build client for
+(if you're going to do a <b>Live</b> or <b>Enterprise</b> build, you'd
+need properly configured access to repositories of this distribution,
+otherwise, it just affects what you'll get as a resulting package).
+
+h3. Build
+
+Just run
+<pre>make all</pre>
+
+Note that if your build will require confirmation of proprietary
+licenses (for hardware RAID controllers handling), you'll be asked to
+enter your confirmation interactively.
+
+h3. Result
+
+* <b>Standalone</b> - you'll get an @*.rpm@ or @*.deb@ in Inquisitor directory.
+* <b>Live</b> - @work/live.iso@.
+* <b>Enterprise</b> - client root image in @work/chroot@ directory,
+ready to be served from NFS server.
+
+h3. Running
+
+* <b>Standalone</b> - run @/usr/bin/inq-live@ for a nice text
+UI or <a href="{relocatable:manual-invocation.page}">invoke individual tests manually</a>.
+* <b>Live</b> - burn a resulting ISO on a CD and boot from it.
+* <b>Enterprise</b> - running an enterprise version is more complex than
+other flavours; please refer to <a href="{relocatable:server.page}">server deployment guide</a>
+for more information.
