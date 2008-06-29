@@ -26,6 +26,8 @@ these requests to proprietary RAID paradigms. In fact, the system still
 uses underlying proprietary CLIs, but the user doesn't interact with
 them directly, staying in a single, well-documented interface.
 
+<div style="text-align: center"><img src="xhtml/images/einarc-architecture.png" width="516" height="200" alt="Einarc architecture" /></div>
+
 h3. Who would be interested to use Einarc?
 
 First of all, system administrators who have a large variety of
@@ -54,5 +56,5 @@ command:
 
 h3. Documentation and support
 
-* A quick-start README is provided inside the source package
+* <a href="https://inq.svn.sourceforge.net/svnroot/inq/trunk/client/lib/einarc/README">A quick-start README</a> is provided inside the source package
 * <a href="xhtml/manual.html">Reference manual</a>
