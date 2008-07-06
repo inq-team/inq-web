@@ -1,3 +1,62 @@
+2008-07-06: |
+ h2. Inquisitor v3.0-rc2 release
+
+ Today we're proud to announce the release of Inquisitor v3.0-rc2. This
+ would be last release candidate until the 3.0-final, which is scheduled
+ to go gold on 2008-07-20.
+
+ h3. New features
+
+ h4. Client
+
+ * Einarc v1.2 inside: more supported controllers, better detects,
+ adapter flashing support.
+ * Firmware flashing support: a unified facility to make sure that every
+ support device would have a latest firmware - complete with UI.
+ * New monitorings: odd-read, cpu-temp-ipmi, cpu-temp-sensors,
+ cpu-vcore-ipmi, cpu-vcore-sensors.
+ * Enhanced curses UI for Live CD.
+ * Improved Live CD build process: added gfxboot, added memtest, switched
+ to initramfs.
+ * New test: hdd-smart.
+
+ h4. Server
+
+ * New server UI features: Java SSH client tab, advanced graph plotting
+ tab. Multiple server interface facelifts and usability fixes (Ajax
+ updates, realtimeness, etc).
+ * "Attention" status: used in interactive tests to pause timecount and
+ grab the attention of user to make him do something.
+ * Authentication on server: makes it possible to implement role-based
+ privilege separation system, complete with user/permissions editor and
+ "My settings" page that allows per-user setup of certain configuration
+ things.
+ * Wiki-like comments for stages: now every authenticated user can edit
+ comments for every stage and see it's history of edits.
+
+ h3. Fixes
+
+ * Multiple general performance and stability fixes: detects, scheduler,
+ tests, web UI.
+ * Web UI is now compatible with Konqueror, Opera and MSIE.
+ * Build system: increased fool-proofness.
+
+ h3. Miscellaneous
+
+ * Lots of refactoring and API stabilization. API improvements: advanced
+ searching using hal (hal-searcher), monitoring_submit_multiple(),
+ show_components().
+ * Almost all server pages were tested live under heavy stress and
+ improved to withstand it.
+ * Further modularization: various enterprise-specific things, such as
+ MyKit and label printing were separated from base platform.
+ * Added lots of embedded documentation and metainformation extraction
+ facility: extract various metainformation from source files and
+ publishes them as documentation, uses them for scheduling purposes, in
+ UI, etc.
+
+ <p class="readmore"><a href="http://sourceforge.net/project/shownotes.php?release_id=611670&group_id=100064">ChangeLog</a> | <a href="{relocatable:/download.page}">Download now!</a></p>
+
 2008-06-09: |
  h2. Einarc v1.2 released
 

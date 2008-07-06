@@ -5,20 +5,13 @@ orderInfo: 50
 ---
 h2. Download
 
-Inquisitor v3.0-rc is available for download:
+Inquisitor v3.0-rc2 is available for download:
 
 h3. SourceForge downloads
 
-* <a href="http://downloads.sourceforge.net/inq/inq-3.0-rc.tar.bz2?modtime=1207744133">Inquisitor v3.0-rc source code</a> (764 KiB)
-* <a href="http://downloads.sourceforge.net/inq/inq-live-3.0-rc-x86.iso?modtime=1207756171">Inquisitor v3.0-rc Live CD (x86)</a> (207 MiB)
-* <a href="http://downloads.sourceforge.net/inq/inq-live-3.0-rc-x86_64.iso?modtime=1207744358">Inquisitor v3.0-rc Live CD (x86_64)</a> (209 MiB)
-
-h3. <a href="http://en.wikipedia.org/wiki/BitTorrent_(protocol)">BitTorrent</a> downloads
-
-* <a href="http://thepiratebay.org/tor/4125008">Inquisitor v3.0-rc Live CD (x86) at ThePirateBay</a> (207 MiB)
-* <a href="http://linuxtracker.org/index.php?page=torrent-details&id=6044c18af237bf12fe8352be956c12a9d602354a">Inquisitor v3.0-rc Live CD (x86) at LinuxTracker</a> (207 MiB)
-* <a href="http://thepiratebay.org/tor/4125007">Inquisitor v3.0-rc Live CD (x86_64) at ThePirateBay</a> (209 MiB)
-* <a href="http://linuxtracker.org/index.php?page=torrent-details&id=2acb3c4be1a789cf97b996a997af1211d73c338b">Inquisitor v3.0-rc Live CD (x86_64) at LinuxTracker</a> (209 MiB)
+* <a href="http://downloads.sourceforge.net/inq/inq-3.0-rc2.tar.bz2">Inquisitor v3.0-rc2 source code</a> (814 KiB)
+* <a href="http://downloads.sourceforge.net/inq/inq-live-3.0-rc2-x86.iso">Inquisitor v3.0-rc2 Live CD (x86)</a> (203 MiB)
+* <a href="http://downloads.sourceforge.net/inq/inq-live-3.0-rc2-x86_64.iso">Inquisitor v3.0-rc2 Live CD (x86_64)</a> (221 MiB)
 
 For older versions, please refer to <a href="https://sourceforge.net/project/showfiles.php?group_id=100064&package_id=263662">Inquisitor on SourceForge.net file archive</a>.
 

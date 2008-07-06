@@ -177,7 +177,7 @@ padding:5px 5px 5px 8px;
 .left{float:left; margin:0 15px 4px 0;}
 .right{float:right; margin:0 0 4px 15px;}
 .textright{text-align:right;}
-.readmore{text-align:right; margin:-10px 10px 12px 0;}
+.readmore{text-align:right; margin:-10px 10px 4em 0;}
 
 .center{text-align:center;}
 .blue{color:#640b26;}
