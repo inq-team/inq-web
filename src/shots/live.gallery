@@ -1,0 +1,27 @@
+title: Live
+orderInfo: 10
+images: live/**
+imagesPerPage: 8
+mainPageMetaInfo:
+  inMenu: true
+layouter: slides
+
+collageSize: 400x300
+slideColor: "#ddd"
+thumbnailResizeMethod: :cropped
+---
+live/livecd-1.jpg:
+  title: Main menu
+  description: A main menu of Live CD - it's what you get after successful booting.
+
+live/livecd-2.jpg:
+  title: Starting a single test
+  description: A list of tests to choose from when starting a single test
+
+live/livecd-3.jpg:
+  title: LiveCD booting
+  description: This is how it looks like when it boots.
+
+live/livecd-4.jpg:
+  title: Stream benchmark
+  description: Running benchmark test "Stream" in single test mode.

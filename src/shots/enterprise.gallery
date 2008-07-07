@@ -1,0 +1,15 @@
+title: Enterprise
+orderInfo: 20
+images: enterprise/**
+imagesPerPage: 8
+mainPageMetaInfo:
+  inMenu: true
+layouter: slides
+
+collageSize: 400x300
+slideColor: "#ddd"
+thumbnailResizeMethod: :cropped
+---
+enterprise/enterprise-1.jpg:
+  title: Computer view
+  description: A page that shows a view of one particular computer.

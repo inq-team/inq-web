@@ -1,0 +1,19 @@
+title: Installations
+orderInfo: 30
+images: installations/**
+imagesPerPage: 8
+mainPageMetaInfo:
+  inMenu: true
+layouter: slides
+
+collageSize: 400x300
+slideColor: "#ddd"
+thumbnailResizeMethod: :cropped
+---
+installations/notebook-inq-1.jpg:
+  title: Testing notebooks
+  description: A production installation of Inquisitor at MaxSelect, operators are testing notebooks.
+
+installations/notebook-inq-2.jpg:
+  title: Comm rack
+  description: It's all it takes to properly distribute network for a 160+ testing shelves.
