@@ -5,7 +5,7 @@ inMenu: true
 h2. ODD read (odd_read)
 
 
-Optical Disc Drive read test
+This test checks for workability and correct optical discs reading of ODDs. It detects if disc is already loaded and tries to run test non-interactively (without any humans nearby). It reads needed number of blocks (trying readcd or dd), calculates their checksums and compares with specified. So, we can determine either drives works fine or not. Also, simultaneously it acts as a monitoring, measuring disc reading speed.
 
 * *Components tested:* ODD
 * *Variables:*

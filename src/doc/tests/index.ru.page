@@ -19,7 +19,7 @@ h2. Тесты
 <table class="toc">
 <tr><th>#</th><th>Скрипт</th><th>Название</th><th>Тестируемые компоненты</th></tr>
 <tr><td style="text-align: right">1</td><td>bonnie</td><td><a href="{relocatable:bonnie.page}">Bonnie</a></td><td>HDD</td></tr>
-<tr><td style="text-align: right">2</td><td>bytemark</td><td><a href="{relocatable:bytemark.page}">BYTEmark</a></td><td>CPU, Memory, Mainboard</td></tr>
+<tr><td style="text-align: right">2</td><td>bytemark</td><td><a href="{relocatable:bytemark.page}">BYTEmark test suite</a></td><td>CPU, Memory, Mainboard</td></tr>
 <tr><td style="text-align: right">3</td><td>cpu</td><td><a href="{relocatable:cpu.page}">CPU burn</a></td><td>CPU</td></tr>
 <tr><td style="text-align: right">4</td><td>db_comparison</td><td><a href="{relocatable:db_comparison.page}">DB to Detects comparison</a></td><td>BMC, CPU, Chassis, Disk Controller, Floppy, HDD, Mainboard, Memory, NIC, OSD, Platform, USB, Video</td></tr>
 <tr><td style="text-align: right">5</td><td>dhrystone</td><td><a href="{relocatable:dhrystone.page}">Dhrystone</a></td><td>CPU</td></tr>
@@ -37,9 +37,9 @@ h2. Тесты
 <tr><td style="text-align: right">17</td><td>mencoder</td><td><a href="{relocatable:mencoder.page}">Mencoder</a></td><td>CPU, Memory, Mainboard</td></tr>
 <tr><td style="text-align: right">18</td><td>net</td><td><a href="{relocatable:net.page}">Network interface</a></td><td>NIC</td></tr>
 <tr><td style="text-align: right">19</td><td>odd_read</td><td><a href="{relocatable:odd_read.page}">ODD read</a></td><td>ODD</td></tr>
-<tr><td style="text-align: right">20</td><td>odd_write</td><td><a href="{relocatable:odd_write.page}">odd_write</a></td><td>ODD</td></tr>
+<tr><td style="text-align: right">20</td><td>odd_write</td><td><a href="{relocatable:odd_write.page}">ODD write</a></td><td>ODD</td></tr>
 <tr><td style="text-align: right">21</td><td>stream</td><td><a href="{relocatable:stream.page}">Stream</a></td><td>Memory</td></tr>
-<tr><td style="text-align: right">22</td><td>unixbench</td><td><a href="{relocatable:unixbench.page}">Unixbench</a></td><td>CPU, Memory, Mainboard</td></tr>
+<tr><td style="text-align: right">22</td><td>unixbench</td><td><a href="{relocatable:unixbench.page}">UnixBench</a></td><td>CPU, Memory, Mainboard</td></tr>
 <tr><td style="text-align: right">23</td><td>usb-device</td><td><a href="{relocatable:usb-device.page}">USB presence</a></td><td>USB</td></tr>
 <tr><td style="text-align: right">24</td><td>usb-flash-drive</td><td><a href="{relocatable:usb-flash-drive.page}">USB Flash Drive</a></td><td>USB</td></tr>
 <tr><td style="text-align: right">25</td><td>whetstone</td><td><a href="{relocatable:whetstone.page}">Whetstone</a></td><td>CPU</td></tr>

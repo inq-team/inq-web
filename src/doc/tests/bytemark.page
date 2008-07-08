@@ -1,10 +1,10 @@
 ---
-title: "BYTEmark"
+title: "BYTEmark test suite"
 inMenu: true
 ---
-h2. BYTEmark (bytemark)
+h2. BYTEmark test suite (bytemark)
 
 
-BYTEmark native mode benchmark
+The BYTEmark benchmark test suite is used to determine how the processor, its caches and coprocessors influence overall system performance. Its measurements can indicate problems with the processor subsystem and (since the processor is a major influence on overall system performance) give us an idea of how well a given system will perform. The BYTEmark test suite is especially valuable since it lets us directly compare computers with different processors and operating systems. The code used in BYTEmark tests simulates some of the real-world operations used by popular office and technical applications. Tests include: numeric and string sort, bitfield working, fourier and assignment manipulations, huffman, IDEA, LU decomposition, neural net.
 
 * *Components tested:* CPU, Memory, Mainboard
