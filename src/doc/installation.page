@@ -50,7 +50,7 @@ enter your confirmation interactively.
 h3. Result
 
 * <b>Standalone</b> - you'll get an @*.rpm@ or @*.deb@ in Inquisitor directory.
-* <b>Live</b> - @work/live.iso@.
+* <b>Live</b> - @work/livecd.iso@.
 * <b>Enterprise</b> - client root image in @work/chroot@ directory,
 ready to be served from NFS server.
 
