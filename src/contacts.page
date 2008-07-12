@@ -1,5 +1,7 @@
 ---
 title: Contacts
+description: Contacts info on Inquisitor Linux hardware testing and monitoring platform
+keywords: Inquisitor,linux,hardware,testing,monitoring,certification,control,raid,contacts
 inMenu: true
 orderInfo: 100
 ---
@@ -7,11 +9,12 @@ h2. Contacts
 
 Inquisitor team is:
 
-* Mikhail Yakshin
+* Mikhail Yakshin (greycat.na.kor at gmail dot com)
 * Pavel Melnikov
 * Maksim Bartenev
 * Sergey Matveev
 * Denis Borovikov
+* Andras Horvath
 
 Thanks for contributions and suggestions:
 

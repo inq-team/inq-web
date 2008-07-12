@@ -2,5 +2,7 @@
 title: News
 inMenu: true
 orderInfo: 8
+description: News about Inquisitor Linux hardware testing and monitoring platform
+keywords: Inquisitor,linux,hardware,testing,monitoring,certification,control,raid,news
 ---
 {news: {filename: src/news.yaml, dateTag: h6}}
