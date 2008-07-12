@@ -1,6 +1,7 @@
 ---
 title: "Network interface"
 inMenu: true
+template: /default.ru.template
 ---
 h2. Network interface (net)
 
@@ -12,4 +13,4 @@ This test must load every network interface in system and measure it's download 
 ** *EXCLUDE_MAC* (string, по умолчанию: _empty_) &mdash; Exclude NICs with MAC addresses that match this regexp from testing
 ** *MD5* (string, по умолчанию: @805414334eb1d3ff4fdca507ec82098f@) &mdash; MD5 checksum for checking
 ** *TIMEOUT* (int, по умолчанию: @15@) &mdash; Wait timeout while test file retrieving, sec
-** *URL* (string, по умолчанию: @3000/test_file@) &mdash; Relative to server PORT:URL to be fetched and checked
+** *URL* (string, по умолчанию: @3000/test_file@) &mdash; Relative to server PORT-URL to be fetched and checked

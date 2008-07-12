@@ -1,12 +1,13 @@
 ---
 title: "HDD SMART"
 inMenu: true
+template: /default.ru.template
 ---
 h2. HDD SMART (hdd-smart)
 
 
 Simple test for SMART capable hard drives. At first it tries to find is there any SMART capable and correctly working with it drives. Test uses standard smartmontools package. Next, it starts long time full SMART testing on every capable drive and waits for their completion. If everything in SMART log seems good tests passes successfully.
 
-* *Тестируемые компоненты:* HDD, Disk Controller
+* *Тестируемые компоненты:* HDD
 * *Переменные:*
 ** *LOGTIME* (int, по умолчанию: @120@) &mdash; Time between progress updates, sec

@@ -7,6 +7,7 @@ h2. USB GPRS Modem Dialup (gprs-modem-dialup)
 
 Test GPRS modem, connected using USB
 
+* *Components tested:* USB, GPRS Modem
 * *Variables:*
 ** *APN* (string, default: @internet.mts.ru@) &mdash; Cell service provider's Internet APN
 ** *DEV* (string, default: @/dev/ttyUSB0@) &mdash; Name of device to test

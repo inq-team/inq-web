@@ -1,8 +1,9 @@
 ---
-title: "Memory test: memtester"
+title: "Memory test: Memtester"
 inMenu: true
+template: /default.ru.template
 ---
-h2. Memory test: memtester (memory)
+h2. Memory test: Memtester (memory)
 
 
 This memory test is performed without reboot, under control of live full-featured OS, using user-space memtester program. Test takes special precautions and tries to lock maximum possible amount of memory for memtester. memtester tests memory using standard read-write-check method using 16 patterns.

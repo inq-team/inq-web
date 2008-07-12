@@ -5,8 +5,9 @@ inMenu: true
 h2. USB GPRS modem signal level (gprs-modem-level)
 
 
-Measure signal level, received by GPRS modem, connected via USB
+This very simple benchmark intended to reset modem and send special AT-command to get signal level. As it (level) can strongly vary, human can repeat this test as much as he want.
 
+* *Components tested:* USB, GPRS Modem
 * *Variables:*
 ** *CHAT_TIMEOUT* (int, default: @5@) &mdash; Timeout for waiting for answer
 ** *DEV* (string, default: @/dev/ttyUSB0@) &mdash; Name of device to test

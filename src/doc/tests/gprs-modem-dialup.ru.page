@@ -1,12 +1,14 @@
 ---
 title: "USB GPRS Modem Dialup"
 inMenu: true
+template: /default.ru.template
 ---
 h2. USB GPRS Modem Dialup (gprs-modem-dialup)
 
 
 Test GPRS modem, connected using USB
 
+* *Тестируемые компоненты:* USB, GPRS Modem
 * *Переменные:*
 ** *APN* (string, по умолчанию: @internet.mts.ru@) &mdash; Cell service provider's Internet APN
 ** *DEV* (string, по умолчанию: @/dev/ttyUSB0@) &mdash; Name of device to test

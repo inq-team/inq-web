@@ -1,12 +1,13 @@
 ---
-title: "Dhrystone"
+title: "CPU benchmark: Dhrystone"
 inMenu: true
+template: /default.ru.template
 ---
-h2. Dhrystone (dhrystone)
+h2. CPU benchmark: Dhrystone (dhrystone)
 
 
 A synthetic computing benchmark that measures CPU integer performance. Inquisitor uses a C version and runs the specified number of loops, testing each CPU separately, with testing process running affined to particular CPU. Performance rating is in terms of MIPS.
 
 * *Тестируемые компоненты:* CPU
 * *Переменные:*
-** *DURATION* (int, по умолчанию: @30@) &mdash; Benchmark duration (sec)
+** *DURATION* (int, по умолчанию: @300@) &mdash; Benchmark duration (sec)

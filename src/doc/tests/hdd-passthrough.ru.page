@@ -1,6 +1,7 @@
 ---
 title: "HDD passthrough"
 inMenu: true
+template: /default.ru.template
 ---
 h2. HDD passthrough (hdd-passthrough)
 

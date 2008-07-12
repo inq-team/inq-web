@@ -1,10 +1,11 @@
 ---
 title: "DB to Detects comparison"
 inMenu: true
+template: /default.ru.template
 ---
 h2. DB to Detects comparison (db_comparison)
 
 
 Pauses testing until comparison has been completed on the application server.
 
-* *Тестируемые компоненты:* BMC, CPU, Chassis, Disk Controller, Floppy, HDD, Mainboard, Memory, NIC, OSD, Platform, USB, Video
+* *Тестируемые компоненты:* BMC, CPU, Chassis, Disk Controller, Floppy, HDD, Mainboard, Memory, NIC, OSD, Platform, USB, Video, ODD, GPRS Modem, USB Mass Storage

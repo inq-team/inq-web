@@ -1,8 +1,8 @@
 ---
-title: "UnixBench"
+title: "UnixBench benchmark suite"
 inMenu: true
 ---
-h2. UnixBench (unixbench)
+h2. UnixBench benchmark suite (unixbench)
 
 
 This test is a general-purpose benchmark designed to provide a basic evaluation of the performance of a Unix-like system. It runs a set of tests to evaluate various aspects of system performance, and then generates a set of scores. Here, we are using UnixBench version 5 (multi-CPU aware branch) without 2D/3D graphics benchmarks.

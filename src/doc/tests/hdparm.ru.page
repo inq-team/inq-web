@@ -1,8 +1,9 @@
 ---
-title: "HDD speed benchmark: hdparm"
+title: "HDD benchmark: Hdparm"
 inMenu: true
+template: /default.ru.template
 ---
-h2. HDD speed benchmark: hdparm (hdparm)
+h2. HDD benchmark: Hdparm (hdparm)
 
 
 This benchmark runs on all hard drives in the system sequentially. Every hard drive is benchmarked for the buffered speed and the cached speed using basic hdparm -t and -T tests for several times. The results for every HDD are averaged and presented as benchmark results.

@@ -1,12 +1,14 @@
 ---
 title: "USB GPRS modem"
 inMenu: true
+template: /default.ru.template
 ---
 h2. USB GPRS modem (gprs-modem)
 
 
 This simple test can determine connected USB modem workability. It sets modem/port speed to 115200bps, checks for proper answer on AT-commands and retrieves it's IMEI number.
 
+* *Тестируемые компоненты:* USB, GPRS Modem
 * *Переменные:*
 ** *ANSWER_ATI* (string, по умолчанию: @OK@) &mdash; String to get after ATI
 ** *CHAT_TIMEOUT* (int, по умолчанию: @5@) &mdash; Timeout for waiting for answer

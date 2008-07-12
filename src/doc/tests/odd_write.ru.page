@@ -1,6 +1,7 @@
 ---
 title: "ODD write"
 inMenu: true
+template: /default.ru.template
 ---
 h2. ODD write (odd_write)
 

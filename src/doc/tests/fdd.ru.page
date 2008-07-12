@@ -1,6 +1,7 @@
 ---
 title: "FDD read/write"
 inMenu: true
+template: /default.ru.template
 ---
 h2. FDD read/write (fdd)
 

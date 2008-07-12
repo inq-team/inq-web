@@ -1,12 +1,13 @@
 ---
-title: "Whetstone"
+title: "CPU benchmark: Whetstone"
 inMenu: true
+template: /default.ru.template
 ---
-h2. Whetstone (whetstone)
+h2. CPU benchmark: Whetstone (whetstone)
 
 
 A synthetic computing benchmark that measures CPU floating-point performance. Inquisitor uses a C version and runs the specified number of loops, testing each CPU separately, with testing process running affined to particular CPU. Performance rating is in terms of MIPS.
 
 * *Тестируемые компоненты:* CPU
 * *Переменные:*
-** *LOOPS* (int, по умолчанию: @20000@) &mdash; Loop count
+** *LOOPS* (int, по умолчанию: @200000@) &mdash; Loop count

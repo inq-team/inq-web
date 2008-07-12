@@ -1,8 +1,9 @@
 ---
-title: "Stream"
+title: "Memory benchmark: STREAM"
 inMenu: true
+template: /default.ru.template
 ---
-h2. Stream (stream)
+h2. Memory benchmark: STREAM (stream)
 
 
 The STREAM benchmark is a simple synthetic benchmark program that measures sustainable memory bandwidth (in MiB/s) and the corresponding computation rate for simple vector kernels. A version written in C language and optimized for single processor systems is used.
