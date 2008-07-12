@@ -1,6 +1,6 @@
 ---
 title: Об Inquisitor
-inMenu: true
+inMenu: false
 orderInfo: 0
 directoryName: О проекте
 template: /default.ru.template
@@ -16,7 +16,7 @@ CD/DVD до серьезных производственных систем с 
 загрузкой по сети.
 
 С помощью Inquisitor можно <a href="{relocatable:/doc/detect.page}">проанализировать</a> и
-<a href="{relocatable:/doc/test/index.page}">оттестировать</a> оборудование
+<a href="{relocatable:/doc/tests/index.page}">оттестировать</a> оборудование
 сверху донизу и убедиться в том, что оно не подведет под серьезной нагрузкой.
 
 Inquisitor - это:

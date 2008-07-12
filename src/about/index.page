@@ -1,8 +1,8 @@
 ---
 title: About
+inMenu: false
 description: Brief description of Inquisitor Linux hardware testing and monitoring platform
 keywords: Inquisitor,linux,hardware,testing,monitoring,certification,control,raid,brief,about
-inMenu: true
 orderInfo: 0
 directoryName: About
 ---
@@ -18,7 +18,7 @@ network boot production system.
 <div class="contents">{news: {filename: src/news.yaml, dateTag: h3, options: {maxEntries: 3, maxParagraphs: 2}}}</div>
 </div>
 
-It can <a href="{relocatable: /doc/detect.page}">analyse</a> and <a href="{relocatable: /doc/test/index.page}">test</a>
+It can <a href="{relocatable: /doc/detect.page}">analyse</a> and <a href="{relocatable: /doc/tests/index.page}">test</a>
 your hardware from top to the bottom and assure that it won't fail easily under the production
 stress.
 
