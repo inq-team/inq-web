@@ -1,0 +1,30 @@
+---
+title: Скачать
+description: Скачать Inquisitor Linux hardware testing and monitoring platform
+keywords: Inquisitor,linux,hardware,testing,monitoring,certification,control,raid,скачать
+inMenu: true
+orderInfo: 50
+template: /default.ru.template
+---
+h2. Скачать
+
+Inquisitor v{includeFile: {filename: version.txt}} можно скачать следующими способами.
+
+h3. HTTP с SourceForge
+
+{includeFile: {filename: downloads-sf.html, escapeHTML: false, processOutput: false}}
+h3. BitTorrent
+
+{includeFile: {filename: downloads-bt.html, escapeHTML: false, processOutput: false}}
+h3. Все остальное
+
+Более старые версии можно найти на <a href="https://sourceforge.net/project/showfiles.php?group_id=100064&package_id=263662">файловом архиве Inquisitor на SourceForge.net</a>.
+
+Кроме этого, можно:
+
+* Скачать себе репозитарий Subversion командой: <p><code>svn co https://inq.svn.sourceforge.net/svnroot/inq/trunk inq</code></p>
+
+* Скачать <a href="{relocatable:/doc/einarc/}">Einarc</a>, подпроект
+Inquisitor - унифицированный интерфейс управления аппаратными RAID.
+
+* Почитать <a href="{relocatable:/doc/}">документацию</a>.

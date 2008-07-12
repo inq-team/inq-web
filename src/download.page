@@ -7,18 +7,15 @@ orderInfo: 50
 ---
 h2. Download
 
-Inquisitor v3.0-rc2 is available for download:
+Inquisitor v{includeFile: {filename: version.txt}} is available for download:
 
 h3. SourceForge downloads
 
-* <a href="http://downloads.sourceforge.net/inq/inq-3.0-rc2.tar.bz2">Inquisitor v3.0-rc2 source code</a> (814 KiB)
-* <a href="http://downloads.sourceforge.net/inq/inq-live-3.0-rc2-x86.iso">Inquisitor v3.0-rc2 Live CD (x86)</a> (203 MiB)
-* <a href="http://downloads.sourceforge.net/inq/inq-live-3.0-rc2-x86_64.iso">Inquisitor v3.0-rc2 Live CD (x86_64)</a> (221 MiB)
-
+{includeFile: {filename: downloads-sf.html, escapeHTML: false, processOutput: false}}
 h3. BitTorrent downloads
 
-* <a href="http://linuxtracker.org/index.php?page=torrent-details&id=3106c86ae10994e150278a159687e5da50d0f059">Inquisitor v3.0-rc2 LiveCD (x86)</a> (203 MiB)
-* <a href="http://linuxtracker.org/index.php?page=torrent-details&id=f43a32f45482f85ea09ac1c8da122f10b0e3a1e3">Inquisitor v3.0-rc2 LiveCD (x86_64)</a> (221 MiB)
+{includeFile: {filename: downloads-bt.html, escapeHTML: false, processOutput: false}}
+h3. Everything else
 
 For older versions, please refer to <a href="https://sourceforge.net/project/showfiles.php?group_id=100064&package_id=263662">Inquisitor on SourceForge.net file archive</a>.
 
@@ -26,7 +23,7 @@ Also, you can:
 
 * Check out the Subversion repository using command: <p><code>svn co https://inq.svn.sourceforge.net/svnroot/inq/trunk inq</code></p>
 
-* Visit <a href="{relocatable:doc/einarc}">Einarc</a>, a unified storage
+* Visit <a href="{relocatable:doc/einarc/}">Einarc</a>, a unified storage
 management Inquisitor sub-project.
 
-* Read the <a href="{relocatable:/doc/index.page}">documentation</a>.
+* Read the <a href="{relocatable:/doc/}">documentation</a>.
