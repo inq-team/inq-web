@@ -1,0 +1,10 @@
+---
+title: "CPU core voltage (ipmi)"
+inMenu: true
+---
+h2. CPU core voltage (ipmi) (cpu-vcore-ipmi)
+
+This monitoring uses ipmitool for getting CPU's core voltage.
+
+* *Monitoring ID:* 3
+* *Measurement:* voltage

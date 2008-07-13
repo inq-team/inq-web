@@ -1,0 +1,10 @@
+---
+title: "CPU temperature (ipmi)"
+inMenu: true
+---
+h2. CPU temperature (ipmi) (cpu-temp-ipmi)
+
+This monitoring uses ipmitool for getting CPU's temperature.
+
+* *Monitoring ID:* 1
+* *Measurement:* temperature

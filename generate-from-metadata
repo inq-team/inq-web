@@ -249,3 +249,117 @@ __EOF__
 		end
 	}
 }
+
+# ==============================
+# Generate pages for monitorings
+# ==============================
+
+File.open('src/doc/monitorings/index.page', 'w') { |f|
+	f.puts <<__EOF__
+---
+title: Monitorings directory
+inMenu: true
+orderInfo: 30
+---
+h2. Monitorings
+
+Monitorings are modules of Inquisitor that are intended to run in
+background full time when computer is under testing. They act like
+daemons that from time to time get neecessary measurements and save
+them. The main measurement is temperature of most
+components. We can start CPU intensive using test and watch how
+processor's temperature will greatly increase. After that we can make
+decisions about component's appropriateness for using.
+
+Current version of Inquisitor includes the following monitorings:
+
+<table class="toc">
+<tr><th>#</th><th>Script</th><th>Title</th><th>Measurement</th></tr>
+__EOF__
+
+	n = 0
+	$MONITORINGS.keys.sort.each { |k|
+		v = $MONITORINGS[k]
+		n += 1
+		f.puts "<tr>
+		<td style=\"text-align: right\">#{n}</td>
+		<td>#{k}</td>
+		<td><a href=\"{relocatable:#{k}.page}\">#{v[:name]}</a></td>
+		<td>#{v[:measurement]}</td>
+		</tr>"
+	}
+	f.puts "</table>\n\n"
+}
+
+File.open('src/doc/monitorings/index.ru.page', 'w') { |f|
+	f.puts <<__EOF__
+---
+title: Каталог мониторингов
+directoryName: Мониторинги
+inMenu: true
+orderInfo: 30
+template: /default.ru.template
+---
+h2. Мониторинги
+
+Мониторинги - модули Inquisitor, которые предназначены для запуска в
+фоновом режиме на протяжении всего времени тестирования компьютера.
+Они работают подобно "демонам" которые время от времени делают
+требуемые измерения и сохраняют их. Наиболее важное измерение для
+большинства компонентов это температура. Мы может запустить тест,
+интенсивно использующий CPU, и следить за тем, как сильно повысится
+его температура. После этого мы может сделать выводы о пригодности
+использования данного аппаратного компонента.
+
+Текущая версия Inquisitor включает в себя следующие мониторинги:
+
+<table class="toc">
+<tr><th>#</th><th>Скрипт</th><th>Название</th><th>Измерение</th></tr>
+__EOF__
+
+	n = 0
+	$MONITORINGS.keys.sort.each { |k|
+		v = $MONITORINGS[k]
+		n += 1
+		f.puts "<tr>
+		<td style=\"text-align: right\">#{n}</td>
+		<td>#{k}</td>
+		<td><a href=\"{relocatable:#{k}.page}\">#{v[:name]}</a></td>
+		<td>#{v[:measurement]}</td>
+		</tr>"
+	}
+	f.puts "</table>\n\n"
+}
+
+$MONITORINGS.keys.sort.each { |k|
+	v = $MONITORINGS[k]
+	File.open("src/doc/monitorings/#{k}.page", 'w') { |ft|
+		ft.puts <<__EOF__
+---
+title: "#{v[:name]}"
+inMenu: true
+---
+__EOF__
+		ft.puts "h2. #{v[:name]} (#{k})"
+		ft.puts
+		ft.puts "#{v[:description]}"
+		ft.puts
+		ft.puts "* *Monitoring ID:* #{v[:id]}"
+		ft.puts "* *Measurement:* #{v[:measurement]}"
+	}
+	File.open("src/doc/monitorings/#{k}.ru.page", 'w') { |ft|
+		ft.puts <<__EOF__
+---
+title: "#{v[:name]}"
+inMenu: true
+template: /default.ru.template
+---
+__EOF__
+		ft.puts "h2. #{v[:name]} (#{k})"
+		ft.puts
+		ft.puts "#{v[:description]}"
+		ft.puts
+		ft.puts "* *ID мониторинга:* #{v[:id]}"
+		ft.puts "* *Измерение:* #{v[:measurement]}"
+	}
+}

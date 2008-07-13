@@ -1,0 +1,11 @@
+---
+title: "CPU temperature (sensors)"
+inMenu: true
+template: /default.ru.template
+---
+h2. CPU temperature (sensors) (cpu-temp-sensors)
+
+This monitoring uses sensors for getting CPU's temperature.
+
+* *ID мониторинга:* 2
+* *Измерение:* temperature

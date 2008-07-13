@@ -1,0 +1,10 @@
+---
+title: "ODD read speed"
+inMenu: true
+---
+h2. ODD read speed (odd-read)
+
+This is not a real monitoring: it runs only once during odd_read test, that submits drive speed. You can view actual code in client/test/odd_read in generate_speed_results function.
+
+* *Monitoring ID:* 6
+* *Measurement:* speed

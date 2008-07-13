@@ -1,0 +1,10 @@
+---
+title: "CPU core voltage (sensors)"
+inMenu: true
+---
+h2. CPU core voltage (sensors) (cpu-vcore-sensors)
+
+This monitoring uses sensors for getting CPU's vcore.
+
+* *Monitoring ID:* 4
+* *Measurement:* voltage

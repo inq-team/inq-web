@@ -1,0 +1,10 @@
+---
+title: "HDD temperature"
+inMenu: true
+---
+h2. HDD temperature (hdd-smart)
+
+This monitoring uses hard drive's SMART to get its temperature.
+
+* *Monitoring ID:* 5
+* *Measurement:* temperature

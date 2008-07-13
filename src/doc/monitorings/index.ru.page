@@ -1,0 +1,60 @@
+---
+title: Каталог мониторингов
+directoryName: Мониторинги
+inMenu: true
+orderInfo: 30
+template: /default.ru.template
+---
+h2. Мониторинги
+
+Мониторинги - модули Inquisitor, которые предназначены для запуска в
+фоновом режиме на протяжении всего времени тестирования компьютера.
+Они работают подобно "демонам" которые время от времени делают
+требуемые измерения и сохраняют их. Наиболее важное измерение для
+большинства компонентов это температура. Мы может запустить тест,
+интенсивно использующий CPU, и следить за тем, как сильно повысится
+его температура. После этого мы может сделать выводы о пригодности
+использования данного аппаратного компонента.
+
+Текущая версия Inquisitor включает в себя следующие мониторинги:
+
+<table class="toc">
+<tr><th>#</th><th>Скрипт</th><th>Название</th><th>Измерение</th></tr>
+<tr>
+		<td style="text-align: right">1</td>
+		<td>cpu-temp-ipmi</td>
+		<td><a href="{relocatable:cpu-temp-ipmi.page}">CPU temperature (ipmi)</a></td>
+		<td>temperature</td>
+		</tr>
+<tr>
+		<td style="text-align: right">2</td>
+		<td>cpu-temp-sensors</td>
+		<td><a href="{relocatable:cpu-temp-sensors.page}">CPU temperature (sensors)</a></td>
+		<td>temperature</td>
+		</tr>
+<tr>
+		<td style="text-align: right">3</td>
+		<td>cpu-vcore-ipmi</td>
+		<td><a href="{relocatable:cpu-vcore-ipmi.page}">CPU core voltage (ipmi)</a></td>
+		<td>voltage</td>
+		</tr>
+<tr>
+		<td style="text-align: right">4</td>
+		<td>cpu-vcore-sensors</td>
+		<td><a href="{relocatable:cpu-vcore-sensors.page}">CPU core voltage (sensors)</a></td>
+		<td>voltage</td>
+		</tr>
+<tr>
+		<td style="text-align: right">5</td>
+		<td>hdd-smart</td>
+		<td><a href="{relocatable:hdd-smart.page}">HDD temperature</a></td>
+		<td>temperature</td>
+		</tr>
+<tr>
+		<td style="text-align: right">6</td>
+		<td>odd-read</td>
+		<td><a href="{relocatable:odd-read.page}">ODD read speed</a></td>
+		<td>speed</td>
+		</tr>
+</table>
+

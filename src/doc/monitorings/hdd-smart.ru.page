@@ -1,0 +1,11 @@
+---
+title: "HDD temperature"
+inMenu: true
+template: /default.ru.template
+---
+h2. HDD temperature (hdd-smart)
+
+This monitoring uses hard drive's SMART to get its temperature.
+
+* *ID мониторинга:* 5
+* *Измерение:* temperature

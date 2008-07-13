@@ -1,0 +1,11 @@
+---
+title: "ODD read speed"
+inMenu: true
+template: /default.ru.template
+---
+h2. ODD read speed (odd-read)
+
+This is not a real monitoring: it runs only once during odd_read test, that submits drive speed. You can view actual code in client/test/odd_read in generate_speed_results function.
+
+* *ID мониторинга:* 6
+* *Измерение:* speed

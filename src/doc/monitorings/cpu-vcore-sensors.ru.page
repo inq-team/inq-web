@@ -1,0 +1,11 @@
+---
+title: "CPU core voltage (sensors)"
+inMenu: true
+template: /default.ru.template
+---
+h2. CPU core voltage (sensors) (cpu-vcore-sensors)
+
+This monitoring uses sensors for getting CPU's vcore.
+
+* *ID мониторинга:* 4
+* *Измерение:* voltage
