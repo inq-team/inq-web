@@ -1,0 +1,17 @@
+---
+title: API Index
+inMenu: false
+orderInfo: 150
+directoryName: API
+---
+h2. API Index
+
+Inquisitor provides the following Unix shell APIs:
+* <a href="{relocatable: functions.page}">main/functions</a>
+* <a href="{relocatable: functions-test.page}">main/functions-test</a>
+* <a href="{relocatable: functions-test-tui.page}">main/functions-test-tui</a>
+* <a href="{relocatable: functions-monitoring.page}">main/functions-monitoring</a>
+* <a href="{relocatable: outformat.page}">main/outformat</a>
+* <a href="{relocatable: local.page}">communication/local</a>
+* <a href="{relocatable: rest.page}">communication/rest</a>
+* <a href="{relocatable: ssh.page}">communication/ssh</a>

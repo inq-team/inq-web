@@ -1,0 +1,36 @@
+---
+title: outformat
+inMenu: true
+---
+h2. API reference: outformat
+
+Output formatting functions.
+
+h3. MOVE_TO_COL
+
+Terminal sequence to move to that position.
+
+h3. SETCOLOR_SUCCESS
+
+Set 'success' color (currently: green)
+
+h3. SETCOLOR_FAILURE
+
+Set 'failure' color (currently: red)
+
+h3. SETCOLOR_WARNING
+
+Set 'warning' color (currently: yellow)
+
+h3. SETCOLOR_INFO
+
+Set 'info' color (currently: cyan)
+
+h3. SETCOLOR_BANNER
+
+Set 'banner' color (currently: blue on yellow)
+
+h3. SETCOLOR_NORMAL
+
+Terminal sequence to reset to the default color.
+

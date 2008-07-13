@@ -1,0 +1,92 @@
+---
+title: rest
+inMenu: true
+---
+h2. API reference: rest
+
+
+
+h3. get_id_by_macs
+
+
+
+h3. plan_test_script
+
+
+
+h3. test_stage_advance
+
+
+
+h3. test_stage_progress
+
+
+
+h3. test_promise_time
+
+
+
+h3. submit_components
+
+
+
+h3. submit_additional_components
+
+
+
+h3. testing_finished
+
+Mark current testing as finished
+
+h3. set_ip
+
+
+
+h3. check_audit
+
+
+
+h3. watchdog
+
+
+
+h3. publish_my_ip
+
+
+
+h3. benchmark_submit_float
+
+
+
+h3. benchmark_submit_string
+
+
+
+h3. set_profile
+
+
+
+h3. monitoring_submit
+
+
+
+h3. monitoring_submit_multiple
+
+
+
+h3. require_attention
+
+
+
+h3. dismiss_attention
+
+
+
+h3. get_needed_firmwares_list
+
+
+
+h3. boot_from_image
+
+
+

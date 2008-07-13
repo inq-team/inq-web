@@ -1,0 +1,8 @@
+---
+title: functions-monitoring
+inMenu: true
+---
+h2. API reference: functions-monitoring
+
+Obligatory functions to process on start of every monitoring.
+

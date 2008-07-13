@@ -1,0 +1,50 @@
+---
+title: functions-test-tui
+inMenu: true
+---
+h2. API reference: functions-test-tui
+
+Functions to process if test was called manually.
+Implements text UI for test, based on test metainformation.
+
+h3. ui_exit_handler
+
+Set up temporary UI exit handler: this one would be used to delete UI
+temporary files, would be disabled right after UI stage.
+
+h3. ui_cleanup
+
+Real cleanup function
+
+h3. show_usage
+
+
+
+h3. show_version
+
+
+
+h3. test_promise_time
+
+Override communication's functions with empty ones
+
+h3. test_stage_progress
+
+
+
+h3. benchmark_submit_float
+
+
+
+h3. benchmark_submit_string
+
+
+
+h3. test_succeeded
+
+
+
+h3. test_failed
+
+
+

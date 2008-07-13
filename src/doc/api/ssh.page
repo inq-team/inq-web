@@ -1,0 +1,44 @@
+---
+title: ssh
+inMenu: true
+---
+h2. API reference: ssh
+
+Set up communication functions to use ssh protocol
+
+h3. init_communication
+
+
+
+h3. publish
+
+Publish some file into log directory on server
+
+h3. retrieve_all
+
+Retrieve all Inquisitor info previously published file as local copy in /
+
+h3. retrieve
+
+Retrieve previously published file as local copy in /
+
+h3. test_set_status
+
+
+
+h3. test_running
+
+
+
+h3. test_ok
+
+
+
+h3. test_failed
+
+test_failed(test_name, reason)
+
+h3. finalize
+
+
+

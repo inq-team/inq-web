@@ -1,0 +1,97 @@
+#!/usr/bin/env ruby
+
+class ShellDoc
+	def initialize(filename)
+		@filename = File.basename(filename)
+		@f = File.open(filename, 'r')
+		@functions = []
+		@collected = []
+	end
+
+	def process!
+		parse_header
+		parse_rest
+		output
+	end
+
+	def parse_header
+		l = @f.gets
+		raise 'Bad shebang detected' unless l =~ /^#!\/bin\/(ba|da|)sh/
+		@header = []
+		while l = @f.gets
+			break unless l =~ /^#\s(.*)$/
+			@header << $1
+		end
+	end
+
+	def parse_rest
+		@f.each_line { |l|
+			case l
+			when /^\s*#\s*(.*)$/
+				@collected << $1
+			when /^\s*$/
+				@collected = []
+			when /([A-Za-z0-9_]+)\(\)/
+				collect_function $1
+			end
+		}
+	end
+
+	def collect_function(name)
+		desc = []
+		input = []
+		output = []
+		collect_to = desc
+		@collected.each { |l|
+			case l
+			when /Input:$/
+				collect_to = input
+			when /Output:$/
+				collect_to = output
+			else
+				collect_to << l
+			end
+		}
+		@functions << {
+			:name => name,
+			:description => desc.join("\n"),
+			:input => input,
+			:output => output,
+		}
+		@collected = []
+	end
+
+	def output
+		puts <<__EOF__
+---
+title: #{@filename}
+inMenu: true
+---
+h2. API reference: #{@filename}
+
+#{@header.join("\n")}
+
+__EOF__
+		@functions.each { |f|
+			puts "h3. #{f[:name]}"
+			puts
+			puts f[:description]
+			puts
+			output_param_list(f[:input], 'Input')
+			output_param_list(f[:output], 'Output')
+		}
+	end
+
+	def output_param_list(list, name)
+		return unless list and not list.empty?
+		puts "h4. #{name}"
+		puts
+		list.each { |l|
+			l.gsub!(/^(.*) - (.*)$/, '@\1@ - \2')
+			puts "* #{l}"
+		}
+		puts
+	end
+end
+
+ShellDoc.new(ARGV[0]).process!

@@ -1,0 +1,25 @@
+#!/bin/sh
+
+CLIENT_DIR=../trunk/client
+API_DIR=src/doc/api
+
+SRC='main/functions main/functions-test main/functions-test-tui main/functions-monitoring main/outformat communication/local communication/rest communication/ssh'
+
+cat >$API_DIR/index.page <<__EOF__
+---
+title: API Index
+inMenu: false
+orderInfo: 150
+directoryName: API
+---
+h2. API Index
+
+Inquisitor provides the following Unix shell APIs:
+__EOF__
+
+for I in $SRC; do
+	echo $I
+	N=`basename $I`
+	./shelldoc $CLIENT_DIR/$I >$API_DIR/$N.page
+	echo "* <a href=\"{relocatable: $N.page}\">$I</a>" >>$API_DIR/index.page
+done

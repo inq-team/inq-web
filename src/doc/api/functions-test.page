@@ -1,0 +1,20 @@
+---
+title: functions-test
+inMenu: true
+---
+h2. API reference: functions-test
+
+Obligatory functions to process before every test.
+
+h3. test_succeeded
+
+
+
+h3. test_failed
+
+
+
+h3. _exit_handler
+
+
+
