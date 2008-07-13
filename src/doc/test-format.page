@@ -31,6 +31,8 @@ right after shebang:
 # IS_INTERACTIVE=false
 # POWEROFF_DURING_TEST=false
 # VERSION=0.1
+# TAGS=usb,gprs
+# DEPENDS=USB, GPRS Modem
 # VAR=DEV:string:/dev/ttyUSB0:Name of device to test
 # VAR=ANSWER_ATI:string:OK:String to get after ATI
 # VAR=CHAT_TIMEOUT:int:5:Timeout for waiting for answer
@@ -57,6 +59,10 @@ should include:
 * *TAGS* is a comma-separated list of tags that would be used in UI to
 navigate in tests. Examples of individual tags: hdd, ram, cpu, legacy,
 benchmark.
+
+* *DEPENDS* is a comma-separated list of components that depends on
+this test. For example stress tests can heavy load processor, memory
+and hard drives subsystems.
 
 * *VERSION* is a version of test; if test changes significantly, it
 should be pumped, thus it's possible to distinguish older test results
