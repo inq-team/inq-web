@@ -1,0 +1,87 @@
+---
+title: Каталог детектов
+directoryName: Детекты
+inMenu: true
+orderInfo: 30
+template: /default.ru.template
+---
+h2. Детекты
+
+Детекты - модули Inquisitor, которые проверяют все аппаратное обеспечение
+компьютера, стоящего на тестировании, и пытаются определить имя производителя, 
+название модели и серийный номер компонента. Возможно детекты не так важны в 
+standalone и LiveCD версии Inquisitor, но они критично важны в его enterprise 
+версии.
+
+Текущая версия Inquisitor включает в себя следующие детекты:
+
+<table class="toc">
+<tr><th>#</th><th>Скрипт</th><th>Название</th><th>Детектируемые компоненты</th></tr>
+<tr>
+		<td style="text-align: right">1</td>
+		<td>00lshw-to-xml</td>
+		<td><a href="{relocatable:00lshw-to-xml.page}">lshw to xml converter</a></td>
+		<td>Video, NIC, Fire Wire</td>
+		</tr>
+<tr>
+		<td style="text-align: right">2</td>
+		<td>bmc</td>
+		<td><a href="{relocatable:bmc.page}">BMC detect</a></td>
+		<td>BMC</td>
+		</tr>
+<tr>
+		<td style="text-align: right">3</td>
+		<td>controller</td>
+		<td><a href="{relocatable:controller.page}">Disk controller detect</a></td>
+		<td>Disk Controller</td>
+		</tr>
+<tr>
+		<td style="text-align: right">4</td>
+		<td>cpu</td>
+		<td><a href="{relocatable:cpu.page}">CPU detect</a></td>
+		<td>CPU</td>
+		</tr>
+<tr>
+		<td style="text-align: right">5</td>
+		<td>floppy</td>
+		<td><a href="{relocatable:floppy.page}">Floppy detect</a></td>
+		<td>Floppy</td>
+		</tr>
+<tr>
+		<td style="text-align: right">6</td>
+		<td>hdd</td>
+		<td><a href="{relocatable:hdd.page}">HDD detect</a></td>
+		<td>HDD</td>
+		</tr>
+<tr>
+		<td style="text-align: right">7</td>
+		<td>ipmi</td>
+		<td><a href="{relocatable:ipmi.page}">IPMI parser</a></td>
+		<td>Chassis, Mainboard, Platform, Power Supply, SCSI Backplane</td>
+		</tr>
+<tr>
+		<td style="text-align: right">8</td>
+		<td>memory</td>
+		<td><a href="{relocatable:memory.page}">Memory detect</a></td>
+		<td>Memory</td>
+		</tr>
+<tr>
+		<td style="text-align: right">9</td>
+		<td>osd</td>
+		<td><a href="{relocatable:osd.page}">OSD detect</a></td>
+		<td>OSD</td>
+		</tr>
+<tr>
+		<td style="text-align: right">10</td>
+		<td>tape</td>
+		<td><a href="{relocatable:tape.page}">Tape detect</a></td>
+		<td>Tape drive</td>
+		</tr>
+<tr>
+		<td style="text-align: right">11</td>
+		<td>usb</td>
+		<td><a href="{relocatable:usb.page}">USB devices detect</a></td>
+		<td>USB</td>
+		</tr>
+</table>
+

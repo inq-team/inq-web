@@ -1,0 +1,10 @@
+---
+title: "Tape detect"
+inMenu: true
+template: /default.ru.template
+---
+h2. Tape detect (tape)
+
+Detect tape drives using hal-device.
+
+* *Детектируемые компоненты:* Tape drive

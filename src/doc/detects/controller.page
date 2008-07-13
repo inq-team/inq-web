@@ -1,0 +1,9 @@
+---
+title: "Disk controller detect"
+inMenu: true
+---
+h2. Disk controller detect (controller)
+
+Detect disk controllers through einarc and hal-device with required priority.
+
+* *Components detected:* Disk Controller

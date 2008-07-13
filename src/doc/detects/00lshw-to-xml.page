@@ -1,0 +1,9 @@
+---
+title: "lshw to xml converter"
+inMenu: true
+---
+h2. lshw to xml converter (00lshw-to-xml)
+
+Convert lshw output to required XML document.
+
+* *Components detected:* Video, NIC, Fire Wire

@@ -1,0 +1,10 @@
+---
+title: "Memory detect"
+inMenu: true
+template: /default.ru.template
+---
+h2. Memory detect (memory)
+
+Detect DIMMs using SPD, IPMI, DMI, /proc.
+
+* *Детектируемые компоненты:* Memory

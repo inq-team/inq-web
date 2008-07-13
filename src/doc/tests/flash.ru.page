@@ -5,7 +5,7 @@ template: /default.ru.template
 ---
 h2. Flash disk (flash)
 
-<div class="infobox"><img src="{relocatable:/images/hdd-destructive.png}" width="64" height="64" title="Test destroys contents of HDD" alt="Test destroys contents of HDD" /></div>
+<div class="infobox"><img src="{relocatable:/images/hdd-destructive.png}" width="64" height="64" title="Тест уничтожает содержимое жесткого диска" alt="Тест уничтожает содержимое жесткого диска" /></div>
 
 Flash disk badblocks test
 

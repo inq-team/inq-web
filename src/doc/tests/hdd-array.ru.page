@@ -5,7 +5,7 @@ template: /default.ru.template
 ---
 h2. HDD array stress (hdd-array)
 
-<div class="infobox"><img src="{relocatable:/images/hdd-destructive.png}" width="64" height="64" title="Test destroys contents of HDD" alt="Test destroys contents of HDD" /></div>
+<div class="infobox"><img src="{relocatable:/images/hdd-destructive.png}" width="64" height="64" title="Тест уничтожает содержимое жесткого диска" alt="Тест уничтожает содержимое жесткого диска" /></div>
 
 HDD array is a stress test that causes high load on HDD array subsystem. First of all, it creates optimally configured arrays (if possible, otherwise it will use single hard drives) using einarc's raid-wizard-optimal utility. Then it creates a filesystem on each array and unpacks and compiles there a large source tree for a specified time. Test distributes specified test duration among created arrays equally. Compilation, as in hdd-passthrough test, goes with 16 simultaneous jobs (by default). Test would end successfully if there wouldn't be any errors in filesystem creation and source code compilation runs. Usually this test starts after the CPU burning, memory and hdd-passthrough ones, and thus failing of this test (considering successful previous tests) usually identifies a broken RAID controller.
 

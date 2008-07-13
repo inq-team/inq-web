@@ -1,0 +1,10 @@
+---
+title: "OSD detect"
+inMenu: true
+template: /default.ru.template
+---
+h2. OSD detect (osd)
+
+Detect optical disk drives using hal-device and try to guess correct vendor name.
+
+* *Детектируемые компоненты:* OSD

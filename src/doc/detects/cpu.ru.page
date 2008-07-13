@@ -1,0 +1,10 @@
+---
+title: "CPU detect"
+inMenu: true
+template: /default.ru.template
+---
+h2. CPU detect (cpu)
+
+Detect CPUs using /proc/cpuinfo.
+
+* *Детектируемые компоненты:* CPU

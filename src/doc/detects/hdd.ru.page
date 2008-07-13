@@ -1,0 +1,10 @@
+---
+title: "HDD detect"
+inMenu: true
+template: /default.ru.template
+---
+h2. HDD detect (hdd)
+
+Detect hard drives using einarc, smartctl and hal-device.
+
+* *Детектируемые компоненты:* HDD

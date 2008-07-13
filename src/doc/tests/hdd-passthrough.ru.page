@@ -5,7 +5,7 @@ template: /default.ru.template
 ---
 h2. HDD passthrough (hdd-passthrough)
 
-<div class="infobox"><img src="{relocatable:/images/hdd-destructive.png}" width="64" height="64" title="Test destroys contents of HDD" alt="Test destroys contents of HDD" /></div>
+<div class="infobox"><img src="{relocatable:/images/hdd-destructive.png}" width="64" height="64" title="Тест уничтожает содержимое жесткого диска" alt="Тест уничтожает содержимое жесткого диска" /></div>
 
 HDD passthrough is a stress test that imposes heavy load on main system components. First, it tries to make all HDDs present in the system to appear as separate device nodes - it checks all available RAID controllers, deletes all arrays / disk groups and creates passthrough devices to access individual HDDs if required. Second, it runs badblocks test on every available HDD, running them simulatenously in groups of 8 HDDs by default. Third, it makes a ramdisk filesystem and starts infinite compilation loop in memory, doing so with 16 simultaneous jobs (by default). Test ends successfully after both 1) minimal required stress time passes, 2) all HDDs are checked with badblocks. Test would fail if any bad blocks would be detected on any HDD. Test will usually hang or crash the system on the unstable hardware.
 

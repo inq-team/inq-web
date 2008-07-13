@@ -1,0 +1,10 @@
+---
+title: "BMC detect"
+inMenu: true
+template: /default.ru.template
+---
+h2. BMC detect (bmc)
+
+Get BMC information through ipmitool.
+
+* *Детектируемые компоненты:* BMC

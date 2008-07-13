@@ -1,0 +1,9 @@
+---
+title: "OSD detect"
+inMenu: true
+---
+h2. OSD detect (osd)
+
+Detect optical disk drives using hal-device and try to guess correct vendor name.
+
+* *Components detected:* OSD

@@ -1,0 +1,10 @@
+---
+title: "IPMI parser"
+inMenu: true
+template: /default.ru.template
+---
+h2. IPMI parser (ipmi)
+
+Get some devices info using ipmitool.
+
+* *Детектируемые компоненты:* Chassis, Mainboard, Platform, Power Supply, SCSI Backplane

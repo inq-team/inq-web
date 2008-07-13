@@ -1,0 +1,10 @@
+---
+title: "USB devices detect"
+inMenu: true
+template: /default.ru.template
+---
+h2. USB devices detect (usb)
+
+Detect some devices that plugged into USB bus.
+
+* *Детектируемые компоненты:* USB

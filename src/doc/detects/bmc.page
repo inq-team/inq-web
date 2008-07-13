@@ -1,0 +1,9 @@
+---
+title: "BMC detect"
+inMenu: true
+---
+h2. BMC detect (bmc)
+
+Get BMC information through ipmitool.
+
+* *Components detected:* BMC

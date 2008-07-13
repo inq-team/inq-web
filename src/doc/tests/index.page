@@ -18,30 +18,155 @@ Current version of Inquisitor includes the following tests:
 
 <table class="toc">
 <tr><th>#</th><th>Script</th><th>Title</th><th>Components tested</th></tr>
-<tr><td style="text-align: right">1</td><td>bonnie</td><td><a href="{relocatable:bonnie.page}">HDD benchmark: Bonnie</a></td><td>HDD</td></tr>
-<tr><td style="text-align: right">2</td><td>bytemark</td><td><a href="{relocatable:bytemark.page}">BYTEmark benchmark suite</a></td><td>CPU, Memory, Mainboard</td></tr>
-<tr><td style="text-align: right">3</td><td>cpu</td><td><a href="{relocatable:cpu.page}">CPU burn</a></td><td>CPU</td></tr>
-<tr><td style="text-align: right">4</td><td>db_comparison</td><td><a href="{relocatable:db_comparison.page}">DB to Detects comparison</a></td><td>BMC, CPU, Chassis, Disk Controller, Floppy, HDD, Mainboard, Memory, NIC, OSD, Platform, USB, Video, ODD, GPRS Modem, USB Mass Storage</td></tr>
-<tr><td style="text-align: right">5</td><td>dhrystone</td><td><a href="{relocatable:dhrystone.page}">CPU benchmark: Dhrystone</a></td><td>CPU</td></tr>
-<tr><td style="text-align: right">6</td><td>fdd</td><td><a href="{relocatable:fdd.page}">FDD read/write</a></td><td>Floppy</td></tr>
-<tr><td style="text-align: right">7</td><td>firmware</td><td><a href="{relocatable:firmware.page}">Firmware reflashing</a></td><td>Mainboard, Disk Controller, BMC</td></tr>
-<tr><td style="text-align: right">8</td><td>flash</td><td><a href="{relocatable:flash.page}">Flash disk</a></td><td></td></tr>
-<tr><td style="text-align: right">9</td><td>gprs-modem</td><td><a href="{relocatable:gprs-modem.page}">USB GPRS modem</a></td><td>USB, GPRS Modem</td></tr>
-<tr><td style="text-align: right">10</td><td>gprs-modem-dialup</td><td><a href="{relocatable:gprs-modem-dialup.page}">USB GPRS Modem Dialup</a></td><td>USB, GPRS Modem</td></tr>
-<tr><td style="text-align: right">11</td><td>gprs-modem-level</td><td><a href="{relocatable:gprs-modem-level.page}">USB GPRS modem signal level</a></td><td>USB, GPRS Modem</td></tr>
-<tr><td style="text-align: right">12</td><td>hdd-array</td><td><a href="{relocatable:hdd-array.page}">HDD array stress</a></td><td>CPU, HDD, Memory, Mainboard, Disk Controller</td></tr>
-<tr><td style="text-align: right">13</td><td>hdd-passthrough</td><td><a href="{relocatable:hdd-passthrough.page}">HDD passthrough</a></td><td>CPU, HDD, Memory, Mainboard, Disk Controller</td></tr>
-<tr><td style="text-align: right">14</td><td>hdd-smart</td><td><a href="{relocatable:hdd-smart.page}">HDD SMART</a></td><td>HDD</td></tr>
-<tr><td style="text-align: right">15</td><td>hdparm</td><td><a href="{relocatable:hdparm.page}">HDD benchmark: Hdparm</a></td><td>Disk Controller, HDD</td></tr>
-<tr><td style="text-align: right">16</td><td>memory</td><td><a href="{relocatable:memory.page}">Memory test: Memtester</a></td><td>Memory</td></tr>
-<tr><td style="text-align: right">17</td><td>mencoder</td><td><a href="{relocatable:mencoder.page}">Mencoder</a></td><td>CPU, Memory, Mainboard</td></tr>
-<tr><td style="text-align: right">18</td><td>net</td><td><a href="{relocatable:net.page}">Network interface</a></td><td>NIC</td></tr>
-<tr><td style="text-align: right">19</td><td>odd_read</td><td><a href="{relocatable:odd_read.page}">ODD read</a></td><td>ODD</td></tr>
-<tr><td style="text-align: right">20</td><td>odd_write</td><td><a href="{relocatable:odd_write.page}">ODD write</a></td><td>ODD</td></tr>
-<tr><td style="text-align: right">21</td><td>stream</td><td><a href="{relocatable:stream.page}">Memory benchmark: STREAM</a></td><td>Memory</td></tr>
-<tr><td style="text-align: right">22</td><td>unixbench</td><td><a href="{relocatable:unixbench.page}">UnixBench benchmark suite</a></td><td>CPU, Memory, Mainboard</td></tr>
-<tr><td style="text-align: right">23</td><td>usb-device</td><td><a href="{relocatable:usb-device.page}">USB presence</a></td><td>USB</td></tr>
-<tr><td style="text-align: right">24</td><td>usb-flash-drive</td><td><a href="{relocatable:usb-flash-drive.page}">USB flash drive</a></td><td>USB, USB Mass Storage</td></tr>
-<tr><td style="text-align: right">25</td><td>whetstone</td><td><a href="{relocatable:whetstone.page}">CPU benchmark: Whetstone</a></td><td>CPU</td></tr>
+<tr>
+		<td style="text-align: right">1</td>
+		<td>bonnie</td>
+		<td><a href="{relocatable:bonnie.page}">HDD benchmark: Bonnie</a></td>
+		<td>HDD</td>
+		</tr>
+<tr>
+		<td style="text-align: right">2</td>
+		<td>bytemark</td>
+		<td><a href="{relocatable:bytemark.page}">BYTEmark benchmark suite</a></td>
+		<td>CPU, Memory, Mainboard</td>
+		</tr>
+<tr>
+		<td style="text-align: right">3</td>
+		<td>cpu</td>
+		<td><a href="{relocatable:cpu.page}">CPU burn</a></td>
+		<td>CPU</td>
+		</tr>
+<tr>
+		<td style="text-align: right">4</td>
+		<td>db_comparison</td>
+		<td><a href="{relocatable:db_comparison.page}">DB to Detects comparison</a></td>
+		<td>BMC, CPU, Chassis, Disk Controller, Floppy, HDD, Mainboard, Memory, NIC, OSD, Platform, USB, Video, ODD, GPRS Modem, USB Mass Storage</td>
+		</tr>
+<tr>
+		<td style="text-align: right">5</td>
+		<td>dhrystone</td>
+		<td><a href="{relocatable:dhrystone.page}">CPU benchmark: Dhrystone</a></td>
+		<td>CPU</td>
+		</tr>
+<tr>
+		<td style="text-align: right">6</td>
+		<td>fdd</td>
+		<td><a href="{relocatable:fdd.page}">FDD read/write</a></td>
+		<td>Floppy</td>
+		</tr>
+<tr>
+		<td style="text-align: right">7</td>
+		<td>firmware</td>
+		<td><a href="{relocatable:firmware.page}">Firmware reflashing</a></td>
+		<td>Mainboard, Disk Controller, BMC</td>
+		</tr>
+<tr>
+		<td style="text-align: right">8</td>
+		<td>flash</td>
+		<td><a href="{relocatable:flash.page}">Flash disk</a></td>
+		<td></td>
+		</tr>
+<tr>
+		<td style="text-align: right">9</td>
+		<td>gprs-modem</td>
+		<td><a href="{relocatable:gprs-modem.page}">USB GPRS modem</a></td>
+		<td>USB, GPRS Modem</td>
+		</tr>
+<tr>
+		<td style="text-align: right">10</td>
+		<td>gprs-modem-dialup</td>
+		<td><a href="{relocatable:gprs-modem-dialup.page}">USB GPRS Modem Dialup</a></td>
+		<td>USB, GPRS Modem</td>
+		</tr>
+<tr>
+		<td style="text-align: right">11</td>
+		<td>gprs-modem-level</td>
+		<td><a href="{relocatable:gprs-modem-level.page}">USB GPRS modem signal level</a></td>
+		<td>USB, GPRS Modem</td>
+		</tr>
+<tr>
+		<td style="text-align: right">12</td>
+		<td>hdd-array</td>
+		<td><a href="{relocatable:hdd-array.page}">HDD array stress</a></td>
+		<td>CPU, HDD, Memory, Mainboard, Disk Controller</td>
+		</tr>
+<tr>
+		<td style="text-align: right">13</td>
+		<td>hdd-passthrough</td>
+		<td><a href="{relocatable:hdd-passthrough.page}">HDD passthrough</a></td>
+		<td>CPU, HDD, Memory, Mainboard, Disk Controller</td>
+		</tr>
+<tr>
+		<td style="text-align: right">14</td>
+		<td>hdd-smart</td>
+		<td><a href="{relocatable:hdd-smart.page}">HDD SMART</a></td>
+		<td>HDD</td>
+		</tr>
+<tr>
+		<td style="text-align: right">15</td>
+		<td>hdparm</td>
+		<td><a href="{relocatable:hdparm.page}">HDD benchmark: Hdparm</a></td>
+		<td>Disk Controller, HDD</td>
+		</tr>
+<tr>
+		<td style="text-align: right">16</td>
+		<td>memory</td>
+		<td><a href="{relocatable:memory.page}">Memory test: Memtester</a></td>
+		<td>Memory</td>
+		</tr>
+<tr>
+		<td style="text-align: right">17</td>
+		<td>mencoder</td>
+		<td><a href="{relocatable:mencoder.page}">Mencoder</a></td>
+		<td>CPU, Memory, Mainboard</td>
+		</tr>
+<tr>
+		<td style="text-align: right">18</td>
+		<td>net</td>
+		<td><a href="{relocatable:net.page}">Network interface</a></td>
+		<td>NIC</td>
+		</tr>
+<tr>
+		<td style="text-align: right">19</td>
+		<td>odd_read</td>
+		<td><a href="{relocatable:odd_read.page}">ODD read</a></td>
+		<td>ODD</td>
+		</tr>
+<tr>
+		<td style="text-align: right">20</td>
+		<td>odd_write</td>
+		<td><a href="{relocatable:odd_write.page}">ODD write</a></td>
+		<td>ODD</td>
+		</tr>
+<tr>
+		<td style="text-align: right">21</td>
+		<td>stream</td>
+		<td><a href="{relocatable:stream.page}">Memory benchmark: STREAM</a></td>
+		<td>Memory</td>
+		</tr>
+<tr>
+		<td style="text-align: right">22</td>
+		<td>unixbench</td>
+		<td><a href="{relocatable:unixbench.page}">UnixBench benchmark suite</a></td>
+		<td>CPU, Memory, Mainboard</td>
+		</tr>
+<tr>
+		<td style="text-align: right">23</td>
+		<td>usb-device</td>
+		<td><a href="{relocatable:usb-device.page}">USB presence</a></td>
+		<td>USB</td>
+		</tr>
+<tr>
+		<td style="text-align: right">24</td>
+		<td>usb-flash-drive</td>
+		<td><a href="{relocatable:usb-flash-drive.page}">USB flash drive</a></td>
+		<td>USB, USB Mass Storage</td>
+		</tr>
+<tr>
+		<td style="text-align: right">25</td>
+		<td>whetstone</td>
+		<td><a href="{relocatable:whetstone.page}">CPU benchmark: Whetstone</a></td>
+		<td>CPU</td>
+		</tr>
 </table>
 

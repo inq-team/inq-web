@@ -1,0 +1,9 @@
+---
+title: "IPMI parser"
+inMenu: true
+---
+h2. IPMI parser (ipmi)
+
+Get some devices info using ipmitool.
+
+* *Components detected:* Chassis, Mainboard, Platform, Power Supply, SCSI Backplane

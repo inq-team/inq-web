@@ -1,0 +1,9 @@
+---
+title: "CPU detect"
+inMenu: true
+---
+h2. CPU detect (cpu)
+
+Detect CPUs using /proc/cpuinfo.
+
+* *Components detected:* CPU

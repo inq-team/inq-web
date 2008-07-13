@@ -1,0 +1,10 @@
+---
+title: "Floppy detect"
+inMenu: true
+template: /default.ru.template
+---
+h2. Floppy detect (floppy)
+
+Detect floppy drives using hal-device.
+
+* *Детектируемые компоненты:* Floppy

@@ -1,0 +1,9 @@
+---
+title: "Tape detect"
+inMenu: true
+---
+h2. Tape detect (tape)
+
+Detect tape drives using hal-device.
+
+* *Components detected:* Tape drive
