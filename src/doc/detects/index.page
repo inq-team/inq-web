@@ -5,8 +5,8 @@ orderInfo: 30
 ---
 h2. Detects
 
-Detects are modules of Inquisitor that scan under test computer's
-hardware and tries to identify each hardware vendor name, model name
+Detects are modules of Inquisitor that scan hardware of computer under
+test and try to identify each hardware vendor name, model name
 and serial number. Maybe it is less useful on LiveCD and standalone
 version of Inquisitor, but it critical for enterprise version.
 
