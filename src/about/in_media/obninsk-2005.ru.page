@@ -2,6 +2,7 @@
 title: In the media
 inMenu: true
 orderInfo: 60
+template: /default.ru.template
 ---
 <div style="float: left">Михаил Якшин</div>
 <div style="float: right">Москва, ALT Linux</div>

@@ -3,6 +3,7 @@ title: Публикации об Inquisitor
 directoryName: Публикации
 inMenu: true
 orderInfo: 60
+template: /default.ru.template
 ---
 h2. Публикации об Inquisitor
 
@@ -13,3 +14,13 @@ h2. Публикации об Inquisitor
 оборудования "Inquisitor"</a> / <a href="http://www.altlinux.ru/events/second_developers_conference.html">Вторая
 международная конференция разработчиков свободных программ на
 Протве</a>: Обнинск, 25-27 июля 2005
+
+* <a href="http://www.linuxcenter.ru/lib/history/lh-05.phtml">Костромин
+В.А. Свободная система для свободных людей (обзор истории операционной
+системы Linux)</a>
+
+* <a href="http://www.maxselect.ru/news/article.html?id=1705">MaxSelect:
+структурные изменения и планы по развитию в 2004 г.</a>
+
+* <a href="http://www.cnews.ru/reviews/free/2004/part8/linux.shtml">Михаил
+Рамендик. Linux наступает: обзор позиций / CNews|аналитика</a>
