@@ -7,6 +7,10 @@ orderInfo: 20
 ---
 h2. License
 
+h3. Inquisitor core platform.
+
+* License: GPLv3.
+
 <pre>
                     GNU GENERAL PUBLIC LICENSE
                        Version 3, 29 June 2007
@@ -682,4 +686,173 @@ may consider it more useful to permit linking proprietary applications with
 the library.  If this is what you want to do, use the GNU Lesser General
 Public License instead of this License.  But first, please read
 <http://www.gnu.org/philosophy/why-not-lgpl.html>.
+</pre>
+
+h3. Non-core components
+
+Inquisitor is a complex system that consists of core itself and many
+additional software it depends and relies on. Here is the list of all
+software there used:
+
+h4. Included
+
+* Patched *tftp-hpa* TFTP-server.
+** License: revised BSD.
+
+<pre>
+Copyright (c) 1982, 1986, 1990, 1991, 1993
+	The Regents of the University of California.  All rights reserved.
+
+Redistribution and use in source and binary forms, with or without
+modification, are permitted provided that the following conditions
+are met:
+1. Redistributions of source code must retain the above copyright
+   notice, this list of conditions and the following disclaimer.
+2. Redistributions in binary form must reproduce the above copyright
+   notice, this list of conditions and the following disclaimer in the
+    documentation and/or other materials provided with the distribution.
+3. All advertising materials mentioning features or use of this software
+    must display the following acknowledgement:
+	This product includes software developed by the University of
+	California, Berkeley and its contributors.
+4. Neither the name of the University nor the names of its contributors
+   may be used to endorse or promote products derived from this software
+   without specific prior written permission.
+
+THIS SOFTWARE IS PROVIDED BY THE REGENTS AND CONTRIBUTORS ``AS IS'' AND
+ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
+IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE
+ARE DISCLAIMED.  IN NO EVENT SHALL THE REGENTS OR CONTRIBUTORS BE LIABLE
+FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL
+DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS
+OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION)
+HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT
+LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY
+OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF
+SUCH DAMAGE.
+</pre>
+
+* *Highlight.js*.
+** License: modified BSD.
+
+<pre>
+Copyright (c) 2006, Ivan Sagalaev
+All rights reserved.
+Redistribution and use in source and binary forms, with or without
+modification, are permitted provided that the following conditions are met:
+
+    * Redistributions of source code must retain the above copyright
+      notice, this list of conditions and the following disclaimer.
+    * Redistributions in binary form must reproduce the above copyright
+      notice, this list of conditions and the following disclaimer in the
+      documentation and/or other materials provided with the distribution.
+    * Neither the name of highlight.js nor the names of its contributors 
+      may be used to endorse or promote products derived from this software 
+      without specific prior written permission.
+
+THIS SOFTWARE IS PROVIDED BY THE REGENTS AND CONTRIBUTORS ``AS IS'' AND ANY
+EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED
+WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE
+DISCLAIMED. IN NO EVENT SHALL THE REGENTS AND CONTRIBUTORS BE LIABLE FOR ANY
+DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES
+(INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES;
+LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND
+ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
+(INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
+SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+</pre>
+
+* *Dhrystone* CPU benchmark.
+** License: unknown without any restrictions.
+
+* *Whetstone* CPU benchmark.
+** License: own.
+
+<pre>
+(c) Copyright 1998 Painter Engineering, Inc.
+Permission is granted to use, duplicate, and
+publish this text and program as long as it
+includes this entire comment block and limited
+rights reference.
+</pre>
+
+* *Einarc*.
+** License: same as core platform - GPLv3.
+
+* Patched *Decode-dimms.pl*.
+** License: GPLv2 and any later.
+
+<pre>
+Copyright 1998, 1999 Philip Edelbrock <phil@netroedge.com>
+modified by Christian Zuckschwerdt <zany@triq.net>
+modified by Burkart Lingner <burkart@bollchen.de>
+Copyright (C) 2005-2008  Jean Delvare <khali@linux-fr.org>
+
+   This program is free software; you can redistribute it and/or modify
+   it under the terms of the GNU General Public License as published by
+   the Free Software Foundation; either version 2 of the License, or
+   (at your option) any later version.
+
+   This program is distributed in the hope that it will be useful,
+   but WITHOUT ANY WARRANTY; without even the implied warranty of
+   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+   GNU General Public License for more details.
+
+   You should have received a copy of the GNU General Public License
+   along with this program; if not, write to the Free Software
+   Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston,
+   MA 02110-1301 USA.
+</pre>
+
+h4. Not included
+
+* *UnixBench* and *ByteMark* bechmark suits. 
+** License: unknown distributable.
+
+* *STREAM* memory benchmark.
+** License: own non-free.
+
+<pre>
+1. You are free to use this program and/or to redistribute
+   this program.
+2. You are free to modify this program for your own use,
+   including commercial use, subject to the publication
+   restrictions in item 3.
+3. You are free to publish results obtained from running this
+   program, or from works that you derive from this program,
+   with the following limitations:
+   3a. In order to be referred to as "STREAM benchmark results",
+       published results must be in conformance to the STREAM
+       Run Rules, (briefly reviewed below) published at
+       http://www.cs.virginia.edu/stream/ref.html
+       and incorporated herein by reference.
+       As the copyright holder, John McCalpin retains the
+       right to determine conformity with the Run Rules.
+   3b. Results based on modified source code or on runs not in
+       accordance with the STREAM Run Rules must be clearly
+       labelled whenever they are published.  Examples of
+       proper labelling include:
+       "tuned STREAM benchmark results"
+       "based on a variant of the STREAM benchmark code"
+       Other comparable, clear and reasonable labelling is
+       acceptable.
+   3c. Submission of results to the STREAM benchmark web site
+       is encouraged, but not required.
+4. Use of this program or creation of derived works based on this
+   program constitutes acceptance of these licensing restrictions.
+5. Absolutely no warranty is expressed or implied.
+</pre>
+
+* Patched *Memtester*.
+** License: GPLv2 only (incompatible with GPLv3).
+
+<pre>
+Very simple but very effective user-space memory tester.
+Originally by Simon Kirby <sim@stormix.com> <sim@neato.org>
+Version 2 by Charles Cazabon <charlesc-memtester@pyropus.ca>
+Version 3 not publicly released.
+Version 4 rewrite:
+Copyright (C) 2007 Charles Cazabon <charlesc-memtester@pyropus.ca>
+Licensed under the terms of the GNU General Public License version 2 (only).
+See the file COPYING for details.
 </pre>
