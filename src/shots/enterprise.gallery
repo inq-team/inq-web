@@ -10,6 +10,54 @@ collageSize: 400x300
 slideColor: "#ddd"
 thumbnailResizeMethod: :cropped
 ---
-enterprise/enterprise-1.jpg:
-  title: Computer view
-  description: A page that shows a view of one particular computer.
+enterprise/hardware-1.png:
+  title: Tested computer hardware
+  description: Computer components detected on a fully tested computer.
+
+enterprise/hardware-2.png:
+  title: Nearly finished computer hardware
+  description: Hardware components of another computer.
+
+enterprise/sticker.png:
+  title: Sticker section
+  description: Creating, viewing and prining of a sticker.
+
+enterprise/marks.png:
+  title: NICs benchmarks
+  description: Viewing speed benchmark results of NICs after their testing.
+
+enterprise/cpu_core_voltage_graph.png:
+  title: CPU core voltage graph
+  description: Viewing of CPU core voltage graph.
+
+enterprise/cpu_temperature_graph.png:
+  title: CPU temperature graph
+  description: Viewing of CPU temperature graph.
+
+enterprise/multi_graph.png:
+  title: Multi graphs
+  description: Viewing of a multigraph with CPU's and HDD's temperature and CPU's core voltage.
+
+enterprise/multi_graph_with_fails.png:
+  title: Multi graphs with failed tests
+  description: Trying to make a decision about failing hdd-array test.
+
+enterprise/orders.png:
+  title: Orders
+  description: A list of all orders showing their brief info and progress on each stage.
+
+enterprise/orders_search.png:
+  title: Orders search
+  description: Orders search form.
+
+enterprise/orders_show_multiple.png:
+  title: Show multicomputer orders
+  description: Viewing an order with many computers in it and its detailed information.
+
+enterprise/orders_show.png:
+  title: Orders show
+  description: Viewing an order with single computer in it and its detailed information.
+
+enterprise/profile_show.png:
+  title: Profile show
+  description: Viewing default testing profile that is applied for all computers if no specified.

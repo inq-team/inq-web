@@ -10,18 +10,42 @@ collageSize: 400x300
 slideColor: "#ddd"
 thumbnailResizeMethod: :cropped
 ---
-live/livecd-1.jpg:
-  title: Main menu
-  description: A main menu of Live CD - it's what you get after successful booting.
-
-live/livecd-2.jpg:
-  title: Starting a single test
-  description: A list of tests to choose from when starting a single test
-
-live/livecd-3.jpg:
-  title: LiveCD booting
-  description: This is how it looks like when it boots.
-
 live/livecd-4.jpg:
   title: Stream benchmark
   description: Running benchmark test "Stream" in single test mode.
+
+live/boot.png:
+  title: LiveCD booting
+  description: This is how it looks like when it boots.
+
+live/main_menu.png:
+  title: Main menu
+  description: A main menu of Live CD - it's what you get after successful booting.
+
+live/single_test_menu.png:
+  title: Starting a single test
+  description: A list of tests to choose from when starting a single test.
+
+detects_called.png:
+  title: Detects finished
+  description: All detects finished, later we can see their results.
+
+live/cpu_test_results.png:
+  title: CPU test finished
+  description: Successfull finishing of CPU test.
+
+live/hdd_passthrough_test_menu.png:
+  title: HDD-Passthrough starting
+  description: Configuring of test variables to start it after.
+
+live/view_test_results-components.xml.png:
+  title: components.xml view
+  description: Viewing components.xml file after detects finished.
+
+live/view_test_results.png:
+  title: View test reuslts
+  description: Menu where we can see all detects, benchmarks, monitorings and tests results.
+
+live/whetstone_benchmark_results.png:
+  title: Whetstone benchmark finished
+  description: Sucessfull finishing of whetstone benchmark.
