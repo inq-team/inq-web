@@ -762,20 +762,6 @@ ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
 SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 </pre>
 
-* *Dhrystone* CPU benchmark.
-** License: unknown without any restrictions.
-
-* *Whetstone* CPU benchmark.
-** License: own.
-
-<pre>
-(c) Copyright 1998 Painter Engineering, Inc.
-Permission is granted to use, duplicate, and
-publish this text and program as long as it
-includes this entire comment block and limited
-rights reference.
-</pre>
-
 * *Einarc*.
 ** License: same as core platform - GPLv3.
 
@@ -805,6 +791,20 @@ Copyright (C) 2005-2008  Jean Delvare <khali@linux-fr.org>
 </pre>
 
 h4. Not included
+
+* *Dhrystone* CPU benchmark.
+** License: unknown without any restrictions.
+
+* *Whetstone* CPU benchmark.
+** License: own.
+
+<pre>
+(c) Copyright 1998 Painter Engineering, Inc.
+Permission is granted to use, duplicate, and
+publish this text and program as long as it
+includes this entire comment block and limited
+rights reference.
+</pre>
 
 * *UnixBench* and *ByteMark* bechmark suits. 
 ** License: unknown distributable.
