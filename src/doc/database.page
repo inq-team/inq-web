@@ -118,7 +118,10 @@ finished
 ** 2 - failure
 ** 3 - hanging (determined by watchdog)
 * *comment* - optional text comment on test result, may be generated
-after completion by test script.
+after completion by test script
+* *test_type* - an identification string of test (commonly it's
+script's filename)
+* *test_version* - version of test itself
 
 Testing stage is created by communication automatics when particular
 test script is called and started.
