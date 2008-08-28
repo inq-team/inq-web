@@ -250,6 +250,108 @@ __EOF__
 	}
 }
 
+# ===================================
+# Generate pages for software detects
+# ===================================
+
+File.open('src/doc/software-detects/index.page', 'w') { |f|
+	f.puts <<__EOF__
+---
+title: Software detects directory
+inMenu: true
+orderInfo: 30
+---
+h2. Software detects
+
+Software detects are modules of Inquisitor that scan software of
+computer under test. Programs that can affect testing of benchmarking
+results are identified. They are inherent part as hardware detects.
+
+Current version of Inquisitor includes the following software detects:
+
+<table class="toc">
+<tr><th>#</th><th>Script</th><th>Title</th></tr>
+__EOF__
+
+	n = 0
+	$SOFTWARE_DETECTS.keys.sort.each { |k|
+		v = $SOFTWARE_DETECTS[k]
+		n += 1
+		f.puts "<tr>
+		<td style=\"text-align: right\">#{n}</td>
+		<td>#{k}</td>
+		<td><a href=\"{relocatable:#{k}.page}\">#{v[:name]}</a></td>
+		</tr>"
+	}
+	f.puts "</table>\n\n"
+}
+
+File.open('src/doc/software-detects/index.ru.page', 'w') { |f|
+	f.puts <<__EOF__
+---
+title: Каталог программных детектов
+directoryName: Программные детекты
+inMenu: true
+orderInfo: 30
+template: /default.ru.template
+---
+h2. Программные детекты
+
+Программные детекты - модули Inquisitor, которые проверяют программное
+обеспечение компьютера, стоящего на тестировании. Определяется только
+те программы, которые могут влиять на результаты тестирования
+или бенчмаркинга. Они так же неотъемлемы как и детекты аппаратного
+обеспечения.
+
+Текущая версия Inquisitor включает в себя следующие программные детекты:
+
+<table class="toc">
+<tr><th>#</th><th>Скрипт</th><th>Название</th></tr>
+__EOF__
+
+	n = 0
+	$SOFTWARE_DETECTS.keys.sort.each { |k|
+		v = $SOFTWARE_DETECTS[k]
+		n += 1
+		f.puts "<tr>
+		<td style=\"text-align: right\">#{n}</td>
+		<td>#{k}</td>
+		<td><a href=\"{relocatable:#{k}.page}\">#{v[:name]}</a></td>
+		</tr>"
+	}
+	f.puts "</table>\n\n"
+}
+
+$SOFTWARE_DETECTS.keys.sort.each { |k|
+	v = $SOFTWARE_DETECTS[k]
+	File.open("src/doc/software-detects/#{k}.page", 'w') { |ft|
+		ft.puts <<__EOF__
+---
+title: "#{v[:name]}"
+inMenu: true
+---
+__EOF__
+		ft.puts "h2. #{v[:name]} (#{k})"
+		ft.puts
+		ft.puts "#{v[:description]}"
+		ft.puts
+	}
+	File.open("src/doc/software-detects/#{k}.ru.page", 'w') { |ft|
+		ft.puts <<__EOF__
+---
+title: "#{v[:name]}"
+inMenu: true
+template: /default.ru.template
+---
+__EOF__
+		ft.puts "h2. #{v[:name]} (#{k})"
+		ft.puts
+		ft.puts "#{v[:description]}"
+		ft.puts
+	}
+}
+
+
 # ==============================
 # Generate pages for monitorings
 # ==============================
