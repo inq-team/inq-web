@@ -1,0 +1,8 @@
+---
+title: "Default filesystem"
+inMenu: true
+---
+h2. Default filesystem (default_fs)
+
+Detect default filesystem.
+

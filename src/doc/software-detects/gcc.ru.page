@@ -1,0 +1,9 @@
+---
+title: "GCC"
+inMenu: true
+template: /default.ru.template
+---
+h2. GCC (gcc)
+
+Detect GCC version.
+

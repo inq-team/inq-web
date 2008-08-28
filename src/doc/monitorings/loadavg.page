@@ -1,0 +1,10 @@
+---
+title: "OS load average"
+inMenu: true
+---
+h2. OS load average (loadavg)
+
+GNU/Linux operating system's load average. Load average figures giving the number of jobs in the run queue or waiting for disk I/O.
+
+* *Monitoring ID:* 8
+* *Measurement:* load

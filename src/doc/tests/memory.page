@@ -10,4 +10,4 @@ This memory test is performed without reboot, under control of live full-feature
 * *Components tested:* Memory
 * *Variables:*
 ** *LOGTIME* (int, default: @120@) &mdash; Time between progress updates, sec
-** *TEST_LOOPS* (int, default: @3@) &mdash; Number of testing loops
+** *TEST_LOOPS* (int, default: @1@) &mdash; Number of testing loops

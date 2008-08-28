@@ -1,0 +1,10 @@
+---
+title: "FTDI thermometer"
+inMenu: true
+---
+h2. FTDI thermometer (thermo)
+
+This monitoring gets all temperature measurements from FTDI-based USB thermometer.
+
+* *Monitoring ID:* 7
+* *Measurement:* temperature

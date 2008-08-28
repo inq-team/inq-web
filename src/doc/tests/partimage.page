@@ -1,0 +1,14 @@
+---
+title: "Partimage"
+inMenu: true
+---
+h2. Partimage (partimage)
+
+<div class="infobox"><img src="{relocatable:/images/hdd-destructive.png}" width="64" height="64" title="Test destroys contents of HDD" alt="Test destroys contents of HDD" /></div>
+
+Actually this is not a real test. It can be used to write prepared raw disk image using Partimage utility.
+
+* *Components tested:* HDD, Disk Controller
+* *Variables:*
+** *SOURCE* (string, default: @raw_disk_image@) &mdash; Absolute of relative path to source raw disk image to be written
+** *TARGET* (string, default: @sda@) &mdash; Target device name that will be overwritten

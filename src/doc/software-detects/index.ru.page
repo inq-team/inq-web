@@ -1,0 +1,76 @@
+---
+title: Каталог программных детектов
+directoryName: Программные детекты
+inMenu: true
+orderInfo: 30
+template: /default.ru.template
+---
+h2. Программные детекты
+
+Программные детекты - модули Inquisitor, которые проверяют программное
+обеспечение компьютера, стоящего на тестировании. Определяется только
+те программы, которые могут влиять на результаты тестирования
+или бенчмаркинга. Они так же неотъемлемы как и детекты аппаратного
+обеспечения.
+
+Текущая версия Inquisitor включает в себя следующие программные детекты:
+
+<table class="toc">
+<tr><th>#</th><th>Скрипт</th><th>Название</th></tr>
+<tr>
+		<td style="text-align: right">1</td>
+		<td>bonnie</td>
+		<td><a href="{relocatable:bonnie.page}">Bonnie++</a></td>
+		</tr>
+<tr>
+		<td style="text-align: right">2</td>
+		<td>default_fs</td>
+		<td><a href="{relocatable:default_fs.page}">Default filesystem</a></td>
+		</tr>
+<tr>
+		<td style="text-align: right">3</td>
+		<td>gas</td>
+		<td><a href="{relocatable:gas.page}">GAS</a></td>
+		</tr>
+<tr>
+		<td style="text-align: right">4</td>
+		<td>gcc</td>
+		<td><a href="{relocatable:gcc.page}">GCC</a></td>
+		</tr>
+<tr>
+		<td style="text-align: right">5</td>
+		<td>gzip</td>
+		<td><a href="{relocatable:gzip.page}">Gzip</a></td>
+		</tr>
+<tr>
+		<td style="text-align: right">6</td>
+		<td>iozone</td>
+		<td><a href="{relocatable:iozone.page}">Iozone</a></td>
+		</tr>
+<tr>
+		<td style="text-align: right">7</td>
+		<td>linux</td>
+		<td><a href="{relocatable:linux.page}">Linux</a></td>
+		</tr>
+<tr>
+		<td style="text-align: right">8</td>
+		<td>mencoder</td>
+		<td><a href="{relocatable:mencoder.page}">Mencoder</a></td>
+		</tr>
+<tr>
+		<td style="text-align: right">9</td>
+		<td>p7zip</td>
+		<td><a href="{relocatable:p7zip.page}">p7zip</a></td>
+		</tr>
+<tr>
+		<td style="text-align: right">10</td>
+		<td>tar</td>
+		<td><a href="{relocatable:tar.page}">Tar</a></td>
+		</tr>
+<tr>
+		<td style="text-align: right">11</td>
+		<td>x264</td>
+		<td><a href="{relocatable:x264.page}">x264</a></td>
+		</tr>
+</table>
+

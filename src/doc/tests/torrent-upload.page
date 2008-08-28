@@ -1,0 +1,15 @@
+---
+title: "Torrent upload"
+inMenu: true
+---
+h2. Torrent upload (torrent-upload)
+
+<div class="infobox"><img src="{relocatable:/images/hdd-destructive.png}" width="64" height="64" title="Test destroys contents of HDD" alt="Test destroys contents of HDD" /></div>
+
+This test uses BitTorrent client to download specified torrent. It uses Enhanced CTorrent client. With its modified version it can write directly on block devices.
+
+* *Components tested:* HDD, Disk Controller
+* *Variables:*
+** *SEED_AFTER* (bool, default: @true@) &mdash; Seed after successfull test finishing?
+** *TARGET* (string, default: @/dev/sda@) &mdash; Target device name that will be overwritten
+** *TORRENT* (string, default: @test.torrent@) &mdash; Either absolute or relative path to .torrent file. Be sure that tracker is available from network

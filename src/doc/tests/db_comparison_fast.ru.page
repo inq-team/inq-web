@@ -1,0 +1,14 @@
+---
+title: "Reference XML to Detects comparison"
+inMenu: true
+template: /default.ru.template
+---
+h2. Reference XML to Detects comparison (db_comparison_fast)
+
+
+Compare detects with pre-generated XML.
+
+* *Тестируемые компоненты:* BMC, CPU, Chassis, Disk Controller, Floppy, HDD, Mainboard, Memory, NIC, OSD, Platform, USB, Video, ODD, GPRS Modem, USB Mass Storage
+* *Переменные:*
+** *EXCLUDED_MODELS* (string, по умолчанию: _empty_) &mdash; Excluded component models from comparison
+** *FILENAMES* (string, по умолчанию: _empty_) &mdash; Reference files

@@ -1,0 +1,11 @@
+---
+title: "FTDI thermometer"
+inMenu: true
+template: /default.ru.template
+---
+h2. FTDI thermometer (thermo)
+
+This monitoring gets all temperature measurements from FTDI-based USB thermometer.
+
+* *ID мониторинга:* 7
+* *Измерение:* temperature

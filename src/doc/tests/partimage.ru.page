@@ -1,0 +1,15 @@
+---
+title: "Partimage"
+inMenu: true
+template: /default.ru.template
+---
+h2. Partimage (partimage)
+
+<div class="infobox"><img src="{relocatable:/images/hdd-destructive.png}" width="64" height="64" title="Тест уничтожает содержимое жесткого диска" alt="Тест уничтожает содержимое жесткого диска" /></div>
+
+Actually this is not a real test. It can be used to write prepared raw disk image using Partimage utility.
+
+* *Тестируемые компоненты:* HDD, Disk Controller
+* *Переменные:*
+** *SOURCE* (string, по умолчанию: @raw_disk_image@) &mdash; Absolute of relative path to source raw disk image to be written
+** *TARGET* (string, по умолчанию: @sda@) &mdash; Target device name that will be overwritten

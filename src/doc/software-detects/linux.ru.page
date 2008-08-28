@@ -1,0 +1,9 @@
+---
+title: "Linux"
+inMenu: true
+template: /default.ru.template
+---
+h2. Linux (linux)
+
+Detect Linux version.
+

@@ -1,0 +1,9 @@
+---
+title: "GAS"
+inMenu: true
+template: /default.ru.template
+---
+h2. GAS (gas)
+
+Detect GNU assembler version.
+

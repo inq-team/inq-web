@@ -1,0 +1,17 @@
+---
+title: "Array configurator"
+inMenu: true
+---
+h2. Array configurator (array-configurator)
+
+<div class="infobox"><img src="{relocatable:/images/hdd-destructive.png}" width="64" height="64" title="Test destroys contents of HDD" alt="Test destroys contents of HDD" /></div>
+
+It is not a real test. Simply, it can create specified array configuration on disk controller with hard drives. Currently it passed command line string to einarc, or, if specified "passthrough", "optimal" or "clear", necessary raid-wizard will be used instead.
+
+* *Components tested:* HDD, Disk Controller
+* *Variables:*
+** *ADAPTER* (string, default: _empty_) &mdash; Default adapter type to work with. Leave it empty if there only single or several identical adapters present
+** *ADAPTER_NUMBER* (int, default: @0@) &mdash; Default adapter number (-a option for einarc) to work with
+** *CONFIGURATION* (string, default: @optimal@) &mdash; Configuration to be passed to einarc. Can be "clear", "optimal" or "passthrough" to run correpsonding raid-wizard utility. Otherwise it will be command line string for einarc. If there are only identical hard drives, then EINARC_DISK1, EINARC_DISK2, etc words can be used to prevent absolute hard drive's identification using
+** *DISK_GROUP_NUMBER* (int, default: @1@) &mdash; Number of disk group (for passthrough configuration)
+** *DISK_GROUP_SIZE* (int, default: @8@) &mdash; Number of disks per group for testing (for passthrough configuration)

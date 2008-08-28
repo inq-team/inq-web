@@ -1,0 +1,17 @@
+---
+title: "Stress compression"
+inMenu: true
+template: /default.ru.template
+---
+h2. Stress compression (stress-compress)
+
+<div class="infobox"><img src="{relocatable:/images/hdd-destructive.png}" width="64" height="64" title="Тест уничтожает содержимое жесткого диска" alt="Тест уничтожает содержимое жесткого диска" /></div>
+
+This test runs many jobs on a hard drive simultaneously with background syncer. Each jobs performs compression/decompression together with taring/untaring of a big archive (Linux source code for example) in infinite loop. Syncer simply makes sync call each specified number of seconds. After specified time amount passed all jobs will be killed with syncer. Test will post benchmark results and successfully finish.
+
+* *Тестируемые компоненты:* CPU, HDD, Memory, Mainboard, Disk Controller
+* *Переменные:*
+** *JOBS* (int, по умолчанию: @16@) &mdash; Number of parallely running jobs during stress test compression/decompression
+** *STRESS_TREE* (string, по умолчанию: @linux-2.6.22.5-31-stress.tar.gz@) &mdash; Gzipped tarball file containing stress test tree
+** *SYNCTIME* (int, по умолчанию: @2@) &mdash; Sync time period, sec
+** *TESTTIME* (int, по умолчанию: @600@) &mdash; Total time of stress testing, sec

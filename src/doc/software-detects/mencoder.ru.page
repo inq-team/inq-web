@@ -1,0 +1,9 @@
+---
+title: "Mencoder"
+inMenu: true
+template: /default.ru.template
+---
+h2. Mencoder (mencoder)
+
+Detect MEncoder encoder version.
+

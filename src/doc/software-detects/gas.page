@@ -1,0 +1,8 @@
+---
+title: "GAS"
+inMenu: true
+---
+h2. GAS (gas)
+
+Detect GNU assembler version.
+

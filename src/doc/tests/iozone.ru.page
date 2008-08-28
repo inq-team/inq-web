@@ -1,0 +1,14 @@
+---
+title: "HDD benchmark: IOzone"
+inMenu: true
+template: /default.ru.template
+---
+h2. HDD benchmark: IOzone (iozone)
+
+<div class="infobox"><img src="{relocatable:/images/hdd-destructive.png}" width="64" height="64" title="Тест уничтожает содержимое жесткого диска" alt="Тест уничтожает содержимое жесткого диска" /></div>
+
+This benchmark measures the speed of sequential I/O to actual files. It generates and measures a variety of file operations.
+
+* *Тестируемые компоненты:* HDD
+* *Переменные:*
+** *TEST_FILE_SIZE* (int, по умолчанию: @0@) &mdash; Size of test file, MiB. If set to zero - double memory amount size will be used

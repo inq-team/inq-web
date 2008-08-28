@@ -1,0 +1,18 @@
+---
+title: "DD"
+inMenu: true
+---
+h2. DD (dd)
+
+<div class="infobox"><img src="{relocatable:/images/hdd-destructive.png}" width="64" height="64" title="Test destroys contents of HDD" alt="Test destroys contents of HDD" /></div>
+
+Actually this is not a real test. It can be used to write prepared raw disk image using DD utility.
+
+* *Components tested:* HDD, Disk Controller
+* *Variables:*
+** *BLOCKSIZE* (int, default: @1024@) &mdash; Blocksize, KiB
+** *COMPRESSION* (string, default: @none@) &mdash; What compression is used. gzip, bzip2 or lzma can be chosen
+** *COUNT* (int, default: @1024@) &mdash; Number of blocks to be written. If zero is specified then this parameter won't be used
+** *IF* (string, default: @raw_disk_image@) &mdash; Either absolute or relative path to source raw disk image to be written, or URL to download
+** *OF* (string, default: @sda@) &mdash; Target device name that will be overwritten
+** *SKIP* (int, default: @0@) &mdash; Number of blocks to skip

@@ -1,0 +1,8 @@
+---
+title: "GCC"
+inMenu: true
+---
+h2. GCC (gcc)
+
+Detect GCC version.
+

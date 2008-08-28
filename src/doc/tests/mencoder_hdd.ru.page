@@ -1,0 +1,19 @@
+---
+title: "Mencoder on hard drive"
+inMenu: true
+template: /default.ru.template
+---
+h2. Mencoder on hard drive (mencoder_hdd)
+
+<div class="infobox"><img src="{relocatable:/images/hdd-destructive.png}" width="64" height="64" title="Тест уничтожает содержимое жесткого диска" alt="Тест уничтожает содержимое жесткого диска" /></div>
+
+This benchmark will transcode specified input file to H.264 video, copying without modification audio in (by default) AVI container. You can specify also preset (taken from MPlayerHQ's documentation examples for x264), scaling and bitrate. Two-pass encoding option is available too. This benchmark will use x264's multithreading capabilities to load all CPUs or can run using specified number of threads.
+
+* *Тестируемые компоненты:* CPU, Memory, Mainboard, Disk Controller, HDD
+* *Переменные:*
+** *BITRATE* (int, по умолчанию: @1000@) &mdash; Bitrate of resulting video, KB/sec
+** *PRESET* (string, по умолчанию: @hq@) &mdash; Encoding preset. "lq" (low quality), "hq" (high quality) and "vhq" (very high quality) are availabe
+** *SCALE* (string, по умолчанию: @720x480@) &mdash; Width and height for rescaling resulting image
+** *SOURCE* (string, по умолчанию: @movie.mpeg2@) &mdash; Source transcoding file
+** *THREADS* (int, по умолчанию: @0@) &mdash; Force using specified number of threads. If equal to zero, then load all available CPUs
+** *TWOPASS* (boolean, по умолчанию: @false@) &mdash; Enable two-pass encoding of not

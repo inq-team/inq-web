@@ -1,0 +1,12 @@
+---
+title: "Boot from image"
+inMenu: true
+template: /default.ru.template
+---
+h2. Boot from image (boot_from_image)
+
+
+This is not real test. It will always succeed if file is available for booting. Can be used to force single loading from image file without any checks about its success finishing.
+
+* *Переменные:*
+** *IMAGE* (string, по умолчанию: @boot_image.img@) &mdash; Image to boot from after rebooting

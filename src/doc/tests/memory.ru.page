@@ -11,4 +11,4 @@ This memory test is performed without reboot, under control of live full-feature
 * *Тестируемые компоненты:* Memory
 * *Переменные:*
 ** *LOGTIME* (int, по умолчанию: @120@) &mdash; Time between progress updates, sec
-** *TEST_LOOPS* (int, по умолчанию: @3@) &mdash; Number of testing loops
+** *TEST_LOOPS* (int, по умолчанию: @1@) &mdash; Number of testing loops
