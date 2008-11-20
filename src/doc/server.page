@@ -47,7 +47,8 @@ Install basic OS of your choice. Be sure to install:
 ** Syslog server (syslog-ng)
 * Misc prerequisites
 ** Ruby language (ruby)
-** gnuplot (gnuplot)
+** Gnuplot plotting utility (gnuplot)
+** BNBT BitTorrent tracker (our version of bnbt)
 
 We'll configure all these services in the following steps.
 
@@ -124,11 +125,11 @@ subnet 10.0.0.0 netmask 255.255.255.0 {
 
 h3. TFTP server
 
-We included tftp-hpa server and a patch for it. You have to apply it,
-build and install at least tftpd. After installation you can run it as
-you wish: as a standalone or through (x)inetd service. You can safely
-replace your standart tftpd with it, but remember that it logs all
-files sent.
+There is patch for tftp-hpa server on our download servers. You have
+to apply it, build and install at least tftpd. After installation you
+can run it as you wish: as a standalone or through (x)inetd service.
+You can safely replace your standart tftpd with it, but remember that
+it logs all files sent.
 
 h3. NFS server
 
