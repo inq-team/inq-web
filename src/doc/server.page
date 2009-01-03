@@ -43,6 +43,7 @@ Install basic OS of your choice. Be sure to install:
 ** DHCP server (dhcp-server)
 ** TFTP server (our version of tftp-hpa)
 ** DNS server (bind)
+** NFS server (nfsd)
 ** NTP server (ntpd + ntpdate)
 ** Syslog server (syslog-ng)
 * Misc prerequisites
