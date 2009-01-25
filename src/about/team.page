@@ -1,11 +1,11 @@
 ---
-title: Contacts
+title: Team
 description: Contacts info on Inquisitor Linux hardware testing and monitoring platform
 keywords: Inquisitor,linux,hardware,testing,monitoring,certification,control,raid,contacts
 inMenu: true
 orderInfo: 100
 ---
-h2. Contacts
+h2. Inquisitor team contacts
 
 Inquisitor team is:
 
@@ -21,3 +21,5 @@ Thanks for contributions and suggestions:
 * Anton Farygin
 * Anton Kachalov
 * Valery Inozemtsev
+* Alexandra Panyukova
+* <a href="http://themblsha.ya.ru/">Michail Pishchagin</a>

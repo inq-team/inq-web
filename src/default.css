@@ -1,278 +1,294 @@
-/* 1024px - An open source xhtml/css website template by Andreas Viklund - http://andreasviklund.com . Free to use in any way and for any purpose as long as the proper credits are given to the original designer.
-
-Version: 1.2, April 20, 2006 */
-
-/******** General tags ********/
-body{
-font:76% Verdana,Tahoma,Arial,sans-serif;
-background:#ffffff url(images/background.gif) top center repeat-y;
-color:#404040;
-line-height:1.2em;
-margin:0 auto;
-padding:0;
+html, body {
+	height: 100%;
+}
+body {
+	padding: 0;
+	margin: 0 auto;
+	background: rgb(95, 95, 95);
+	width: 100%;
+	height: 100%;
+	font-size: 13px;
+	font-family: "Trebuchet MS",Verdana,Tahoma,Arial,sans-serif;
+	color: #333333;
 }
 
-a, #sidebar .webgen-menu span {
-text-decoration:none;
-color:#640b26;
-font-weight:bold;
+a {
+	text-decoration: none;
+	color: #333333;
+}
+a:hover {
+	text-decoration: underline;
+}
+img {
+	text-decoration: none;
+	border-style: solid;
+	border-width: 0px;
+}
+form {
+	padding: 0px;
+	margin: 0px;
+}
+#clear {
+	clear: both;
 }
 
-a:hover{text-decoration:underline;}
-a img{border:0;}
-p{margin:0 0 18px 10px;}
-/*
-ul,ol,dl{font-size:0.9em; margin:2px 0 16px 35px;}
-ul ul,ol ol{margin:4px 0 4px 35px;}
-*/
+/*Фон*/
 
-h1{
-font-size:4.2em;
-letter-spacing:-5px;
-margin:0 0 30px 25px;
-color:#640b26;
+#page-body {
+	margin: 0 auto;
+	padding: 0;
+	background-image: url('images/bg_01.jpg');
+	background-repeat: repeat-x;
+	height: 100%;
+	width: 1055px;
 }
 
-h1 a{text-transform:none; color:#640b26;}
+/*Шапка*/
 
-h2{
-font-size:1.4em;
-color:#640b26;
-border-bottom:4px solid #dadada;
-padding:0 2px 2px 5px;
-margin:0 0 10px 0;
-letter-spacing:-1px;
+#header {
+	margin: 0 auto;
+	padding: 0;
+	height: 207px;
+	width: 1055px;
+	background-image: url('images/header.jpg');
+	background-repeat: no-repeat;
+}
+#header .logo {
+	background-image: url('images/inq-logo.png');
+	background-repeat: no-repeat;
+	position: relative;
+	height: 200px;
+	background-position: 115px 35px;
 }
 
-h3{
-font-size:1.2em;
-font-weight:bold;
-color:#640b26;
-border-bottom:1px solid #dadada;
-margin:10px 0 8px 0;
-padding:1px 2px 2px 3px;
-}
-
-blockquote{
-font-size:0.9em;
-border:1px solid #dadada;
-margin:20px 10px;
-padding:8px;
-}
-
-/******** Main wrap ********/
-#wrap{
-color:#404040;
-width:970px;
-margin:0 auto;
-padding:0;
-//background:#ffffff url(images/logo.png) right top no-repeat;
-}
-
-#header{margin:0;}
-
-#header h1 {margin-top: -30px}
-
-#location-bar {
+#left {
+	padding: 0px 0px 40px 0px;
+	margin: 0px;
 	float: left;
-	padding-left: 215px;
+	min-height: 696px;
+	background-repeat: no-repeat;
+	background-position: left top;
+	border-style: solid;
+	border-width: 0px 1px 0px 0px;
+	border-color: #E1E1E1;
+	width: 303px;
 }
-
-#language-bar {
-	float: right;
+#navigation {
+	vertical-align: top;
+	text-align: left;
+	padding: 25px 20px 0px 68px;
 }
-
-#slogan{
-font-size:1.5em;
-color:#808080;
-font-weight:bold;
-letter-spacing:-1px;
-margin:15px 0px 20px 35px;
-line-height:1.2em;
+#navigation ul {
+	padding: 0px;
+	margin: 0px;
 }
-
-/******** sidebar ********/
-#sidebar{
-float:left;
-width:195px;
-margin:0 0 5px 0;
-padding:1px 0 0 0;
+#navigation li {
+	background-position: 5px 9px;
+	list-style-type: none;
+	padding: 4px 5px 2px 19px;
+	margin: 0px;
+	border-style: solid;
+	border-width: 0px 0px 1px 0px;
+	border-color: #EAEAEA;
+	background-image: url('images/st_03.gif');
+	background-repeat: no-repeat;
 }
-
-#sidebar ul{
-list-style:none;
-font-size:0.9em;
-margin:0;
-padding:0 0 15px 10px;
+#navigation li:hover {
+	background-color: #EEEEEE;
+	background-image: url('images/st_02.gif');
 }
-
-#sidebar li{
-list-style:none;
-margin:0 0 4px 0;
-padding:0;
-}
-
-#sidebar li a, #sidebar li span {
-font-size:1.2em;
-font-weight:bold;
-padding:2px;
-}
-
-#sidebar ul ul{
-margin:4px 0 3px 15px;
-line-height:1.2em;
-padding:0;
-}
-
-#sidebar ul ul li a, #sidebar ul ul li span {font-weight:normal;}
-#sidebar h2{margin:3px 0px 8px 0px;}
-
-/******** Content variations ********/
-#content{
-line-height:1.5em;
-width:750px;
-float:right;
-text-align:left;
-margin:0;
-padding:0;
-}
-
-#contentalt{
-line-height:1.5em;
-width:750px;
-float:left;
-text-align:left;
-padding:0;
-margin-right:20px;
-}
-
-#content h3, #contentalt h3{margin:10px 0 8px;}
-
-/******** Footer ********/
-#footer{
-clear:both;
-text-align:right;
-color:#808080;
-font-size:0.9em;
-border-top:4px solid #dadada;
-margin:0 auto;
-padding:8px 0;
-line-height:1.6em;
-}
-
-#footer p{margin:0; padding:0;}
-#footer a{color:#808080;}
-
-/******** Various classes ********/
-.box{
-color:#ffffff;
-font-size:0.9em;
-background-color:#640b26;
-border:1px solid #c8c8c8;
-line-height:1.3em;
-padding:5px 5px 5px 8px;
-}
-
-.box a{color:#f0f0f0;}
-.left{float:left; margin:0 15px 4px 0;}
-.right{float:right; margin:0 0 4px 15px;}
-.textright{text-align:right;}
-.readmore{text-align:right; margin:-10px 10px 4em 0;}
-
-.center{text-align:center;}
-.blue{color:#640b26;}
-.big{font-size:1.3em;}
-.small{font-size:0.8em;}
-.bold{font-weight:bold;}
-
-.clear{clear:both;}
-.hide{display:none;}
-.fade{color:#c8c8c8;}
-.gray{color:#808080;}
-
-.photo{
-border:1px solid #bababa;
-padding:2px;
-background-color:#ffffff;
-margin:6px 18px 2px 5px;
-}
-
-pre {
-	border: 1px dashed #808080;
-	background-color: #F0F0F0;
-	line-height: 1em;
-	padding: 0.5em;
-}
-
-#newsbar {
-	width: 28em;
-	float: right;
-	background: #F8F8F8;
-	margin-left: 1em;
-}
-
-#newsbar a.header {
-	font-size:1.4em;
-	color:#640b26;
-	border-bottom:4px solid #dadada;
-	padding:0 2px 2px 5px;
-	margin:0 0 10px 0;
-	letter-spacing:-1px;
-
-	display: block;
-}
-
-#newsbar .contents {
-	font-size: 80%;
-	padding: 0em 0.7em;
-}
-
-#newsbar h3 {
-	float: left;
-//	border: none;
-	font-size: 1.2em;
+#navigation .webgen-menu-item-selected {
+	background-image: url('images/st_01.gif');
+	background-color: #F5F5F5;
 	font-weight: bold;
-	color: #640b26;
-	margin: 0em 0.5em 0em 0em;
-	padding: 0em 0.2em;
+}
+#navigation .level1-active {
+	background-image: url('images/st_02.gif');
+}
+#navigation .level2 {
+	padding: 4px 0px 2px 33px;
+	background-position: 19px 9px;
+	background-image: url('images/st_03.gif');
+}
+#navigation .level2-active {
+	padding: 4px 0px 2px 33px;
+	background-position: 19px 9px;
+	background-image: url('images/st_02.gif');
+	font-weight: bold;
 }
 
-#newsbar h2 {
-	display: inline;
-	font-size: 1.2em;
-	color: #404040;
-	font-weight: normal;
-	border: none;
-	letter-spacing: 0px;
+/*Контент*/
+
+#content {
+	padding: 28px 75px 40px 25px;
+	float: right;
+	width: 651px;
+	line-height: 20px;
+}
+#content a {
+	color: #2B5AA2;
+	text-decoration: underline;
+	font-weight: bold;
+}
+#content h2 {
+	border-style: solid;
+	border-width: 0px 0px 1px 0px;
+	border-color: #CCCCCC;
+	font-size: 20px;
+	padding: 0px 0px 2px 0px;
+	margin: 0px 0px 18px 0px;
+	font-variant: small-caps;
+}
+#content ol li {
+	padding: 0px 0px 15px 0px;
+	margin: 0px 0px 0px 25px;
+	list-style-type: decimal;
+}
+#content strong {
+	font-weight: bold;
+	color: #CC0000;
+}
+#content .titles {
+	margin: 0px 0px 20px 0px;
+	border-style: solid;
+	border-width: 0px 0px 1px 0px;
+	border-color: #CCCCCC;
+	padding: 0px 0px 2px 0px;
+}
+#content .read-more {
+	float: right;
+}
+#content .read-more a {
+	color: #346CB1;
+}
+#content .h2 {
+	font-variant: small-caps;
+	font-size: 20px;
+	float: left;
+}
+#center {
+	padding: 0px;
+	background-image: url('images/bg_04.jpg');
+	margin: 0px;
+}
+
+#sidebar {
+	border-style: solid;
+	border-width: 1px 0px 0px 0px;
+	border-color: #E4E4E4;
+	padding: 23px 20px 0px 42px;
+	margin: 30px 0px -18px 48px;
+	line-height: 20px;
+}
+#sidebar h3 {
+	background-image: url('images/st_05.gif');
+	background-position: 0px 3px;
+	padding: 0px 0px 0px 15px;
+	background-repeat: no-repeat;
+	margin: 0px 0px 0px -17px;
+	font-weight: bold;
+	font-size: 13px;
+}
+#sidebar h2 {
+	font-weight: bold;
+	font-size: 100%;
+	margin: 0;
+	padding: 0;
+}
+#sidebar p {
 	margin: 0px;
 	padding: 0px;
 }
+#sidebar a {
+	color: #375E9D;
+	text-decoration: underline;
+}
+#sidebar .item {
+	padding: 0px 0px 20px 0px;
+}
 
-h6 {
+#banner_01 {
+	border-style: solid;
+	border-width: 1px 0px 0px 0px;
+	border-color: #E4E4E4;
+	padding: 25px 20px 0px 27px;
+	margin: 25px 0px 0px 48px;
+}
+
+/*Низ*/
+#bottom {
+	height: 135px;
+	background-image: url('images/bg_06.png');
+	background-repeat: no-repeat;
+	text-align: left;
+	vertical-align: top;
+	padding: 20px 0px 0px 335px;
+	margin: 0px;
+	font-size: 12px;
+}
+#bottom a {
+	text-decoration: underline;
+	color: #2B5AA2;
+	padding: 0px 20px 0px 0px;
+	margin: 0px 0px 10px 0px;
+}
+#bottom p {
+	padding: 0px 0px 5px 0px;
+	margin: 0px;
+}
+#bottom .info {
 	float: left;
-	font-size:1.4em;
-	color: #404040;
-	border-bottom: 4px solid #dadada;
-	border-right: 2px solid #dadada;
-	padding:0 10px 2px 5px;
-	margin:0 10px 10px 0;
-	letter-spacing:-1px;
 }
-
-.toc {
-	border-collapse: collapse;
-	margin-bottom: 2em;
-}
-
-.toc th, .toc td {
-	border: 1px solid #dadada;
-	padding: 0em 1em;
-}
-
-.toc th {
-	background: #dadada;
-}
-
-.infobox {
+#bottom .sponsors {
 	float: right;
+	width: 230px;
+}
+
+/*Выбор языка*/
+#topbar {
+	background-image: url('images/bg_03.png');
+	background-repeat: no-repeat;
+	height: 26px;
+	text-align: right;
+	vertical-align: top;
+	padding: 6px 75px 0px 0px;
+	margin: 0px;
+	color: #EEEEEE;
+}
+#locationbar {
+	color: #EEEEEE;
+	float: left;
+	margin-left: 320px;
+}
+#topbar a, #locationbar a {
+	background-color: #333333;
+	color: #FFFFFF;
+}
+
+/*Выравнивание*/
+#to-left {
+	float: left;
+	padding: 0px;
+	margin: 0px 20px 0px 0px;
+}
+#to-right {
+	float: right;
+	padding: 0px;
+	margin: 0px 0px 0px 20px;
+}
+#to-center-content {
+	margin: 0px;
+	padding: 0px 0px 0px 100px;
+}
+#height_01 {
+	height:15px;
+}
+
+.readmore {
+	text-align: right;
+	margin: -10px 10px 4em 0;
+}
+
+.supportform td {
+	vertical-align: top;
 }

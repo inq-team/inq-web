@@ -4,9 +4,8 @@ description: Контактная информация Inquisitor Linux hardware
 keywords: Inquisitor,linux,hardware,testing,monitoring,certification,control,raid,contacts
 inMenu: true
 orderInfo: 100
-template: /default.ru.template
 ---
-h2. Контактная информация
+h2. Контактная информация команды Inquisitor
 
 В команду Inquisitor входят:
 
@@ -22,3 +21,5 @@ h2. Контактная информация
 * Антон Фарыгин
 * Антон Качалов
 * Валерий Иноземцев
+* Александра Панюкова
+* <a href="http://themblsha.ya.ru/">Михаил Пищагин</a>

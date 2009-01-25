@@ -4,7 +4,6 @@ inMenu: false
 orderInfo: 0
 description: Свободная система тестирования, бенчмаркинга и сертификации компьютерного оборудования под Linux для домашнего и промышленного применения.
 directoryName: О проекте
-template: /default.ru.template
 ---
 h2. Inquisitor
 

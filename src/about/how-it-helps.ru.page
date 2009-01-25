@@ -4,7 +4,6 @@ description: Информация о полезности Inquisitor Linux hardw
 keywords: Inquisitor,linux,hardware,testing,monitoring,certification,control,raid,usefulness
 inMenu: true
 orderInfo: 10
-template: /default.ru.template
 ---
 h2. Как Inquisitor может помочь вам, если вы...
 
