@@ -1,7 +1,7 @@
 ---
 title: About
 inMenu: false
-description: Brief description of Inquisitor Linux hardware testing and monitoring platform
+description: Free hardware diagnostics, stress testing, benchmarking and certification platform, based on Linux, suitable for both enterprise and home use, customizable, modular and available in both serverless Live CD/DVD format and server-controlled network boot production system.
 keywords: Inquisitor,linux,hardware,testing,monitoring,certification,control,raid,brief,about
 orderInfo: 0
 directoryName: About
