@@ -8,6 +8,7 @@ directoryName: About
 ---
 h2. Inquisitor
 
+<img src="{relocatable: /images/inq-box.jpg}" style="padding-right: 20px; padding-bottom: 10px; float: left" alt="" />
 Inquisitor is an open-source hardware testing and certification system,
 suitable for both enterprise and home use, customizable, modular and
 available in both serverless Live CD/DVD format and server-controlled
@@ -39,7 +40,7 @@ computers in manufacturing enterprise.
 under active development since 2004. There are <a href="../shots/Installations.html">multiple production enterprise installations</a>
 relying on it.
 
-<p class="readmore"><a href="{relocatable:how-it-helps.page}">How it can help you?</a> &raquo;</p>
+<p class="readmore"><a href="{relocatable:how-it-helps.page}">How can it help you?</a> &raquo;</p>
 
 --- sidebar,html
 {news: {filename: src/news.yaml, dateTag: h3, contentTag: div class='item', options: {maxEntries: 3, maxParagraphs: 2}}}
