@@ -5,7 +5,7 @@
 
 <head>
 	<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
-	<title>{title: }</title>
+	<title>{title: } | Inquisitor hardware testing platform</title>
 	<meta name="generator" content="webgen - http://webgen.rubyforge.com/" />
 	<link href="{relocatable: default.css}" rel="stylesheet" type="text/css" />
 </head>
