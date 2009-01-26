@@ -73,6 +73,7 @@ form {
 	border-color: #E1E1E1;
 	width: 303px;
 }
+
 #navigation {
 	vertical-align: top;
 	text-align: left;
@@ -85,10 +86,10 @@ form {
 #navigation li {
 	background-position: 5px 9px;
 	list-style-type: none;
-	padding: 4px 5px 2px 19px;
+	padding: 2px 5px 2px 19px;
 	margin: 0px;
 	border-style: solid;
-	border-width: 0px 0px 1px 0px;
+	border-width: 1px 0px 0px 0px;
 	border-color: #EAEAEA;
 	background-image: url('images/st_03.gif');
 	background-repeat: no-repeat;
@@ -165,6 +166,17 @@ form {
 	font-variant: small-caps;
 	font-size: 20px;
 	float: left;
+}
+#content pre {
+	border: 1px dashed #303030;
+	background: #F0F0F0;
+	padding: 0.5em;
+}
+#content h6 {
+	float: left;
+	font: 100% monospace;
+	border-right: 1px #CCCCCC;
+	width: 12em;	
 }
 #center {
 	padding: 0px;
@@ -244,7 +256,6 @@ form {
 	width: 230px;
 }
 
-/*Выбор языка*/
 #topbar {
 	background-image: url('images/bg_03.png');
 	background-repeat: no-repeat;
@@ -255,14 +266,17 @@ form {
 	margin: 0px;
 	color: #EEEEEE;
 }
+#language span {
+	font-weight: bold;
+	color: #FFFFFF;
+}
+#topbar a {
+	color: #BBBBBB;
+}
 #locationbar {
 	color: #EEEEEE;
 	float: left;
 	margin-left: 320px;
-}
-#topbar a, #locationbar a {
-	background-color: #333333;
-	color: #FFFFFF;
 }
 
 /*Выравнивание*/
