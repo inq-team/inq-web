@@ -1,18 +1,57 @@
 ---
-title: Support
+title: Support & Contacts
 inMenu: true
 orderInfo: 80
 description: Support methods for Inquisitor Linux hardware testing and monitoring platform
 keywords: Inquisitor,linux,hardware,testing,monitoring,certification,control,raid,support
 ---
-h2. Community support
+<table style="width: 100%"><tr><td style="width: 50%; vertical-align: top">
+<h2>Community support</h2>
 
-* <a href="http://sourceforge.net/tracker/?atid=626230&group_id=100064&func=browse">Bug tracking</a>
-* <a href="http://sourceforge.net/tracker/?atid=626233&group_id=100064&func=browse">Feature requests</a>
-* <a href="http://sourceforge.net/mail/?group_id=100064">Mailing lists</a>
+* <a href="http://sourceforge.net/mailarchive/forum.php?forum_name=inq-discuss-en">General discussion mailing list and forum (English)</a>
+* <a href="http://sourceforge.net/mailarchive/forum.php?forum_name=inq-discuss-ru">General discussion mailing list and forum (Russian)</a>
+* <a href="http://track.inquisitor.ru/">Bug, task and feature tracking</a>
 
-h2. Links
+</td><td style="width: 50%; vertical-align: top">
+<h2>Links</h2>
 
 * <a href="http://sourceforge.net/projects/inq/">SourceForge.net project page</a>
 * <a href="http://freshmeat.net/projects/inq/">freshmeat.net project page</a>
 * <a href="http://www.ohloh.net/projects/8935?p=Inquisitor">ohloh project page</a>
+
+</td></tr></table>
+
+h2. Contact us
+
+Send message directly to the an <a href="{relocatable:about/team.page}">Inquisitor team</a> using the
+following form. Be sure to enter your e-mail correctly if you want to
+get an answer!
+
+<form action="post-message.html" method="post"><table style="width: 100%; padding-left: 2.5em; padding-right: 1em">
+
+<tr>
+<td style="width: 7em">Name:</td>
+<td><input name="name" style="width: 100%" /></td>
+</tr>
+
+<tr>
+<td>E-mail:</td>
+<td><input name="email" style="width: 100%"/></td>
+</tr>
+
+<tr>
+<td>Subject:</td>
+<td><input name="subject" style="width: 100%"/></td>
+</tr>
+
+<tr>
+<td>Message:</td>
+<td><textarea name="message" rows="8" style="width: 100%"></textarea></td>
+</tr>
+
+<tr>
+<td></td>
+<td><input type="submit" value="Send message"/></td>
+</tr>
+
+</table></form>
