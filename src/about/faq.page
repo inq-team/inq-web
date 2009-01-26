@@ -1,0 +1,55 @@
+---
+title: FAQ
+inMenu: true
+description: Frequently asked questions about Inquisitor Linux hardware testing and monitoring platform
+keywords: faq,frequently,asked,questions,Inquisitor,linux,hardware,testing,monitoring,certification
+orderInfo: 90
+---
+h2. Frequently asked questions
+
+h3. Why it is called Inquisitor?
+
+This name originates from 2004, when ALT Linux was building its new
+installer/configuration system. All its components' names finished with
+<code>*tor</code> (i.e. <a href="http://freesource.info/wiki/Musorka/AltLinux/Sisyphus/Separator">separator</a>,
+<a href="http://sisyphus.ru/srpm/propagator">propagator</a>, predator,
+<a href="http://freesource.info/wiki/AltLinux/Sisyphus/Alterator">alterator</a>,
+etc). Mikhail Yakshin came forward with a curious idea of calling new hardware
+testing system an "Inquisitor" - it fitted <code>*tor</code> schema perfectly
+and besides, it was a pun on system's functionality with stress tests
+like *cpuburn*.
+
+There's <a href="http://lists.altlinux.org/pipermail/devel-conf/2004-February/003069.html">a
+message in ALT Linux devel-conf mailing list</a> that started it all :)
+
+h3. Is Inquisitor a Linux distribution or what?
+
+Well, yes and no. Inquisitor is somewhat you might call
+meta-distribution. Sure, it boasts separate Live CD that one can
+download and use, just as one might download any other Live CD Linux
+distribution, and Inquisitor can be built into bootable root that would
+look just like real Linux system (but customized for specific tasks). 
+
+However, Inquisitor does not have its own separate package repository.
+This is done purely by intent, there are several strong reasons to do
+so:
+
+* There are some great and well-maintained repositories already
+available. These repositories usually have 95% of software we'd need to
+build complete Inquisitor system. It's just a huge waste of time and
+effort to make yet-another-repository and rebuild everything.
+
+* There are some industry standard distributions that most people
+recognize and would like to use. If we'd built our own kernel, for
+example, failing or passing of hardware on that kernel would mean very
+little: it could be a bug in our kernel build and userbase is very
+narrow to test it properly on huge range of hardware. Instead, if we'll
+use, for example, some wide-spread kernel, such as one from ALT Linux,
+Debian, Gentoo, Red Hat, SuSE or Ubuntu. Same logic is applicable to all
+other software in the repository.
+
+* An ability to build Inquisitor on top of multiple distributions gives
+it an unique feature: it's possible to compare various
+distributions/repositories -- in terms of hardware support, performance,
+stability, etc. For example, one could easily compare performance of
+video card X on various distributions and choose the fastest one.
