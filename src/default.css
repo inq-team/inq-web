@@ -1,16 +1,13 @@
-html, body {
-	height: 100%;
-}
 body {
 	padding: 0;
 	margin: 0 auto;
 	background: rgb(95, 95, 95);
-	width: 100%;
-	height: 100%;
 	font-size: 13px;
 	font-family: "Trebuchet MS",Verdana,Tahoma,Arial,sans-serif;
 	color: #333333;
 }
+
+/* Generic HTML elements stylishness */
 
 a {
 	text-decoration: none;
@@ -28,37 +25,124 @@ form {
 	padding: 0px;
 	margin: 0px;
 }
-#clear {
-	clear: both;
-}
 
-/*Фон*/
+/* Top-level "wrap" regions */
 
-#page-body {
-	margin: 0 auto;
-	padding: 0;
-	background-image: url('images/bg_01.jpg');
-	background-repeat: repeat-x;
-	height: 100%;
-	width: 1055px;
-}
-
-/*Шапка*/
-
-#header {
+#header-wrap {
 	margin: 0 auto;
 	padding: 0;
 	height: 207px;
-	width: 1055px;
-	background-image: url('images/header.jpg');
-	background-repeat: no-repeat;
+	background: url('images/header.jpg') center top no-repeat;
 }
-#header .logo {
-	background-image: url('images/inq-logo.png');
-	background-repeat: no-repeat;
-	position: relative;
-	height: 200px;
-	background-position: 115px 35px;
+#body-wrap, #toolbar-wrap, #footer-deco1, #footer-wrap {
+	margin: 0 auto;
+	padding: 0;
+	background: url('images/bg_04.jpg') repeat-y scroll center top;
+}
+#footer-deco1 {
+	height: 4px;
+}
+#footer-wrap {
+	height: 99px;
+}
+/*	background: url('images/bg_06.png') center top no-repeat;*/
+#footer-deco2 {
+	margin: 0 auto;
+	padding: 0;
+	height: 51px;
+	background: url('images/footer.png') center top no-repeat;
+}
+
+/* Real top-level regions */
+
+#header {
+	width: 960px;
+	margin: 0 auto;
+}
+#toolbar1 {
+	margin: 0 auto;
+	padding: 0;
+	width: 960px;
+	background: #DF2203;
+}
+#body {
+	margin: 0 auto;
+	padding: 0;
+	width: 960px;
+	background: #FFFFFF;
+}
+#footer {
+	margin: 0 auto;
+	padding: 0;
+	width: 960px;
+	height: 100px;
+	text-align: left;
+	vertical-align: top;
+	font-size: 12px;
+	background: #E0E0E0 url('images/footer-logo.png') 24px 32px no-repeat;
+}
+
+/* Toolbar */
+
+#toolbar2 {
+	margin-left: 255px;
+	background: #000000;
+	color: #EEEEEE;
+}
+#location-bar {
+	padding: 0.3em 16px;
+	float: left;
+}
+#language-bar {
+	padding: 0.3em 25px;
+	float: right;
+}
+
+#toolbar2 a {
+	color: #BBBBFF;
+	text-decoration: underline;
+}
+#language-bar span {
+	font-weight: bold;
+	color: #FFFFFF;
+}
+
+/* Footer */
+
+#footer-deco1-1 {
+	margin: 0 auto;
+	padding: 0;
+	width: 960px;
+	height: 4px;
+	background: #DF2203;
+}
+#footer-deco1-2 {
+	margin-left: 255px;
+	height: 4px;
+	background: #353535;
+}
+
+#footer2 {
+	margin-left: 255px;
+	background: #F0F0F0;
+	padding-left: 32px;
+	padding-right: 32px;
+	padding-top: 16px;
+	height: 100%;
+}
+#footer2 a {
+	text-decoration: underline;
+	color: #2B5AA2;
+	padding: 0px 20px 0px 0px;
+	margin: 0px 0px 10px 0px;
+}
+#footer2 p {
+	padding: 0px 0px 5px 0px;
+	margin: 0px;
+}
+#footer .sponsors {
+	float: right;
+	width: 148px;
 }
 
 #left {
@@ -71,13 +155,13 @@ form {
 	border-style: solid;
 	border-width: 0px 1px 0px 0px;
 	border-color: #E1E1E1;
-	width: 303px;
+	width: 255px;
 }
 
 #navigation {
 	vertical-align: top;
 	text-align: left;
-	padding: 25px 20px 0px 68px;
+	padding: 25px 20px 0px 20px;
 }
 #navigation ul {
 	padding: 0px;
@@ -121,7 +205,7 @@ form {
 /*Контент*/
 
 #content {
-	padding: 28px 75px 40px 25px;
+	padding: 28px 28px 40px 25px;
 	float: right;
 	width: 651px;
 	line-height: 20px;
@@ -189,7 +273,7 @@ form {
 	border-width: 1px 0px 0px 0px;
 	border-color: #E4E4E4;
 	padding: 23px 20px 0px 42px;
-	margin: 30px 0px -18px 48px;
+	margin: 30px 0px -18px 0px;
 	line-height: 20px;
 }
 #sidebar h3 {
@@ -224,59 +308,7 @@ form {
 	border-width: 1px 0px 0px 0px;
 	border-color: #E4E4E4;
 	padding: 25px 20px 0px 27px;
-	margin: 25px 0px 0px 48px;
-}
-
-/*Низ*/
-#bottom {
-	height: 135px;
-	background-image: url('images/bg_06.png');
-	background-repeat: no-repeat;
-	text-align: left;
-	vertical-align: top;
-	padding: 20px 0px 0px 335px;
-	margin: 0px;
-	font-size: 12px;
-}
-#bottom a {
-	text-decoration: underline;
-	color: #2B5AA2;
-	padding: 0px 20px 0px 0px;
-	margin: 0px 0px 10px 0px;
-}
-#bottom p {
-	padding: 0px 0px 5px 0px;
-	margin: 0px;
-}
-#bottom .info {
-	float: left;
-}
-#bottom .sponsors {
-	float: right;
-	width: 230px;
-}
-
-#topbar {
-	background-image: url('images/bg_03.png');
-	background-repeat: no-repeat;
-	height: 26px;
-	text-align: right;
-	vertical-align: top;
-	padding: 6px 75px 0px 0px;
-	margin: 0px;
-	color: #EEEEEE;
-}
-#language span {
-	font-weight: bold;
-	color: #FFFFFF;
-}
-#topbar a {
-	color: #BBBBBB;
-}
-#locationbar {
-	color: #EEEEEE;
-	float: left;
-	margin-left: 320px;
+	margin: 25px 0px 0px 0px;
 }
 
 /*Выравнивание*/
