@@ -6,15 +6,26 @@ h2. API reference: functions-test
 
 Obligatory functions to process before every test.
 
-h3. test_succeeded
+<h3><a name="execute_after_test"></a>execute_after_test</h3>
 
 
 
-h3. test_failed
+<h3><a name="test_succeeded"></a>test_succeeded</h3>
 
 
 
-h3. _exit_handler
+<h3><a name="test_failed"></a>test_failed</h3>
 
 
 
+<h3><a name="_exit_handler"></a>_exit_handler</h3>
+
+
+
+--- sidebar,html
+<ul>
+<li><a href="#execute_after_test">execute_after_test</a></li>
+<li><a href="#test_succeeded">test_succeeded</a></li>
+<li><a href="#test_failed">test_failed</a></li>
+<li><a href="#_exit_handler">_exit_handler</a></li>
+</ul>

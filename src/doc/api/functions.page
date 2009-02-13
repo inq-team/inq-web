@@ -11,35 +11,35 @@ from multiple different modules. For functions specific to one
 particular kind of a *module* (for example, for "test" modules),
 see "functions-*module*" file, i.e. "functions-test".
 
-h3. echo_success
+<h3><a name="echo_success"></a>echo_success</h3>
 
 Prints success marker @[ DONE ]@ in success color to stdout.
 
-h3. echo_failure
+<h3><a name="echo_failure"></a>echo_failure</h3>
 
 Prints failure marker @[FAILED]@ in failure color to stdout.
 
-h3. echo_skipped
+<h3><a name="echo_skipped"></a>echo_skipped</h3>
 
 Prints skipped marker @[ SKIP ]@ in warning color to stdout.
 
-h3. echo_passed
+<h3><a name="echo_passed"></a>echo_passed</h3>
 
 Prints passed marker @[PASSED]@ in warning color to stdout.
 
-h3. echo_running
+<h3><a name="echo_running"></a>echo_running</h3>
 
 Prints running test marker @[CALLED]@ in warning color to stdout.
 
-h3. fatal_failure
+<h3><a name="fatal_failure"></a>fatal_failure</h3>
 
 
 
-h3. test_progress
+<h3><a name="test_progress"></a>test_progress</h3>
 
 
 
-h3. run_test
+<h3><a name="run_test"></a>run_test</h3>
 
 Issues a managed test run; should be called by a scheduler.
 
@@ -49,7 +49,7 @@ h4. Input
 * @TEST_NAME@ - unique identifier of test stage in testing (for database)
 * + variables to pass to the test
 
-h3. monitoring_start
+<h3><a name="monitoring_start"></a>monitoring_start</h3>
 
 Starts a monitoring in background. Makes sure that running monitoring
 is unique.
@@ -58,7 +58,7 @@ h4. Input
 
 * @$1@ - name of monitoring script
 
-h3. monitoring_stop
+<h3><a name="monitoring_stop"></a>monitoring_stop</h3>
 
 Stops a monitoring, running in background.
 
@@ -66,87 +66,170 @@ h4. Input
 
 * @$1@ - name of monitoring script
 
-h3. refresh_console
+<h3><a name="refresh_console"></a>refresh_console</h3>
 
 
 
-h3. watchdog_start
+<h3><a name="watchdog_start"></a>watchdog_start</h3>
 
 
 
-h3. watchdog_stop
+<h3><a name="watchdog_stop"></a>watchdog_stop</h3>
 
 
 
-h3. start_background
+<h3><a name="start_background"></a>start_background</h3>
 
 start_background(PIDFILE, CPULIST, CMDLINE)
 Starts a process CMDLINE in background, setting CPU affinity to
 CPU_LIST (if not empty). Saves PID of the program in PIDFILE.
 
-h3. stop_background
+<h3><a name="stop_background"></a>stop_background</h3>
 
 
 
-h3. print_green_message
+<h3><a name="print_green_message"></a>print_green_message</h3>
 
 
 
-h3. print_red_message
+<h3><a name="print_red_message"></a>print_red_message</h3>
 
 
 
-h3. dev_for_route_to_server
+<h3><a name="dev_for_route_to_server"></a>dev_for_route_to_server</h3>
 
 
 
-h3. subnet_for_dev
+<h3><a name="subnet_for_dev"></a>subnet_for_dev</h3>
 
 
 
-h3. get_hdds_list
+<h3><a name="get_hdd_info"></a>get_hdd_info</h3>
 
 
 
-h3. get_odds_list
+<h3><a name="get_nic_mac"></a>get_nic_mac</h3>
 
 
 
-h3. get_fdds_list
+<h3><a name="get_hdds_list"></a>get_hdds_list</h3>
 
 
 
-h3. get_nics_list
+<h3><a name="get_odds_list"></a>get_odds_list</h3>
 
 
 
-h3. get_interface_ipaddr
+<h3><a name="get_fdds_list"></a>get_fdds_list</h3>
 
 
 
-h3. check_writeable_odd
+<h3><a name="get_nics_list"></a>get_nics_list</h3>
 
 
 
-h3. check_readable_odd
+<h3><a name="get_interface_ipaddr"></a>get_interface_ipaddr</h3>
 
 
 
-h3. hard_reboot
+<h3><a name="check_writeable_odd"></a>check_writeable_odd</h3>
+
+
+
+<h3><a name="check_readable_odd"></a>check_readable_odd</h3>
+
+
+
+<h3><a name="hard_reboot"></a>hard_reboot</h3>
 
 Waits for 10 seconds and forces hard reboot sequence using procfs
 system request.
 
-h3. hard_shutdown
+<h3><a name="hard_shutdown"></a>hard_shutdown</h3>
 
 Waits for 10 seconds and forces hard shutdown (usually a poweroff)
 sequence using procfs system request.
 
-h3. test_succeed_if_no
+<h3><a name="test_succeed_if_no"></a>test_succeed_if_no</h3>
 
 
 
-h3. need_kernel_module
+<h3><a name="need_kernel_module"></a>need_kernel_module</h3>
 
 
 
+<h3><a name="component_version"></a>component_version</h3>
+
+
+
+<h3><a name="cpu_quantity"></a>cpu_quantity</h3>
+
+
+
+<h3><a name="memory_amount"></a>memory_amount</h3>
+
+
+
+<h3><a name="executable_arch"></a>executable_arch</h3>
+
+
+
+<h3><a name="pushdq"></a>pushdq</h3>
+
+
+
+<h3><a name="popdq"></a>popdq</h3>
+
+
+
+<h3><a name="service_start"></a>service_start</h3>
+
+
+
+<h3><a name="add_component"></a>add_component</h3>
+
+
+
+--- sidebar,html
+<ul>
+<li><a href="#echo_success">echo_success</a></li>
+<li><a href="#echo_failure">echo_failure</a></li>
+<li><a href="#echo_skipped">echo_skipped</a></li>
+<li><a href="#echo_passed">echo_passed</a></li>
+<li><a href="#echo_running">echo_running</a></li>
+<li><a href="#fatal_failure">fatal_failure</a></li>
+<li><a href="#test_progress">test_progress</a></li>
+<li><a href="#run_test">run_test</a></li>
+<li><a href="#monitoring_start">monitoring_start</a></li>
+<li><a href="#monitoring_stop">monitoring_stop</a></li>
+<li><a href="#refresh_console">refresh_console</a></li>
+<li><a href="#watchdog_start">watchdog_start</a></li>
+<li><a href="#watchdog_stop">watchdog_stop</a></li>
+<li><a href="#start_background">start_background</a></li>
+<li><a href="#stop_background">stop_background</a></li>
+<li><a href="#print_green_message">print_green_message</a></li>
+<li><a href="#print_red_message">print_red_message</a></li>
+<li><a href="#dev_for_route_to_server">dev_for_route_to_server</a></li>
+<li><a href="#subnet_for_dev">subnet_for_dev</a></li>
+<li><a href="#get_hdd_info">get_hdd_info</a></li>
+<li><a href="#get_nic_mac">get_nic_mac</a></li>
+<li><a href="#get_hdds_list">get_hdds_list</a></li>
+<li><a href="#get_odds_list">get_odds_list</a></li>
+<li><a href="#get_fdds_list">get_fdds_list</a></li>
+<li><a href="#get_nics_list">get_nics_list</a></li>
+<li><a href="#get_interface_ipaddr">get_interface_ipaddr</a></li>
+<li><a href="#check_writeable_odd">check_writeable_odd</a></li>
+<li><a href="#check_readable_odd">check_readable_odd</a></li>
+<li><a href="#hard_reboot">hard_reboot</a></li>
+<li><a href="#hard_shutdown">hard_shutdown</a></li>
+<li><a href="#test_succeed_if_no">test_succeed_if_no</a></li>
+<li><a href="#need_kernel_module">need_kernel_module</a></li>
+<li><a href="#component_version">component_version</a></li>
+<li><a href="#cpu_quantity">cpu_quantity</a></li>
+<li><a href="#memory_amount">memory_amount</a></li>
+<li><a href="#executable_arch">executable_arch</a></li>
+<li><a href="#pushdq">pushdq</a></li>
+<li><a href="#popdq">popdq</a></li>
+<li><a href="#service_start">service_start</a></li>
+<li><a href="#add_component">add_component</a></li>
+</ul>

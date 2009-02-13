@@ -6,39 +6,51 @@ h2. API reference: ssh
 
 Set up communication functions to use ssh protocol
 
-h3. init_communication
+<h3><a name="init_communication"></a>init_communication</h3>
 
 
 
-h3. publish
+<h3><a name="publish"></a>publish</h3>
 
 Publish some file into log directory on server
 
-h3. retrieve_all
+<h3><a name="retrieve_all"></a>retrieve_all</h3>
 
 Retrieve all Inquisitor info previously published file as local copy in /
 
-h3. retrieve
+<h3><a name="retrieve"></a>retrieve</h3>
 
 Retrieve previously published file as local copy in /
 
-h3. test_set_status
+<h3><a name="test_set_status"></a>test_set_status</h3>
 
 
 
-h3. test_running
+<h3><a name="test_running"></a>test_running</h3>
 
 
 
-h3. test_ok
+<h3><a name="test_ok"></a>test_ok</h3>
 
 
 
-h3. test_failed
+<h3><a name="test_failed"></a>test_failed</h3>
 
 test_failed(test_name, reason)
 
-h3. finalize
+<h3><a name="finalize"></a>finalize</h3>
 
 
 
+--- sidebar,html
+<ul>
+<li><a href="#init_communication">init_communication</a></li>
+<li><a href="#publish">publish</a></li>
+<li><a href="#retrieve_all">retrieve_all</a></li>
+<li><a href="#retrieve">retrieve</a></li>
+<li><a href="#test_set_status">test_set_status</a></li>
+<li><a href="#test_running">test_running</a></li>
+<li><a href="#test_ok">test_ok</a></li>
+<li><a href="#test_failed">test_failed</a></li>
+<li><a href="#finalize">finalize</a></li>
+</ul>

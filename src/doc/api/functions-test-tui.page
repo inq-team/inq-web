@@ -7,44 +7,62 @@ h2. API reference: functions-test-tui
 Functions to process if test was called manually.
 Implements text UI for test, based on test metainformation.
 
-h3. ui_exit_handler
+<h3><a name="ui_exit_handler"></a>ui_exit_handler</h3>
 
 Set up temporary UI exit handler: this one would be used to delete UI
 temporary files, would be disabled right after UI stage.
 
-h3. ui_cleanup
+<h3><a name="ui_cleanup"></a>ui_cleanup</h3>
 
 Real cleanup function
 
-h3. show_usage
+<h3><a name="show_usage"></a>show_usage</h3>
 
 
 
-h3. show_version
+<h3><a name="show_version"></a>show_version</h3>
 
 
 
-h3. test_promise_time
+<h3><a name="test_promise_time"></a>test_promise_time</h3>
 
 Override communication's functions with empty ones
 
-h3. test_stage_progress
+<h3><a name="test_stage_progress"></a>test_stage_progress</h3>
 
 
 
-h3. benchmark_submit_float
+<h3><a name="benchmark_submit_float"></a>benchmark_submit_float</h3>
 
 
 
-h3. benchmark_submit_string
+<h3><a name="benchmark_submit_string"></a>benchmark_submit_string</h3>
 
 
 
-h3. test_succeeded
+<h3><a name="test_succeeded"></a>test_succeeded</h3>
 
 
 
-h3. test_failed
+<h3><a name="test_succeeded_and_reboot"></a>test_succeeded_and_reboot</h3>
 
 
 
+<h3><a name="test_failed"></a>test_failed</h3>
+
+
+
+--- sidebar,html
+<ul>
+<li><a href="#ui_exit_handler">ui_exit_handler</a></li>
+<li><a href="#ui_cleanup">ui_cleanup</a></li>
+<li><a href="#show_usage">show_usage</a></li>
+<li><a href="#show_version">show_version</a></li>
+<li><a href="#test_promise_time">test_promise_time</a></li>
+<li><a href="#test_stage_progress">test_stage_progress</a></li>
+<li><a href="#benchmark_submit_float">benchmark_submit_float</a></li>
+<li><a href="#benchmark_submit_string">benchmark_submit_string</a></li>
+<li><a href="#test_succeeded">test_succeeded</a></li>
+<li><a href="#test_succeeded_and_reboot">test_succeeded_and_reboot</a></li>
+<li><a href="#test_failed">test_failed</a></li>
+</ul>

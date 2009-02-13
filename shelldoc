@@ -73,13 +73,19 @@ h2. API reference: #{@filename}
 
 __EOF__
 		@functions.each { |f|
-			puts "h3. #{f[:name]}"
+			puts "<h3><a name=\"#{f[:name]}\"></a>#{f[:name]}</h3>"
 			puts
 			puts f[:description]
 			puts
 			output_param_list(f[:input], 'Input')
 			output_param_list(f[:output], 'Output')
 		}
+		puts '--- sidebar,html'
+		puts '<ul>'
+		@functions.each { |f|
+			puts "<li><a href=\"##{f[:name]}\">#{f[:name]}</a></li>"
+		}
+		puts '</ul>'
 	end
 
 	def output_param_list(list, name)

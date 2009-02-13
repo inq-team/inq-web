@@ -6,103 +6,151 @@ h2. API reference: local
 
 
 
-h3. init_communication
+<h3><a name="init_communication"></a>init_communication</h3>
 
 Set up null communications (only local storage of files)
 
-h3. publish
+<h3><a name="publish"></a>publish</h3>
 
 Store file into publish directory for latter packaging
 
-h3. finalize
+<h3><a name="finalize"></a>finalize</h3>
 
 
 
-h3. plan_test_script
+<h3><a name="plan_test_script"></a>plan_test_script</h3>
 
 
 
-h3. test_stage_advance
+<h3><a name="get_id_by_macs"></a>get_id_by_macs</h3>
 
 
 
-h3. test_stage_progress
+<h3><a name="test_stage_advance"></a>test_stage_advance</h3>
 
 
 
-h3. test_promise_time
+<h3><a name="test_stage_progress"></a>test_stage_progress</h3>
 
 
 
-h3. submit_components
+<h3><a name="test_promise_time"></a>test_promise_time</h3>
 
 
 
-h3. submit_additional_components
+<h3><a name="submit_components"></a>submit_components</h3>
 
 
 
-h3. testing_finished
+<h3><a name="submit_additional_components"></a>submit_additional_components</h3>
+
+
+
+<h3><a name="add_software_component"></a>add_software_component</h3>
+
+
+
+<h3><a name="testing_finished"></a>testing_finished</h3>
 
 Mark current testing as finished
 
-h3. set_ip
+<h3><a name="set_ip"></a>set_ip</h3>
 
 
 
-h3. watchdog
+<h3><a name="watchdog"></a>watchdog</h3>
 
 
 
-h3. publish_my_ip
+<h3><a name="publish_my_ip"></a>publish_my_ip</h3>
 
 
 
-h3. benchmark_submit_float
+<h3><a name="benchmark_submit_float"></a>benchmark_submit_float</h3>
 
 
 
-h3. benchmark_submit_string
+<h3><a name="benchmark_submit_string"></a>benchmark_submit_string</h3>
 
 
 
-h3. monitoring_submit
+<h3><a name="monitoring_submit"></a>monitoring_submit</h3>
 
 
 
-h3. monitoring_submit_multiple
+<h3><a name="monitoring_submit_multiple"></a>monitoring_submit_multiple</h3>
 
 
 
-h3. require_attention
+<h3><a name="require_attention"></a>require_attention</h3>
 
 
 
-h3. dismiss_attention
+<h3><a name="dismiss_attention"></a>dismiss_attention</h3>
 
 
 
-h3. get_needed_firmwares_list
+<h3><a name="get_needed_firmwares_list"></a>get_needed_firmwares_list</h3>
 
 
 
-h3. get_needed_firmwares_list
+<h3><a name="get_needed_firmwares_list"></a>get_needed_firmwares_list</h3>
 
 
 
-h3. boot_from_image
+<h3><a name="boot_from_image"></a>boot_from_image</h3>
 
 
 
-h3. boot_from_image
+<h3><a name="boot_from_image"></a>boot_from_image</h3>
 
 
 
-h3. check_audit
+<h3><a name="check_audit"></a>check_audit</h3>
 
 
 
-h3. check_audit
+<h3><a name="check_audit"></a>check_audit</h3>
 
 
 
+<h3><a name="compare_fast"></a>compare_fast</h3>
+
+
+
+<h3><a name="compare_fast"></a>compare_fast</h3>
+
+
+
+--- sidebar,html
+<ul>
+<li><a href="#init_communication">init_communication</a></li>
+<li><a href="#publish">publish</a></li>
+<li><a href="#finalize">finalize</a></li>
+<li><a href="#plan_test_script">plan_test_script</a></li>
+<li><a href="#get_id_by_macs">get_id_by_macs</a></li>
+<li><a href="#test_stage_advance">test_stage_advance</a></li>
+<li><a href="#test_stage_progress">test_stage_progress</a></li>
+<li><a href="#test_promise_time">test_promise_time</a></li>
+<li><a href="#submit_components">submit_components</a></li>
+<li><a href="#submit_additional_components">submit_additional_components</a></li>
+<li><a href="#add_software_component">add_software_component</a></li>
+<li><a href="#testing_finished">testing_finished</a></li>
+<li><a href="#set_ip">set_ip</a></li>
+<li><a href="#watchdog">watchdog</a></li>
+<li><a href="#publish_my_ip">publish_my_ip</a></li>
+<li><a href="#benchmark_submit_float">benchmark_submit_float</a></li>
+<li><a href="#benchmark_submit_string">benchmark_submit_string</a></li>
+<li><a href="#monitoring_submit">monitoring_submit</a></li>
+<li><a href="#monitoring_submit_multiple">monitoring_submit_multiple</a></li>
+<li><a href="#require_attention">require_attention</a></li>
+<li><a href="#dismiss_attention">dismiss_attention</a></li>
+<li><a href="#get_needed_firmwares_list">get_needed_firmwares_list</a></li>
+<li><a href="#get_needed_firmwares_list">get_needed_firmwares_list</a></li>
+<li><a href="#boot_from_image">boot_from_image</a></li>
+<li><a href="#boot_from_image">boot_from_image</a></li>
+<li><a href="#check_audit">check_audit</a></li>
+<li><a href="#check_audit">check_audit</a></li>
+<li><a href="#compare_fast">compare_fast</a></li>
+<li><a href="#compare_fast">compare_fast</a></li>
+</ul>

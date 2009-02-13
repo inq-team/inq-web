@@ -6,31 +6,41 @@ h2. API reference: outformat
 
 Output formatting functions.
 
-h3. MOVE_TO_COL
+<h3><a name="MOVE_TO_COL"></a>MOVE_TO_COL</h3>
 
 Terminal sequence to move to that position.
 
-h3. SETCOLOR_SUCCESS
+<h3><a name="SETCOLOR_SUCCESS"></a>SETCOLOR_SUCCESS</h3>
 
 Set 'success' color (currently: green)
 
-h3. SETCOLOR_FAILURE
+<h3><a name="SETCOLOR_FAILURE"></a>SETCOLOR_FAILURE</h3>
 
 Set 'failure' color (currently: red)
 
-h3. SETCOLOR_WARNING
+<h3><a name="SETCOLOR_WARNING"></a>SETCOLOR_WARNING</h3>
 
 Set 'warning' color (currently: yellow)
 
-h3. SETCOLOR_INFO
+<h3><a name="SETCOLOR_INFO"></a>SETCOLOR_INFO</h3>
 
 Set 'info' color (currently: cyan)
 
-h3. SETCOLOR_BANNER
+<h3><a name="SETCOLOR_BANNER"></a>SETCOLOR_BANNER</h3>
 
 Set 'banner' color (currently: blue on yellow)
 
-h3. SETCOLOR_NORMAL
+<h3><a name="SETCOLOR_NORMAL"></a>SETCOLOR_NORMAL</h3>
 
 Terminal sequence to reset to the default color.
 
+--- sidebar,html
+<ul>
+<li><a href="#MOVE_TO_COL">MOVE_TO_COL</a></li>
+<li><a href="#SETCOLOR_SUCCESS">SETCOLOR_SUCCESS</a></li>
+<li><a href="#SETCOLOR_FAILURE">SETCOLOR_FAILURE</a></li>
+<li><a href="#SETCOLOR_WARNING">SETCOLOR_WARNING</a></li>
+<li><a href="#SETCOLOR_INFO">SETCOLOR_INFO</a></li>
+<li><a href="#SETCOLOR_BANNER">SETCOLOR_BANNER</a></li>
+<li><a href="#SETCOLOR_NORMAL">SETCOLOR_NORMAL</a></li>
+</ul>
