@@ -207,6 +207,9 @@ form {
 	width: 651px;
 	line-height: 20px;
 }
+#content p {
+	margin: 0.5em 0em;
+}
 #content a {
 	color: #2B5AA2;
 	text-decoration: underline;
@@ -221,6 +224,9 @@ form {
 	padding: 0px 0px 2px 0px;
 	margin: 0px 0px 18px 0px;
 	font-variant: small-caps;
+}
+#content h3, #content h4 {
+	margin: 1em 0em 0.5em 0em;
 }
 #content ol li {
 	padding: 0px 0px 15px 0px;
@@ -237,11 +243,6 @@ form {
 	border-width: 0px 0px 1px 0px;
 	border-color: #CCCCCC;
 	padding: 0px 0px 2px 0px;
-}
-#content .h2 {
-	font-variant: small-caps;
-	font-size: 20px;
-	float: left;
 }
 #content pre {
 	border: 1px dashed #303030;
@@ -279,7 +280,7 @@ form {
 	border-width: 1px 0px 0px 0px;
 	border-color: #E4E4E4;
 	padding: 23px 20px 0px 42px;
-	margin: 0px;
+	margin: 0px 0px 20px 0px;
 	line-height: 20px;
 }
 #sidebar h3 {
@@ -297,7 +298,7 @@ form {
 	margin: 0;
 	padding: 0;
 }
-#sidebar p {
+#sidebar p, #sidebar ul {
 	margin: 0px;
 	padding: 0px;
 }
@@ -306,7 +307,7 @@ form {
 	text-decoration: underline;
 }
 #sidebar .item {
-	padding: 0px 0px 20px 0px;
+	margin: 0px 0px 20px 0px;
 }
 
 #download_button {
