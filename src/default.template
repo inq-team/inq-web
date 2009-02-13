@@ -36,24 +36,14 @@
 			</div>
 <% if node.node_info[:pagedata].blocks.has_key?('sidebar') %>
 			<div id="sidebar">
-  {block: sidebar}
+{block: sidebar}
 			</div>
 <% end %>
-			<div id="banner_01">
-				<a href="{relocatable: /download.html}"><img alt="Download Inquisitor now!" src="{relocatable: /images/banner_01.png}" width="194" height="104" /></a>
+			<div id="download_button">
+				<a href="{relocatable: /download.html}"><img alt="Download Inquisitor now!" src="{relocatable: /images/download_button.png}" width="194" height="104" /></a>
 			</div>
 		</div>
 		<div style="clear: both"></div>
-	</div>
-<script type="text/javascript">
-var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
-document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
-</script>
-<script type="text/javascript">
-var pageTracker = _gat._getTracker("UA-2651806-1");
-pageTracker._initData();
-pageTracker._trackPageview();
-</script>
 	</div>
 </div>
 
@@ -76,6 +66,16 @@ pageTracker._trackPageview();
 </div>
 
 <div id="footer-deco2"></div>
+
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+var pageTracker = _gat._getTracker("UA-2651806-1");
+pageTracker._initData();
+pageTracker._trackPageview();
+</script>
 
 </body>
 </html>
