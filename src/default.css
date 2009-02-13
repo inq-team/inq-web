@@ -213,6 +213,7 @@ form {
 	font-weight: bold;
 }
 #content h2 {
+	clear: right;
 	border-style: solid;
 	border-width: 0px 0px 1px 0px;
 	border-color: #CCCCCC;
@@ -237,12 +238,6 @@ form {
 	border-color: #CCCCCC;
 	padding: 0px 0px 2px 0px;
 }
-#content .read-more {
-	float: right;
-}
-#content .read-more a {
-	color: #346CB1;
-}
 #content .h2 {
 	font-variant: small-caps;
 	font-size: 20px;
@@ -254,10 +249,29 @@ form {
 	padding: 0.5em;
 }
 #content h6 {
+	clear: both;
 	float: left;
-	font: 100% monospace;
-	border-right: 1px #CCCCCC;
-	width: 12em;	
+	font-size: 20px;
+	font-weight: bold;
+	border-right: 1px solid #CCCCCC;
+	width: 6.2em;
+	padding: 0px;
+	margin: 0px 0.8em 0px 0px;
+}
+#content .readmore {
+	float: right;
+	margin-bottom: 4em;
+	padding: 0.3em 1.2em;
+	background: #5E5E5E;
+	color: #FFFFFF;
+	-moz-border-radius: 3px;
+}
+#content .readmore a {
+	color: #FFFFFF;
+	text-decoration: none;
+}
+#content .readmore a:hover {
+	text-decoration: underline;
 }
 
 #sidebar {
@@ -320,10 +334,6 @@ form {
 	height:15px;
 }
 
-.readmore {
-	text-align: right;
-	margin: -10px 10px 4em 0;
-}
 
 .supportform td {
 	vertical-align: top;
