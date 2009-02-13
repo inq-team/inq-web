@@ -274,6 +274,15 @@ form {
 #content .readmore a:hover {
 	text-decoration: underline;
 }
+#content table.toc {
+	border-top: 2px solid rgb(82, 123, 189);
+	border-bottom: 2px solid rgb(82, 123, 189);
+	border-collapse: collapse;
+}
+#content table.toc tr td, #content table.toc tr th {
+	border: 1px solid black;
+	padding: 0em 0.3em;
+}
 
 #sidebar {
 	border-style: solid;
@@ -338,4 +347,9 @@ form {
 
 .supportform td {
 	vertical-align: top;
+}
+
+/* Einarc reference manual, converted from asciidoc -> DocBook -> HTML */
+#content h2.title {
+	margin-top: 2em;
 }

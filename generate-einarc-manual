@@ -1,0 +1,24 @@
+#!/bin/sh
+
+mkdir -p src/doc/einarc/xhtml/images
+cat >src/doc/einarc/xhtml/manual.page <<__EOF__
+---
+title: Reference manual
+inMenu: false
+directoryName: Einarc
+--- content,html
+__EOF__
+
+cp ../trunk/client/lib/einarc/doc/xhtml/images/*.png src/doc/einarc/xhtml/images
+cat ../trunk/client/lib/einarc/doc/xhtml/manual.html |
+	sed -e '
+/<?xml version="1.0" encoding="UTF-8"?>/ d;
+/<!DOCTYPE html/ d;
+s,<html xmlns="http://www.w3.org/1999/xhtml">,,;
+s,<head>.*</head>,,;
+s,<body>,,;
+s,</body>,,;
+s,</html>,,;
+s,<hr />,,;
+s,<h2 class="title"><a id=".*"></a>Einarc: Reference manual</h2>,<h2>Einarc: Reference manual</h2>,;
+' >>src/doc/einarc/xhtml/manual.page
