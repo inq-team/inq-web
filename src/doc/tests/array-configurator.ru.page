@@ -1,7 +1,6 @@
 ---
 title: "Array configurator"
 inMenu: true
-template: /default.ru.template
 ---
 h2. Array configurator (array-configurator)
 

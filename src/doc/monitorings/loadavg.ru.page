@@ -1,7 +1,6 @@
 ---
 title: "OS load average"
 inMenu: true
-template: /default.ru.template
 ---
 h2. OS load average (loadavg)
 

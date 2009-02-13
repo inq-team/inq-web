@@ -1,7 +1,6 @@
 ---
 title: "USB presence"
 inMenu: true
-template: /default.ru.template
 ---
 h2. USB presence (usb-device)
 

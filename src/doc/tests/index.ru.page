@@ -3,7 +3,6 @@ title: Каталог тестов
 directoryName: Тесты
 inMenu: true
 orderInfo: 30
-template: /default.ru.template
 ---
 h2. Тесты
 
@@ -13,7 +12,7 @@ h2. Тесты
 автоматически с помощью <a href="{relocatable:/doc/scheduler.page}">планировщика</a>, но, кроме
 того, их можно <a href="{relocatable:/doc/manual-invocation.page}">запускать вручную</a>,
 как обычный исполнямый файл. Все тесты написаны в одном и том же формате
-(который описывается в  секции <a href="{relocatable:/doc/test-format.page}">формат тестов</a>).
+(который описывается в секции <a href="{relocatable:/doc/test-format.page}">формат тестов</a>).
 
 Текущая версия Inquisitor включает в себя следующие тесты:
 

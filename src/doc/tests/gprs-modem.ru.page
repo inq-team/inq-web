@@ -1,7 +1,6 @@
 ---
 title: "USB GPRS modem"
 inMenu: true
-template: /default.ru.template
 ---
 h2. USB GPRS modem (gprs-modem)
 

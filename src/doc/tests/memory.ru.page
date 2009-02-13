@@ -1,7 +1,6 @@
 ---
 title: "Memory test: Memtester"
 inMenu: true
-template: /default.ru.template
 ---
 h2. Memory test: Memtester (memory)
 

@@ -1,7 +1,6 @@
 ---
 title: "lshw to xml converter"
 inMenu: true
-template: /default.ru.template
 ---
 h2. lshw to xml converter (00lshw-to-xml)
 

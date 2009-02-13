@@ -1,7 +1,6 @@
 ---
 title: "Network interface"
 inMenu: true
-template: /default.ru.template
 ---
 h2. Network interface (net)
 

@@ -3,7 +3,6 @@ title: Каталог мониторингов
 directoryName: Мониторинги
 inMenu: true
 orderInfo: 30
-template: /default.ru.template
 ---
 h2. Мониторинги
 

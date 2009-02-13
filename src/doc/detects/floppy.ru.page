@@ -1,7 +1,6 @@
 ---
 title: "Floppy detect"
 inMenu: true
-template: /default.ru.template
 ---
 h2. Floppy detect (floppy)
 

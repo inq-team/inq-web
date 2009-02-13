@@ -1,7 +1,6 @@
 ---
 title: "FTDI thermometer"
 inMenu: true
-template: /default.ru.template
 ---
 h2. FTDI thermometer (thermo)
 

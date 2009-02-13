@@ -1,7 +1,6 @@
 ---
 title: "UnixBench benchmark suite"
 inMenu: true
-template: /default.ru.template
 ---
 h2. UnixBench benchmark suite (unixbench)
 

@@ -1,7 +1,6 @@
 ---
 title: "Memory benchmark: STREAM"
 inMenu: true
-template: /default.ru.template
 ---
 h2. Memory benchmark: STREAM (stream)
 

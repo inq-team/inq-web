@@ -1,7 +1,6 @@
 ---
 title: "HDD benchmark: IOzone"
 inMenu: true
-template: /default.ru.template
 ---
 h2. HDD benchmark: IOzone (iozone)
 

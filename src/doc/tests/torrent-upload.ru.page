@@ -1,7 +1,6 @@
 ---
 title: "Torrent upload"
 inMenu: true
-template: /default.ru.template
 ---
 h2. Torrent upload (torrent-upload)
 

@@ -1,7 +1,6 @@
 ---
 title: "HDD detect"
 inMenu: true
-template: /default.ru.template
 ---
 h2. HDD detect (hdd)
 

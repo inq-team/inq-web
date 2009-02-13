@@ -1,7 +1,6 @@
 ---
 title: "CPU benchmark: Whetstone"
 inMenu: true
-template: /default.ru.template
 ---
 h2. CPU benchmark: Whetstone (whetstone)
 

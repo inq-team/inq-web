@@ -1,7 +1,6 @@
 ---
 title: "HDD array stress"
 inMenu: true
-template: /default.ru.template
 ---
 h2. HDD array stress (hdd-array)
 

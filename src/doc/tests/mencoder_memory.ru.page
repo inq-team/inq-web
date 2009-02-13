@@ -1,7 +1,6 @@
 ---
 title: "Mencoder in memory"
 inMenu: true
-template: /default.ru.template
 ---
 h2. Mencoder in memory (mencoder_memory)
 

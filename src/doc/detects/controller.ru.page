@@ -1,7 +1,6 @@
 ---
 title: "Disk controller detect"
 inMenu: true
-template: /default.ru.template
 ---
 h2. Disk controller detect (controller)
 

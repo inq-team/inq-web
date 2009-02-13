@@ -1,7 +1,6 @@
 ---
 title: "USB GPRS modem signal level"
 inMenu: true
-template: /default.ru.template
 ---
 h2. USB GPRS modem signal level (gprs-modem-level)
 

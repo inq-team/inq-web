@@ -3,7 +3,6 @@ title: Каталог детектов
 directoryName: Детекты
 inMenu: true
 orderInfo: 30
-template: /default.ru.template
 ---
 h2. Детекты
 

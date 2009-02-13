@@ -1,7 +1,6 @@
 ---
 title: "Mencoder on hard drive"
 inMenu: true
-template: /default.ru.template
 ---
 h2. Mencoder on hard drive (mencoder_hdd)
 

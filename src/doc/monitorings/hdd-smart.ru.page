@@ -1,7 +1,6 @@
 ---
 title: "HDD temperature"
 inMenu: true
-template: /default.ru.template
 ---
 h2. HDD temperature (hdd-smart)
 

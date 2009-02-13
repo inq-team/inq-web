@@ -1,7 +1,6 @@
 ---
 title: "IPMI parser"
 inMenu: true
-template: /default.ru.template
 ---
 h2. IPMI parser (ipmi)
 

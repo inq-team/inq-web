@@ -1,7 +1,6 @@
 ---
 title: "BMC detect"
 inMenu: true
-template: /default.ru.template
 ---
 h2. BMC detect (bmc)
 
