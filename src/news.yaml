@@ -1,3 +1,50 @@
+2009-02-15: |
+ h2. First alpha version of Inquisitor v3.1 released
+
+ We're pleased to announce first public alpha release on brand new
+ Inquisitor v3.1 Live CD. This is experimental build made with Debian
+ package base.
+
+ Overview of new features in this Live CD build over 3.0 platform
+ release:
+
+ * Lots of improvements in Live CD: profiles at Live CD are also
+ XML-based now, so they can be easily replaced/interchanged. Profiles
+ can include each other. Live CD interface received major facelift to
+ allow more control over testing process (including, for example,
+ infinite testing).
+ * Throughout support for new client platform: Debian (including builds
+ of Enterprise and Live CD versions).
+ * New class of modules - "software detects" are introduced. These
+ modules detect and record versions and build options of software used
+ for future reference.
+ * Lots of new tests: array-configurator, bonnie++ version 0.2,
+ boot_from_image, db_comparison_fast, dd, hdd-passthrough version 0.3,
+ iozone, mencoder_hdd, mencoder_memory, partimage, stress-compress,
+ torrent-upload.
+ * New hardware detects: Infiniband, BBU.
+ * New monitorings: loadavg.
+
+ Lots of stability fixes and bug fixes were applied:
+
+ * This release uses new version of Einarc (one-that-would-be-1.4) to
+ manage hardware and software RAIDs on storage devices.
+ * Heavily improved new hdd-badblocks utility.
+ * Fixed many issues with XML indentation and compliance on client and
+ server sides.
+ * Many user interface and general outlook improvements.
+
+ API extensions:
+
+ * A hook that allows unconditional execution of code after test
+ competion (like "finally").
+ * Enhanced helper API for tests and detects in client's API.
+ * Firmware test heavily uses hardware detects.
+ * Benchmarks can publish measurement units.
+ * Ability to change default filesystem used in many tests.
+ 
+ <p class="readmore"><a href="https://sourceforge.net/project/showfiles.php?group_id=100064&package_id=263662&release_id=656879">Download now!</a></p>
+
 2008-12-14: |
  h2. Einarc v1.3 released
 
