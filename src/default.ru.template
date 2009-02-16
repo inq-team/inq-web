@@ -59,8 +59,12 @@
 			<div class="sponsors">
 				<a href="http://www.etegro.com/"><img src="{relocatable: /images/sponsor_etegro.png}" width="148" height="70" alt="Sponsored by ETegro Technologies" /></a>
 			</div>
-			<p><a href="{relocatable: support.html}">Связь с нами</a><a href="{relocatable: about/license.html}">Лицензия</a><a href="{relocatable: sitemap.html}">Карта сайта</a></p>
-			<p>&copy; 2004-{date: {format: %Y}} Команда Inquisitor &mdash; сайт поддерживается с помощью <a href="http://webgen.rubyforge.org/">Webgen</a></p>
+			<ul>
+				<li><a href="{relocatable: support.html}">Связь с нами</a></li>
+				<li><a href="{relocatable: about/license.html}">Лицензия</a></li>
+				<li><a href="{relocatable: sitemap.html}">Карта сайта</a></li>
+			</ul>
+			<p>&copy; 2004-{date: {format: %Y}} <a href="{relocatable: about/team.html}">Команда Inquisitor</a> &mdash; сайт поддерживается с помощью <a href="http://webgen.rubyforge.org/">Webgen</a></p>
 		</div>
 	</div>
 </div>
