@@ -1,0 +1,6 @@
+#!/bin/sh
+
+# One must have an account at inquisitor.ru to publish content using
+# this script.
+
+rsync -vr --delete-after output inquisitor.ru:inq/web
