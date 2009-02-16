@@ -27,7 +27,7 @@ Send message directly to the an <a href="{relocatable:about/team.page}">Inquisit
 following form. Be sure to enter your e-mail correctly if you want to
 get an answer!
 
-<form action="post-message.html" method="post"><table style="width: 100%; padding-left: 2.5em; padding-right: 1em">
+<form action="post-message.php" method="post"><table style="width: 100%; padding-left: 2.5em; padding-right: 1em">
 
 <tr>
 <td style="width: 7em">Name:</td>
