@@ -43,7 +43,7 @@ form {
 	height: 4px;
 }
 #footer-wrap {
-	height: 99px;
+	height: 129px;
 }
 /*	background: url('images/bg_06.png') center top no-repeat;*/
 #footer-deco2 {
@@ -75,7 +75,7 @@ form {
 	margin: 0 auto;
 	padding: 0;
 	width: 960px;
-	height: 100px;
+	height: 130px;
 	text-align: left;
 	vertical-align: top;
 	font-size: 12px;
@@ -128,7 +128,7 @@ form {
 	padding-left: 32px;
 	padding-right: 32px;
 	padding-top: 16px;
-	height: 84px;
+	height: 114px;
 }
 #footer2 a {
 	text-decoration: underline;
