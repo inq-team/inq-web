@@ -1,6 +1,7 @@
 #!/bin/sh
 
-# One must have an account at inquisitor.ru to publish content using
-# this script.
+# One must have accounts at all *.inquisitor.ru sites to publish content
+# using this script.
 
-rsync -vr --delete-after output inquisitor.ru:inq/web
+rsync -vr --delete-after output www1.inquisitor.ru:inq/web
+rsync -vr --delete-after output/* www2.inquisitor.ru:/var/www/vhosts/inquisitor.ru
