@@ -30,7 +30,7 @@ them directly, staying in a single, well-documented interface.
 
 h3. Who would be interested to use Einarc?
 
-First of all, system administrators who have a large variety of
+* First of all, system administrators who have a large variety of
 RAIDs/storage devices to manage and who want to manage them all in the
 single paradigm. There's no need to remember lots of cryptic commands to
 create volumes on particular model of RAID controller, it would be just
@@ -38,7 +38,7 @@ one single and simple command like <code>einarc logical add 5 100000
 0:1,0:2,0:3</code> (that means add *logical* disc, *RAID level 5*, with
 size of *100000 MB* and consisting of 3 physical drives: *0:1,0:2,0:3*).
 
-Second, Einarc is also a easy-to-use library that can be used in other
+* Second, Einarc is also a easy-to-use library that can be used in other
 software that needs unified disc management. For example, it is used in
 Inquisitor to test discs arrays, building and destroying various logical
 disc combinations under the stress.
