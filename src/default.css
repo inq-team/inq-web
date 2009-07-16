@@ -356,3 +356,8 @@ form {
 #content h2.title {
 	margin-top: 2em;
 }
+
+/* SF Logo alignment */
+#sflogo img {
+	vertical-align: -3px;
+}
