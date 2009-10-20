@@ -1,3 +1,18 @@
+2009-10-20: |
+ h2. Inquisitor v3.1-beta2 released
+
+ We're pleased to announce the second beta release of Inquisitor v3.1
+ Live CD. This is experimental build made with Debian package base.
+
+ This is a bugfix release that fixes numerous bugs, stability and
+ usability issues in previous alpha and beta releases.
+
+ We welcome all users who want to get the latest Inquisitor build to
+ download it and try. Platform v3.1 really looks and acts better than
+ dated v3.0 in many cases.
+
+ <p class="readmore"><a href="{relocatable:/download.page}">Download now!</a></p>
+
 2009-07-01: |
  h2. Einarc v1.4rc released
 
