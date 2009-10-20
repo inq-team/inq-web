@@ -46,7 +46,7 @@ get an answer!
 
 <tr>
 <td>Message:</td>
-<td><textarea name="message" rows="8" style="width: 100%"></textarea></td>
+<td><textarea name="message" rows="8" cols="60" style="width: 100%"></textarea></td>
 </tr>
 
 <tr>
