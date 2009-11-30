@@ -27,7 +27,7 @@ Send message directly to the an <a href="{relocatable:about/team.page}">Inquisit
 following form. Be sure to enter your e-mail correctly if you want to
 get an answer!
 
-<form action="post-message.php" method="post"><table style="width: 100%; padding-left: 2.5em; padding-right: 1em">
+<form action="post-message2.php" method="post"><table style="width: 100%; padding-left: 2.5em; padding-right: 1em">
 
 <tr>
 <td style="width: 7em">Name:</td>
@@ -46,12 +46,18 @@ get an answer!
 
 <tr>
 <td>Message:</td>
-<td><textarea name="message" rows="8" cols="60" style="width: 100%"></textarea></td>
+<td><textarea name="body" rows="8" cols="60" style="width: 100%"></textarea></td>
+</tr>
+
+<tr>
+<td>Captcha:</td>
+<td>
+Sorry, but we need to make sure that you're human.<br/>
+Please answer a simple question: 2 + 2 = <input name="captcha" size="2"/>
+</td>
 </tr>
 
 <tr>
 <td></td>
 <td><input type="submit" value="Send message"/></td>
 </tr>
-
-</table></form>
