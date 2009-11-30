@@ -1,0 +1,65 @@
+---
+title: Support &amp; Contacts
+inMenu: true
+orderInfo: 80
+description: Support methods for Inquisitor Linux hardware testing and monitoring platform
+keywords: Inquisitor,linux,hardware,testing,monitoring,certification,control,raid,support
+---
+<table style="width: 100%"><tr><td style="width: 50%; vertical-align: top">
+<h2>Поддержка сообщества</h2>
+
+* <a href="http://sourceforge.net/mailarchive/forum.php?forum_name=inq-discuss-en">Список рассылки (на английском)</a>
+* <a href="http://sourceforge.net/mailarchive/forum.php?forum_name=inq-discuss-ru">Список рассылки (на русском)</a>
+* <a href="http://track.inquisitor.ru/">Трекинг ошибок, пожеланий и задач</a>
+
+</td><td style="width: 50%; vertical-align: top">
+<h2>Ссылки</h2>
+
+* <a href="http://sourceforge.net/projects/inq/">Проект на SourceForge.net</a>
+* <a href="http://freshmeat.net/projects/inq/">Проект на freshmeat.net</a>
+* <a href="http://www.ohloh.net/p/inq">Проект на ohloh</a>
+
+</td></tr></table>
+
+h2. Прямая связь
+
+Через форму, приведенную ниже, можно послать сообщение <a href="{relocatable:about/team.page}">команде Inquisitor</a> напрямую.
+Убедитесь, что введенный e-mail корректен - иначе мы не сможем ответить
+на сообщение!
+
+<form action="post-message2.php" method="post"><table style="width: 100%; padding-left: 2.5em; padding-right: 1em">
+
+<tr>
+<td style="width: 7em">Имя:</td>
+<td><input name="name" style="width: 100%" /></td>
+</tr>
+
+<tr>
+<td>E-mail:</td>
+<td><input name="email" style="width: 100%"/></td>
+</tr>
+
+<tr>
+<td>Тема:</td>
+<td><input name="subject" style="width: 100%"/></td>
+</tr>
+
+<tr>
+<td>Сообщение:</td>
+<td><textarea name="body" rows="8" cols="60" style="width: 100%"></textarea></td>
+</tr>
+
+<tr>
+<td>Captcha:</td>
+<td>
+К сожалению, нам придется проверить, что вы не бот.<br/>
+Пожалуйста, ответьте на вопрос: сколько будет 2 + 2 = <input name="captcha" size="2"/>
+</td>
+</tr>
+
+<tr>
+<td></td>
+<td><input type="submit" value="Послать сообщение"/></td>
+</tr>
+
+</table></form>
