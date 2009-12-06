@@ -6,7 +6,7 @@ Use the following commands to install webgen and rebuild the Inquisitor's websit
 $ gem install --remote --version '=3.0.4' --no-rdoc --no-ri RedCloth
 $ gem install --remote --version '=0.4.7' --no-rdoc --no-ri webgen
 $ mkdir ~/bin
-$ ln -s /home/greycat/.gem/ruby/1.8/bin/webgen ~/bin
+$ ln -s ~/.gem/ruby/1.8/bin/webgen ~/bin
 
 Then run webgen to rebuild the site:
 
