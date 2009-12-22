@@ -18,7 +18,7 @@ There are some requirements that test scripts must meet:
 source test library functions:
 
 <pre>
-. /usr/share/inquisitor/functions-test
+. _inq-config-global; . $SHARE_DIR/functions-test
 </pre>
 
 * Scripts must include the following comments with meta-information
@@ -109,11 +109,11 @@ signals to do cleanup on script exits, etc.
 
 h3. Recommendations
 
-Recommended, but not mandatory things:
+Test scripts *SHOULD* use:
 
-* Scripts should use @/bin/sh@ as an interpreter.
-* Scripts should use @-e@ (exit on non-zero exit statuses, i.e. fail on
-errors) and @-f@ (disable globbing) options of an interpreter.
+* @/bin/sh@ as an interpreter.
+* Interpreter options @-e@ (exit on non-zero exit statuses, i.e. fail on
+errors) and @-f@ (disable globbing).
 
 h3. Test execution
 
