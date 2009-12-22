@@ -1,0 +1,230 @@
+---
+title: Coding style guidelines
+inMenu: false
+---
+h2. Coding style guidelines
+
+Inquisitor is a fairly complex system written in multiple languages, so
+all developers *MUST* use the same set of coding style standards to avoid
+unnecessary arguments and fights.
+
+h3. Shell script
+
+h4. Standards compliance
+
+We aim to be portable among POSIX shells and thus we *SHOULD* use only
+features specified in <a href="http://www.opengroup.org/onlinepubs/009695399/utilities/xcu_chap02.html">POSIX shell standard</a>.
+The common way to check for standards compliance is:
+
+* Usage of @/bin/dash@ - Debian Almquist Shell
+* Usage of following lints to check for bashisms and other unportable
+constructions:
+** WRITEMORE
+
+h4. General formatting style
+
+We prefer K&R-inspired general formatting style, with standard C-like
+exception for functions, as they can't be nested in each other. This
+example gives an overview of general pattern:
+
+<pre>
+some_function()
+{
+	local i
+	local count=0
+	while [ $# -gt 0 ]; do
+		case "$1" in
+		opt1) OPT1=1 ;;
+		opt2) OPT2=1; count=$(($count + 1)) ;;
+		longopt)
+			do_something
+			and_something_more --with "$OPT2"
+			if [ "$OPT2" = 1 ]; then
+				do_something
+				and_something_more
+			else
+				OPT2=1
+			fi
+			;;
+		list)
+			for i in $LIST; do
+				echo $i
+			done
+			;;
+		esac
+		shift
+	done
+}
+</pre>
+
+h4. Indentation
+
+Indentation *MUST* be always 1 tab (@"\t"@). One can use whatever (s)he
+likes to show tabs in his/her favorite text editor: 8 spaces per tab, 4
+spaces, special symbols, proportional font, etc.
+
+Indentation is a *MUST* for bodies of the following constructions on
+distinct lines:
+
+* functions
+* @if@
+* @while@
+* @for@
+
+Choices of @case@ *MUST NOT* be indented, as shown in example above.
+
+h4. Line length
+
+One *SHOULD* use lines of 72 characters long, but use common sense if in
+doubt. It's common to use longer lines if it helps, but hurts
+readability.
+
+Continuation of long lines *MUST* be indented with one extra level of
+indentation. starting with second line. One *SHOULD* use this technique,
+for example, to group all options of a long command line, one option per
+line of code:
+
+<pre>
+./configure \
+	--with-libs=$LIBS \
+	--with-feature=$FEATURE \
+	--enable-debug \
+	--disable-optimizations
+</pre>
+
+In case when it's possible to omit @\@, one *SHOULD* do omit it:
+
+<pre>
+[ -n "$VAR1" ] ||
+	do_something --with=argument ||
+	last_possible_fallback
+cat some-file |
+	grep something |
+	sed 's/word1/word2/' |
+	sort | uniq -c | sort -rn
+</pre>
+
+h4. Comments
+
+All comments *SHOULD* be on the same level of indentation as the code it
+refers to. All comments must start with @# @ (i.e. hash symbol and a space):
+
+<pre>
+# Comment
+</pre>
+
+One *SHOULD NOT* use inline comments. All comments that refer to a
+specific line should go above that line.
+
+For comments that mark up logical sections of a program, one *SHOULD*
+use the following layout:
+
+<pre>
+
+# ======================================================================
+# Header text for the following section
+# ======================================================================
+
+</pre>
+
+That is: line full of @=@ up to maximum characters allowed, header text
+describing following section, line full of @=@. Whole header *SHOULD* be
+delimited with blank line before and after it.
+
+h4. Functions
+
+Functions *MUST* be declared without optional @function@ keyword:
+
+<pre>
+monitoring_start()
+{
+	...
+}
+</pre>
+
+Globally useful functions should be declared in
+@client/lib/main/functions@ or similar file. All these functions should
+have a descriptive comment in <a href="{relocatable: shelldoc.page}">ShellDoc</a>
+format.
+
+Function names *SHOULD* be descriptive and *SHOULD* be generated as
+@class_method@, if possible: @monitoring_start@, @test_promise_time@,
+@memory_amount@, etc.
+
+Functions *SHOULD NOT* be more than a screen (~24-30 lines) long and
+*SHOULD NOT* use more than 5-6 levels of indentation. If algorithm is
+very complex, try splitting it into more functions.
+
+h4. Variables
+
+Local functions variables *MUST* be declared as such in a function and
+*MUST* be in @lower_case@. If a variable needs to be initialized,
+initializion *SHOULD* be combined with declaration:
+
+<pre>
+local count=0
+local i
+</pre>
+
+Global variables *MUST* be in @UPPER_CASE@. No extra declarations
+required. One *SHOULD* use global variables, unless dealing with library
+functions that *SHOULD* avoid messing up global variables and thus
+*SHOULD* use local variables.
+
+When accessing the variables, one *SHOULD NOT* use extra braces around
+variable name (@${VAR}@) if it's possible to do so: @$VAR@. One *SHOULD*
+use double quotes @"@ to access the variables that could contains spaces
+(especially file/path names):
+
+<pre>
+cp "$SRC" "$DEST"
+</pre>
+
+h4. Conditions
+
+WRITEMORE
+
+h4. Arithmetic expansion
+
+One *MUST* use @$(( ... ))@ for arithmetic expansion, and one *MUST*
+reference variables inside this block as @$VAR@:
+
+<pre>
+x=$(($x + 2))
+</pre>
+
+One *MUST* delimit all arithmetic operators with spaces before and after an
+operator.
+
+One *SHOULD* be aware of limitation of shell arithmetic, in particular
+that it can operate only on integers and on some platforms these
+integers are only 32-bit signed int: so, for example, it's a bad idea to
+use shell arithmetics to make calculations with values like number of
+bytes on a modern HDD, etc.
+
+h4. Command substitution
+
+WRITEMORE
+
+h4. Pipelining
+
+WRITEMORE
+
+h4. Complex algorithms
+
+Shell scripting is fairly limited, so it's generally agreed upon that
+it's best to use shell what it's designed for: to call other programs
+and track the results. If solving a particular task with shell script
+seem to be too awkward, one *SHOULD* use other scripting languages.
+
+h4. Inquisitor-specific style notes
+
+See additional style guidelines, specific for various kinds of Inquisitor scripts:
+
+* <a href="{relocatable: test-format.page}">Test scripts</a>
+
+h4. Links to other shell script coding style guidelines
+
+* http://lug.fh-swf.de/vim/vim-bash/StyleGuideShell.en.pdf
+* http://www.shelldorado.com/goodcoding/
+* http://hub.opensolaris.org/bin/view/Community+Group+on/shellstyle

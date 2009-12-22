@@ -251,6 +251,7 @@ form {
 	border: 1px dashed #303030;
 	background: #F0F0F0;
 	padding: 0.5em;
+	font-size: 12px;
 }
 #content h6 {
 	clear: both;
