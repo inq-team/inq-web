@@ -26,6 +26,7 @@ h3. Developer documentation
 
 * <a href="{relocatable:build-system.page}">Build system</a>
 * <a href="{relocatable:coding-style.page}">Coding style guidelines</a>
+** <a href="{relocatable:coding-style-shell.page}">Coding style guidelines: Shell script</a>
 * <a href="{relocatable:api/index.page}">API reference</a>
 * <a href="{relocatable:reusable.page}">Reusable components</a>
 ** <a href="{relocatable:einarc/index.page}">Einarc</a> - a unified

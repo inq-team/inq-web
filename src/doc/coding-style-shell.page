@@ -1,16 +1,19 @@
 ---
-title: Coding style guidelines
+title: Coding style guidelines - Shell script
 inMenu: false
 ---
-h2. Coding style guidelines
+h2. Coding style guidelines: Shell script
 
 Inquisitor is a fairly complex system written in multiple languages, so
 all developers *MUST* use the same set of coding style standards to avoid
 unnecessary arguments and fights.
 
-h3. Shell script
+The key words "MUST", "MUST NOT", "REQUIRED", "SHALL", "SHALL NOT",
+"SHOULD", "SHOULD NOT", "RECOMMENDED", "MAY", and "OPTIONAL" in this
+document are to be interpreted as described in
+<a href="http://www.ietf.org/rfc/rfc2119.txt">RFC 2119</a>.
 
-h4. Standards compliance
+h3. Standards compliance
 
 We aim to be portable among POSIX shells and thus we *SHOULD* use only
 features specified in <a href="http://www.opengroup.org/onlinepubs/009695399/utilities/xcu_chap02.html">POSIX shell standard</a>.
@@ -19,9 +22,11 @@ The common way to check for standards compliance is:
 * Usage of @/bin/dash@ - Debian Almquist Shell
 * Usage of following lints to check for bashisms and other unportable
 constructions:
-** WRITEMORE
+** <a href="http://svn.debian.org/viewsvn/devscripts/trunk/scripts/checkbashisms.pl">checkbashisms.pl</a> - available in:
+*** <a href="http://sisyphus.ru/ru/srpm/checkbashisms">checkbashsisms</a> package in ALT Linux
+*** <a href="http://packages.debian.org/unstable/devscripts">devscripts</a> package in Debian/Ubuntu
 
-h4. General formatting style
+h3. General formatting style
 
 We prefer K&R-inspired general formatting style, with standard C-like
 exception for functions, as they can't be nested in each other. This
@@ -57,7 +62,7 @@ some_function()
 }
 </pre>
 
-h4. Indentation
+h3. Indentation
 
 Indentation *MUST* be always 1 tab (@"\t"@). One can use whatever (s)he
 likes to show tabs in his/her favorite text editor: 8 spaces per tab, 4
@@ -73,10 +78,10 @@ distinct lines:
 
 Choices of @case@ *MUST NOT* be indented, as shown in example above.
 
-h4. Line length
+h3. Line length
 
 One *SHOULD* use lines of 72 characters long, but use common sense if in
-doubt. It's common to use longer lines if it helps, but hurts
+doubt. It's common to use longer lines if it helps, not hurts
 readability.
 
 Continuation of long lines *MUST* be indented with one extra level of
@@ -92,7 +97,7 @@ line of code:
 	--disable-optimizations
 </pre>
 
-In case when it's possible to omit @\@, one *SHOULD* do omit it:
+In case when it's possible to omit @\@, one *SHOULD* omit it:
 
 <pre>
 [ -n "$VAR1" ] ||
@@ -104,7 +109,7 @@ cat some-file |
 	sort | uniq -c | sort -rn
 </pre>
 
-h4. Comments
+h3. Comments
 
 All comments *SHOULD* be on the same level of indentation as the code it
 refers to. All comments must start with @# @ (i.e. hash symbol and a space):
@@ -131,7 +136,7 @@ That is: line full of @=@ up to maximum characters allowed, header text
 describing following section, line full of @=@. Whole header *SHOULD* be
 delimited with blank line before and after it.
 
-h4. Functions
+h3. Functions
 
 Functions *MUST* be declared without optional @function@ keyword:
 
@@ -155,9 +160,18 @@ Functions *SHOULD NOT* be more than a screen (~24-30 lines) long and
 *SHOULD NOT* use more than 5-6 levels of indentation. If algorithm is
 very complex, try splitting it into more functions.
 
-h4. Variables
+Functions *SHOULD* return:
 
-Local functions variables *MUST* be declared as such in a function and
+* Boolean results - using exit status: 0 = true, 1 = false, other values
+for different failure codes. Such check functions *SHOULD* be named with
+prefix like @is_@ or @has_@ that clearly depicts that it's a check.
+
+* All other results (strings, numbers, etc) - using stdout. Such
+functions should be executed using command substitution syntax.
+
+h3. Variables
+
+Local variables *MUST* be declared @local@ in a function and
 *MUST* be in @lower_case@. If a variable needs to be initialized,
 initializion *SHOULD* be combined with declaration:
 
@@ -180,13 +194,32 @@ use double quotes @"@ to access the variables that could contains spaces
 cp "$SRC" "$DEST"
 </pre>
 
-h4. Conditions
+h3. Conditions
 
-WRITEMORE
+All test invocations *MUST* use @[ expression ]@ syntax, not @test@
+call:
 
-h4. Arithmetic expansion
+<pre>
+[ "$answer" = 42 ] || echo fail
+if [ "$answer" != 42 ]; then
+	echo fail
+	exit 1
+fi
+</pre>
 
-One *MUST* use @$(( ... ))@ for arithmetic expansion, and one *MUST*
+For "and" and "or" logic operators, one *SHOULD* use shell operators
+(i.e. @&&@ and @||@), and not test operations (@-a@ and @-o@):
+
+<pre>
+[ "$answer" = 42 ] && [ -z "$question" ]
+</pre>
+
+Note that most of our scripts are executed with @-e@ option (exit
+immediately after command fail)
+
+h3. Arithmetic expansion
+
+One *MUST* use @$((...))@ for arithmetic expansion, and one *MUST*
 reference variables inside this block as @$VAR@:
 
 <pre>
@@ -202,28 +235,62 @@ integers are only 32-bit signed int: so, for example, it's a bad idea to
 use shell arithmetics to make calculations with values like number of
 bytes on a modern HDD, etc.
 
-h4. Command substitution
+h3. Command substitution
 
-WRITEMORE
+One *SHOULD* use @`command`@ syntax for command substitution. Usage of
+@$(command)@ syntax is permitted for nested command substitutions, but
+generally, nested command substitutions are discouraged: one *SHOULD*
+use a function, variable or temporary file in this case.
 
-h4. Pipelining
+h3. Pipelining
 
-WRITEMORE
+One *MUST* use the following rules for pipelining commands and filenames:
 
-h4. Complex algorithms
+* @|@ pipe character is delimited with spaces both before and after it:
+
+<pre>
+grep something from-file | sed 's/1/2/' | sort -u | wc -l
+</pre>
+
+* @<@, @>@ and @2>@ redirection operators must be delimited with space
+before, but not after:
+
+<pre>
+sed 's/1/2/' <input >output 2>errors
+</pre>
+
+h3. Complex substitutions
+
+Complex string substitutions, such as:
+
+* @${parameter%word}@
+* @${parameter%%word}@
+* @${parameter#word}@
+* @${parameter##word}@
+* @${#parameter}@
+
+*SHOULD NOT* be used - one *SHOULD* use calls to external tools, such as
+@sed@, @cut@, @wc@ or scripting languages.
+
+h3. Sourcing
+
+Sourcing (inclusion of another script file to run in current shell
+interpreter) *MUST* be done using @.@ builtin, not by @source@.
+
+h3. Complex algorithms
 
 Shell scripting is fairly limited, so it's generally agreed upon that
 it's best to use shell what it's designed for: to call other programs
 and track the results. If solving a particular task with shell script
 seem to be too awkward, one *SHOULD* use other scripting languages.
 
-h4. Inquisitor-specific style notes
+h3. Inquisitor-specific style notes
 
 See additional style guidelines, specific for various kinds of Inquisitor scripts:
 
 * <a href="{relocatable: test-format.page}">Test scripts</a>
 
-h4. Links to other shell script coding style guidelines
+h3. Links to other shell script coding style guidelines
 
 * http://lug.fh-swf.de/vim/vim-bash/StyleGuideShell.en.pdf
 * http://www.shelldorado.com/goodcoding/
