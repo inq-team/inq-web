@@ -1,5 +1,5 @@
 File/CopyHandler:
-  paths: ["**/*.css", "**/*.js", "**/*.jpg", "**/*.png", "**/*.gif", "**/*.zip", "**/*.ico", "google*.html", "y_key_*.html", "robots.txt"]
+  paths: ["**/*.css", "**/*.js", "**/*.jpg", "**/*.png", "**/*.gif", "**/*.zip", "**/*.ico", "google*.html", "y_key_*.html", "yandex_*.txt", "robots.txt"]
 
 ---
 sf-project.html:
