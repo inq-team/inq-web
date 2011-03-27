@@ -68,7 +68,7 @@ Indentation *MUST* be always 1 tab (@"\t"@). One can use whatever (s)he
 likes to show tabs in his/her favorite text editor: 8 spaces per tab, 4
 spaces, special symbols, proportional font, etc.
 
-Indentation is a *MUST* for bodies of the following constructions on
+Indentation is *REQUIRED* for bodies of the following constructions on
 distinct lines:
 
 * functions
@@ -112,7 +112,8 @@ cat some-file |
 h3. Comments
 
 All comments *SHOULD* be on the same level of indentation as the code it
-refers to. All comments must start with @# @ (i.e. hash symbol and a space):
+refers to. All comments must start with @# @ (i.e. a hash symbol and a
+space):
 
 <pre>
 # Comment
@@ -181,7 +182,9 @@ local i
 </pre>
 
 Global variables *MUST* be in @UPPER_CASE@. No extra declarations
-required. One *SHOULD* use global variables, unless dealing with library
+required.
+
+It is *RECOMMENDED* to use global variables, unless dealing with library
 functions that *SHOULD* avoid messing up global variables and thus
 *SHOULD* use local variables.
 
@@ -215,7 +218,7 @@ For "and" and "or" logic operators, one *SHOULD* use shell operators
 </pre>
 
 Note that most of our scripts are executed with @-e@ option (exit
-immediately after command fail)
+immediately after command fail).
 
 h3. Arithmetic expansion
 
@@ -246,13 +249,14 @@ h3. Pipelining
 
 One *MUST* use the following rules for pipelining commands and filenames:
 
-* @|@ pipe character is delimited with spaces both before and after it:
+* @|@ pipe character *MUST* be delimited with spaces both before and
+after it:
 
 <pre>
 grep something from-file | sed 's/1/2/' | sort -u | wc -l
 </pre>
 
-* @<@, @>@ and @2>@ redirection operators must be delimited with space
+* @<@, @>@ and @2>@ redirection operators *MUST* be delimited with space
 before, but not after:
 
 <pre>
