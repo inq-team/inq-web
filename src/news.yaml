@@ -1,3 +1,25 @@
+2011-03-28: |
+ h2. Migration to Git
+
+ After several years of hot debates over what version control system we
+ should use, Inquisitor project is pleased to announce that further
+ development would be done using <a href="http://git-scm.com/">Git</a>
+ VCS.
+
+ We'll use github as a hosting platform and, subsequently, Inquisitor
+ would be available now as:
+
+ * <a href="https://github.com/GreyCat/inq">inq</a> - core Inquisitor project repo
+
+ * <a href="https://github.com/GreyCat/einarc">einarc</a> - <a href="{relocatable:/doc/einarc/}">Einarc</a> project repo
+
+ * <a href="https://github.com/GreyCat/inq-web">inq-web</a> - sources for this web site
+
+ Refer to download page for details about other options for checking
+ out project's sources.
+
+ <p class="readmore"><a href="{relocatable:/download.page}">Download</a></p>
+
 2011-01-29: |
  h2. Inquisitor participates in Debian Census
 
