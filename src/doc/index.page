@@ -15,6 +15,7 @@ h3. End-user and system administrator documentation
 * <a href="{relocatable:installation.page}">Quick-start installation</a>
 * <a href="{relocatable:server.page}">Deploying a server</a>
 ** <a href="{relocatable:server-hardware-requirements.page}">Server hardware requirements</a>
+** <a href="{relocatable:debian-enterprise-client-chroot.page}">Enterprise client chroot under Debian</a>
 * Available modules
 ** <a href="{relocatable:tests/index.page}">Tests</a>
 ** <a href="{relocatable:detects/index.page}">Detects</a>
