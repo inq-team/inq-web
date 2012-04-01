@@ -1,0 +1,79 @@
+---
+title: Enterprise client chroot under Debian
+inMenu: true
+orderInfo: 20
+---
+h2. Enterprise client chroot under Debian
+
+h3. Packages needed for building
+
+* subversion
+* make
+* debootstrap
+* dpkg
+* build-essential
+* fakeroot
+* debhelper
+* ruby
+* rsync
+* unzip
+* rpm
+
+h3. What else do you need?
+
+* root privileges
+
+h3. Building
+
+All following operations will go under inq/trunk directory.
+
+* Edit Makefile.conf:
+** Change FLAVOUR to enterprise
+** Change CLIENT_BASE to debian
+** Be sure to use another DEPLOY_PATH if there is already another enterprise version exists on a server.
+
+* Edit build/debian/Makefile:
+** Change REPO to your preferred Debian repository URL
+** Change REPO_MULTIMEDIA to preferred debian-multimedia repository URL
+** Change REPO_BRANCH to preferred Debian distribution branch (etch, lenny, unstable, etc)
+** Change REPO_SECTIONS to preferred Debian reopsitories sections (main, contrib, non-free, etc)
+
+* Create package:
+
+<pre>
+make build-package
+</pre>
+
+There is Einarc, that can ask you additional questions and maybe it can
+cause more actions.
+
+* If you need to place something to your chroot, then you can create
+compressed tarballs with everything you need. They will be unpacked to
+chroot (so preserve aboslute paths in them).
+
+* Create chroot itself:
+
+<pre>
+make build-root
+</pre>
+
+It can take much time and questions from user. To prevent questioning,
+you can add all answers in build/debian/preseed preseed file.
+
+* Then you need to rsync chroot, and create some special devices on it.
+You can see how it is working in rsync target in Makefile. You can
+modify it according to your needs, as it is very varying for different
+users. And then, at last, make rsync:
+
+<pre>
+make rsync
+</pre>
+
+* Configure diskless clients booting (PXE environment and NFS shares
+exporting).
+
+Example kernel command line maybe like this:
+
+<pre>
+append ip=dhcp root=/dev/nfs nfsroot=10.254.254.1:/inq/root-debian-x86_64 init=/usr/bin/inq-wrapper pci_noms
+</pre>
