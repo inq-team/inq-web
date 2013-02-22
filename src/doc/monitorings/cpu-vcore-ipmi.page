@@ -1,6 +1,6 @@
 ---
 title: "CPU core voltage (ipmi)"
-inMenu: true
+in_menu: true
 ---
 h2. CPU core voltage (ipmi) (cpu-vcore-ipmi)
 

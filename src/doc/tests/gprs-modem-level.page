@@ -1,6 +1,6 @@
 ---
 title: "USB GPRS modem signal level"
-inMenu: true
+in_menu: true
 ---
 h2. USB GPRS modem signal level (gprs-modem-level)
 

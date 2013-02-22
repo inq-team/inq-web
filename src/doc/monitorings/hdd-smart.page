@@ -1,6 +1,6 @@
 ---
 title: "HDD temperature"
-inMenu: true
+in_menu: true
 ---
 h2. HDD temperature (hdd-smart)
 

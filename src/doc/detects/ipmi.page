@@ -1,6 +1,6 @@
 ---
 title: "IPMI parser"
-inMenu: true
+in_menu: true
 ---
 h2. IPMI parser (ipmi)
 

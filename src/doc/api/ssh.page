@@ -1,6 +1,6 @@
 ---
 title: ssh
-inMenu: true
+in_menu: true
 ---
 h2. API reference: ssh
 
@@ -42,7 +42,7 @@ test_failed(test_name, reason)
 
 
 
---- sidebar,html
+--- name:sidebar
 <ul>
 <li><a href="#init_communication">init_communication</a></li>
 <li><a href="#publish">publish</a></li>

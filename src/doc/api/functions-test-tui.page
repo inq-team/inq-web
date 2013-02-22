@@ -1,6 +1,6 @@
 ---
 title: functions-test-tui
-inMenu: true
+in_menu: true
 ---
 h2. API reference: functions-test-tui
 
@@ -52,7 +52,7 @@ Override communication's functions with empty ones
 
 
 
---- sidebar,html
+--- name:sidebar
 <ul>
 <li><a href="#ui_exit_handler">ui_exit_handler</a></li>
 <li><a href="#ui_cleanup">ui_cleanup</a></li>

@@ -1,6 +1,6 @@
 ---
 title: "Boot from image"
-inMenu: true
+in_menu: true
 ---
 h2. Boot from image (boot_from_image)
 

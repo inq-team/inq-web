@@ -1,6 +1,6 @@
 ---
 title: "Mencoder"
-inMenu: true
+in_menu: true
 template: /default.ru.template
 ---
 h2. Mencoder (mencoder)

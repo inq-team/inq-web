@@ -1,6 +1,6 @@
 ---
 title: functions-test
-inMenu: true
+in_menu: true
 ---
 h2. API reference: functions-test
 
@@ -22,7 +22,7 @@ Obligatory functions to process before every test.
 
 
 
---- sidebar,html
+--- name:sidebar
 <ul>
 <li><a href="#execute_after_test">execute_after_test</a></li>
 <li><a href="#test_succeeded">test_succeeded</a></li>

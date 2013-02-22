@@ -80,7 +80,7 @@ __EOF__
 			output_param_list(f[:input], 'Input')
 			output_param_list(f[:output], 'Output')
 		}
-		puts '--- sidebar,html'
+		puts '--- name:sidebar'
 		puts '<ul>'
 		@functions.each { |f|
 			puts "<li><a href=\"##{f[:name]}\">#{f[:name]}</a></li>"

@@ -2,8 +2,8 @@
 title: Screenshot catalog
 description: Screenshot catalog of Inquisitor Linux hardware testing and monitoring platform
 keywords: Inquisitor,linux,hardware,testing,monitoring,certification,control,screenshot
-inMenu: false
-orderInfo: 150
+in_menu: false
+order_info: 150
 directoryName: Screenshots
 ---
 h2. Screenshots

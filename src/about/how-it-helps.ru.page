@@ -2,8 +2,8 @@
 title: Кому это полезно?
 description: Информация о полезности Inquisitor Linux hardware testing and monitoring platform
 keywords: Inquisitor,linux,hardware,testing,monitoring,certification,control,raid,usefulness
-inMenu: true
-orderInfo: 10
+in_menu: true
+order_info: 10
 ---
 h2. Как Inquisitor может помочь вам, если вы...
 

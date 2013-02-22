@@ -1,6 +1,6 @@
 ---
 title: "USB presence"
-inMenu: true
+in_menu: true
 ---
 h2. USB presence (usb-device)
 

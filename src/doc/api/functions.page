@@ -1,6 +1,6 @@
 ---
 title: functions
-inMenu: true
+in_menu: true
 ---
 h2. API reference: functions
 
@@ -88,6 +88,22 @@ CPU_LIST (if not empty). Saves PID of the program in PIDFILE.
 
 
 
+<h3><a name="timed_run_success"></a>timed_run_success</h3>
+
+Helper function for timed_run()
+
+<h3><a name="timed_run_failure"></a>timed_run_failure</h3>
+
+Helper function for timed_run()
+
+<h3><a name="timed_run"></a>timed_run</h3>
+
+
+
+<h3><a name="timed_run_real"></a>timed_run_real</h3>
+
+
+
 <h3><a name="print_green_message"></a>print_green_message</h3>
 
 
@@ -128,6 +144,10 @@ CPU_LIST (if not empty). Saves PID of the program in PIDFILE.
 
 
 
+<h3><a name="get_cpus_list"></a>get_cpus_list</h3>
+
+
+
 <h3><a name="get_interface_ipaddr"></a>get_interface_ipaddr</h3>
 
 
@@ -139,6 +159,10 @@ CPU_LIST (if not empty). Saves PID of the program in PIDFILE.
 <h3><a name="check_readable_odd"></a>check_readable_odd</h3>
 
 
+
+<h3><a name="sync_full"></a>sync_full</h3>
+
+Syncing with clearing all buffers and caches
 
 <h3><a name="hard_reboot"></a>hard_reboot</h3>
 
@@ -155,6 +179,10 @@ sequence using procfs system request.
 
 
 <h3><a name="need_kernel_module"></a>need_kernel_module</h3>
+
+
+
+<h3><a name="assure_network_stack_exists"></a>assure_network_stack_exists</h3>
 
 
 
@@ -176,13 +204,53 @@ sequence using procfs system request.
 
 <h3><a name="pushdq"></a>pushdq</h3>
 
+Pushes current working directory into a stack (implemented with
+global variable $PREV_DIRS) and changes current directory to a new
+directory, specified as an argument. Later it can be retrieved with
+'popdq' method.
 
+This behavior roughly emulates pushd/popd functionality for shells
+that don't support it (i.e. pure POSIX shells, such as dash).
+
+h4. Input
+
+* @$@@ - new directory to go to
 
 <h3><a name="popdq"></a>popdq</h3>
 
+Retrieves a previously current directory, stored in a temporary
+stack (implemented with global variable $PREV_DIRS) and changes
+current directory to that directory. Previous current directory
+should be pushed beforahand into this stack using 'pushdq' method.
 
+This behavior roughly emulates pushd/popd functionality for shells
+that don't support it (i.e. pure POSIX shells, such as dash).
 
 <h3><a name="service_start"></a>service_start</h3>
+
+
+
+<h3><a name="strip_surrounding_spaces"></a>strip_surrounding_spaces</h3>
+
+
+
+<h3><a name="strip_amp_symbols"></a>strip_amp_symbols</h3>
+
+
+
+<h3><a name="strip_empty_xmlns"></a>strip_empty_xmlns</h3>
+
+
+
+<h3><a name="strip_non_printable"></a>strip_non_printable</h3>
+
+
+
+<h3><a name="strip_tag_symbols"></a>strip_tag_symbols</h3>
+
+
+
+<h3><a name="sanitize_string"></a>sanitize_string</h3>
 
 
 
@@ -190,7 +258,13 @@ sequence using procfs system request.
 
 
 
---- sidebar,html
+<h3><a name="has_ipmi"></a>has_ipmi</h3>
+
+Returns "true" (zero exit status) if IPMI is available, or "false"
+(non-zero exit status) if it's not. Meant to be used in various detects
+and monitorings that use IPMI to bail out early.
+
+--- name:sidebar
 <ul>
 <li><a href="#echo_success">echo_success</a></li>
 <li><a href="#echo_failure">echo_failure</a></li>
@@ -207,6 +281,10 @@ sequence using procfs system request.
 <li><a href="#watchdog_stop">watchdog_stop</a></li>
 <li><a href="#start_background">start_background</a></li>
 <li><a href="#stop_background">stop_background</a></li>
+<li><a href="#timed_run_success">timed_run_success</a></li>
+<li><a href="#timed_run_failure">timed_run_failure</a></li>
+<li><a href="#timed_run">timed_run</a></li>
+<li><a href="#timed_run_real">timed_run_real</a></li>
 <li><a href="#print_green_message">print_green_message</a></li>
 <li><a href="#print_red_message">print_red_message</a></li>
 <li><a href="#dev_for_route_to_server">dev_for_route_to_server</a></li>
@@ -217,13 +295,16 @@ sequence using procfs system request.
 <li><a href="#get_odds_list">get_odds_list</a></li>
 <li><a href="#get_fdds_list">get_fdds_list</a></li>
 <li><a href="#get_nics_list">get_nics_list</a></li>
+<li><a href="#get_cpus_list">get_cpus_list</a></li>
 <li><a href="#get_interface_ipaddr">get_interface_ipaddr</a></li>
 <li><a href="#check_writeable_odd">check_writeable_odd</a></li>
 <li><a href="#check_readable_odd">check_readable_odd</a></li>
+<li><a href="#sync_full">sync_full</a></li>
 <li><a href="#hard_reboot">hard_reboot</a></li>
 <li><a href="#hard_shutdown">hard_shutdown</a></li>
 <li><a href="#test_succeed_if_no">test_succeed_if_no</a></li>
 <li><a href="#need_kernel_module">need_kernel_module</a></li>
+<li><a href="#assure_network_stack_exists">assure_network_stack_exists</a></li>
 <li><a href="#component_version">component_version</a></li>
 <li><a href="#cpu_quantity">cpu_quantity</a></li>
 <li><a href="#memory_amount">memory_amount</a></li>
@@ -231,5 +312,12 @@ sequence using procfs system request.
 <li><a href="#pushdq">pushdq</a></li>
 <li><a href="#popdq">popdq</a></li>
 <li><a href="#service_start">service_start</a></li>
+<li><a href="#strip_surrounding_spaces">strip_surrounding_spaces</a></li>
+<li><a href="#strip_amp_symbols">strip_amp_symbols</a></li>
+<li><a href="#strip_empty_xmlns">strip_empty_xmlns</a></li>
+<li><a href="#strip_non_printable">strip_non_printable</a></li>
+<li><a href="#strip_tag_symbols">strip_tag_symbols</a></li>
+<li><a href="#sanitize_string">sanitize_string</a></li>
 <li><a href="#add_component">add_component</a></li>
+<li><a href="#has_ipmi">has_ipmi</a></li>
 </ul>

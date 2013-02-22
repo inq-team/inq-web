@@ -1,6 +1,6 @@
 ---
 title: local
-inMenu: true
+in_menu: true
 ---
 h2. API reference: local
 
@@ -122,7 +122,7 @@ Mark current testing as finished
 
 
 
---- sidebar,html
+--- name:sidebar
 <ul>
 <li><a href="#init_communication">init_communication</a></li>
 <li><a href="#publish">publish</a></li>

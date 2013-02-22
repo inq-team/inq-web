@@ -2,8 +2,8 @@
 title: License
 description: Licensing information on Inquisitor Linux hardware testing and monitoring platform
 keywords: Inquisitor,linux,hardware,testing,monitoring,certification,control,license,licensing
-inMenu: true
-orderInfo: 20
+in_menu: true
+order_info: 20
 ---
 h2. License
 

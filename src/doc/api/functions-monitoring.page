@@ -1,11 +1,11 @@
 ---
 title: functions-monitoring
-inMenu: true
+in_menu: true
 ---
 h2. API reference: functions-monitoring
 
 Obligatory functions to process on start of every monitoring.
 
---- sidebar,html
+--- name:sidebar
 <ul>
 </ul>

@@ -1,6 +1,6 @@
 ---
 title: "lshw to xml converter"
-inMenu: true
+in_menu: true
 ---
 h2. lshw to xml converter (00lshw-to-xml)
 

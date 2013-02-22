@@ -1,6 +1,6 @@
 ---
 title: rest
-inMenu: true
+in_menu: true
 ---
 h2. API reference: rest
 
@@ -98,7 +98,7 @@ Mark current testing as finished
 
 
 
---- sidebar,html
+--- name:sidebar
 <ul>
 <li><a href="#get_id_by_macs">get_id_by_macs</a></li>
 <li><a href="#plan_test_script">plan_test_script</a></li>

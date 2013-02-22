@@ -1,7 +1,7 @@
 ---
 title: Rails application server under Debian
-inMenu: true
-orderInfo: 20
+in_menu: true
+order_info: 20
 ---
 h2. Rails application server under Debian
 

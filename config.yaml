@@ -1,8 +1,12 @@
-File/CopyHandler:
-  paths: ["**/*.css", "**/*.js", "**/*.jpg", "**/*.png", "**/*.gif", "**/*.zip", "**/*.ico", "google*.html", "y_key_*.html", "yandex_*.txt", "robots.txt"]
+## The default processing pipeline for page files. If you use a different markup language you need to
+## change 'markdown' to the short name of the content processor for the markup language.
+default_processing_pipeline:
+  Page: erb,tags,textile,blocks,fragments
 
----
-sf-project.html:
-  title: SF.net project
-  inMenu: true
-  url: http://www.sourceforge.net/projects/inq/
+## Setting the default language. The argument must be an ISO-639-1/2 language code.
+# website.lang: de
+
+## Adding some extensions to the copy source handler.
+patterns:
+  Copy:
+    add: ["**/*.css", "**/*.js", "**/*.jpg", "**/*.png", "**/*.gif", "**/*.zip", "**/*.ico", "google*.html", "y_key_*.html", "yandex_*.txt", "robots.txt"]

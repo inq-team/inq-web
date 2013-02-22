@@ -1,6 +1,6 @@
 ---
 title: Карта сайта
-inMenu: false
+in_menu: false
 template: /default.ru.template
 ---
 h2. Карта сайта

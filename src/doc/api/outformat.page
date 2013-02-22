@@ -1,6 +1,6 @@
 ---
 title: outformat
-inMenu: true
+in_menu: true
 ---
 h2. API reference: outformat
 
@@ -34,7 +34,7 @@ Set 'banner' color (currently: blue on yellow)
 
 Terminal sequence to reset to the default color.
 
---- sidebar,html
+--- name:sidebar
 <ul>
 <li><a href="#MOVE_TO_COL">MOVE_TO_COL</a></li>
 <li><a href="#SETCOLOR_SUCCESS">SETCOLOR_SUCCESS</a></li>

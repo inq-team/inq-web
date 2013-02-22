@@ -1,4 +1,4 @@
---- content, html
+--- name:content, pipeline:html
 <%
 ginfo = node.node_info[:ginfo]
 if ginfo[:collage_node].nil?
