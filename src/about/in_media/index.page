@@ -4,7 +4,7 @@ description: Media appearances of Inquisitor Linux hardware testing and monitori
 keywords: Inquisitor,linux,hardware,testing,monitoring,certification,control,raid,media,appearance
 directoryName: In the media
 in_menu: true
-order_info: 60
+sort_info: 60
 ---
 h2. Inquisitor in the media
 

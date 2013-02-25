@@ -2,7 +2,7 @@
 title: Каталог тестов
 directoryName: Тесты
 in_menu: true
-order_info: 30
+sort_info: 30
 ---
 h2. Тесты
 

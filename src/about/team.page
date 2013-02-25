@@ -3,7 +3,7 @@ title: Team
 description: Inquisitor team
 keywords: Inquisitor,linux,hardware,testing,monitoring,certification,control,raid,contacts
 in_menu: true
-order_info: 100
+sort_info: 100
 ---
 h2. Inquisitor team
 
