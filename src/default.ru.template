@@ -64,7 +64,7 @@
 				<li><a href="{relocatable: sitemap.html}">Карта сайта</a></li>
 				<li id="sflogo"><a href="http://sourceforge.net/projects/inq"><img src="http://sflogo.sourceforge.net/sflogo.php?group_id=100064&amp;type=10" width="80" height="15" alt="Get Inquisitor at SourceForge.net. Fast, secure and Free Open Source software downloads" /></a></li>
 			</ul>
-			<p>&copy; 2004-(date: (format: %Y)) <a href="{relocatable: about/team.html}">Команда Inquisitor</a> &mdash; сайт поддерживается с помощью <a href="http://webgen.rubyforge.org/">Webgen</a></p>
+			<p>&copy; 2004-<%= Time.now.year %> <a href="{relocatable: about/team.html}">Команда Inquisitor</a> &mdash; сайт поддерживается с помощью <a href="http://webgen.rubyforge.org/">Webgen</a></p>
 		</div>
 	</div>
 </div>
