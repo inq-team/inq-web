@@ -168,7 +168,7 @@ form {
 	margin: 0px;
 }
 #navigation li {
-	background-position: 5px 9px;
+	background-position: 5px 0.5em;
 	list-style-type: none;
 	padding: 2px 5px 2px 19px;
 	margin: 0px;
