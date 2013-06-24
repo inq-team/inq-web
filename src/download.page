@@ -7,14 +7,14 @@ sort_info: 50
 ---
 h2. Download
 
-Inquisitor v{includeFile: {filename: version.txt}} is available for download:
+Inquisitor v{include_file: {filename: src/version.txt}} is available for download:
 
 h3. SourceForge downloads
 
-{includeFile: {filename: downloads-sf.html, escapeHTML: false, processOutput: false}}
+{include_file: {filename: src/downloads-sf.html, escape_html: false, process_output: false}}
 h3. BitTorrent downloads
 
-{includeFile: {filename: downloads-bt.html, escapeHTML: false, processOutput: false}}
+{include_file: {filename: src/downloads-bt.html, escape_html: false, process_output: false}}
 h3. Everything else
 
 For older versions, please refer to <a href="https://sourceforge.net/project/showfiles.php?group_id=100064&package_id=263662">Inquisitor on SourceForge.net file archive</a>.
