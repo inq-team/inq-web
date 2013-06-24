@@ -7,14 +7,16 @@ sort_info: 50
 ---
 h2. Скачать
 
-Inquisitor v{includeFile: {filename: version.txt}} можно скачать следующими способами.
+Inquisitor v{include_file: {filename: src/version.txt}} можно скачать следующими способами.
 
 h3. HTTP с SourceForge
 
-{includeFile: {filename: downloads-sf.html, escapeHTML: false, processOutput: false}}
+{include_file: {filename: src/downloads-sf.html, escape_html: false, process_output: false}}
+
 h3. BitTorrent
 
-{includeFile: {filename: downloads-bt.html, escapeHTML: false, processOutput: false}}
+{include_file: {filename: src/downloads-bt.html, escape_html: false, process_output: false}}
+
 h3. Все остальное
 
 Более старые версии можно найти на <a href="https://sourceforge.net/project/showfiles.php?group_id=100064&package_id=263662">файловом архиве Inquisitor на SourceForge.net</a>.
