@@ -6,3 +6,5 @@ doc:
   title: Documentation
 about/in_media:
   title: In the media
+doc/api:
+  title: API
