@@ -1,0 +1,63 @@
+---
+title: Лицензия
+description: Информация о лицензировании Inquisitor - свободной системы тестирования, бенчмаркинга и сертификации компьютерного оборудования под Linux
+keywords: Inquisitor,linux,hardware,testing,monitoring,certification,control,лицензия,лицензирование
+in_menu: true
+sort_info: 20
+---
+h2. Лицензия
+
+h3. Основная платформа Inquisitor
+
+* Лицензия: GPLv3.
+
+<pre>{include_file: {filename: licenses/gpl3.txt, escape_html: false}}</pre>
+
+h3. Дополнительные компоненты
+
+Inquisitor - сложная система, состоящая из платформы и многих
+дополнительных пакетов ПО, которые могут задействоваться. Ниже
+приведен список всего используемого ПО:
+
+h4. Поставляются в дистрибутиве
+
+* Patched *tftp-hpa* TFTP-server.
+** Лицензия: revised BSD.
+
+<pre>{include_file: {filename: licenses/revised-bsd.txt, escape_html: false}}</pre>
+
+* *Highlight.js*.
+** Лицензия: modified BSD.
+
+<pre>{include_file: {filename: licenses/highlight-js.txt, escape_html: false}}</pre>
+
+* *Einarc*.
+** Лицензия: такая же, как и на основную платформу - GPLv3.
+
+* Patched *Decode-dimms.pl*.
+** Лицензия: GPLv2 или более поздняя.
+
+<pre>{include_file: {filename: licenses/decode-dimms.txt, escape_html: false}}</pre>
+
+h4. Не поставляются
+
+* *Dhrystone* CPU benchmark.
+** Лицензия: unknown without any restrictions.
+
+* *Whetstone* CPU benchmark.
+** Лицензия: собственная.
+
+<pre>{include_file: {filename: licenses/whetstone.txt, escape_html: false}}</pre>
+
+* *UnixBench* and *ByteMark* bechmark suits. 
+** Лицензия: unknown distributable.
+
+* *STREAM* memory benchmark.
+** Лицензия: собственная несвободная.
+
+<pre>{include_file: {filename: licenses/stream.txt, escape_html: false}}</pre>
+
+* Patched *Memtester*.
+** Лицензия: только GPLv2 (несовместимо с GPLv3).
+
+<pre>{include_file: {filename: licenses/memtester.txt, escape_html: false}}</pre>

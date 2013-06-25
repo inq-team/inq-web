@@ -1,0 +1,5 @@
+(c) Copyright 1998 Painter Engineering, Inc.
+Permission is granted to use, duplicate, and
+publish this text and program as long as it
+includes this entire comment block and limited
+rights reference.
