@@ -19,7 +19,7 @@
 <div id="toolbar-wrap">
 	<div id="toolbar1">
 		<div id="toolbar2">
-			<div id="location-bar">{breadcrumb_trail: }</div>
+			<div id="location-bar">/ {breadcrumb_trail: {start_level: 1}}</div>
 			<div id="language-bar">{langbar: }</div>
 			<div style="clear: both"></div>
 		</div>
