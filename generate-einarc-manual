@@ -1,16 +1,25 @@
 #!/bin/sh
 
+. ./config
+EINARC_DIR=$CLIENT_DIR/lib/einarc
+
 mkdir -p src/doc/einarc/xhtml/images
 cat >src/doc/einarc/xhtml/manual.page <<__EOF__
 ---
 title: Reference manual
-inMenu: false
-directoryName: Einarc
---- name:content
+in_menu: false
+directory_name: Einarc
+--- pipeline:blocks
 __EOF__
 
-cp ../trunk/client/lib/einarc/doc/xhtml/images/*.png src/doc/einarc/xhtml/images
-cat ../trunk/client/lib/einarc/doc/xhtml/manual.html |
+cp $EINARC_DIR/doc/xhtml/images/*.png src/doc/einarc/xhtml/images
+
+if [ ! -r $EINARC_DIR/doc/xhtml/manual.html ]; then
+	echo 'No pre-built Einarc documentation was found. Please go to Einarc directory and run "make doc" there.'
+    exit 1
+fi
+
+cat $EINARC_DIR/doc/xhtml/manual.html |
 	sed -e '
 /<?xml version="1.0" encoding="UTF-8"?>/ d;
 /<!DOCTYPE html/ d;
