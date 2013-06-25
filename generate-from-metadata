@@ -1,6 +1,9 @@
 #!/usr/bin/env ruby
+# -*- coding: utf-8 -*-
 
-require '../trunk/server/web/lib/planner/meta'
+INQ_CODE_DIR = `. ./config; echo $INQ_CODE_DIR`.strip
+
+require "#{INQ_CODE_DIR}/server/web/lib/planner/meta"
 
 # ========================
 # Generate pages for tests
@@ -10,19 +13,19 @@ File.open('src/doc/tests/index.page', 'w') { |f|
 	f.puts <<__EOF__
 ---
 title: Test directory
-inMenu: true
-orderInfo: 30
+in_menu: true
+sort_info: 30
 ---
 h2. Tests
 
 Tests are modules of Inquisitor that do the real work. They usually do
 one specific action and can return binary result: passed or failed.
 Tests are usually ran automatically by
-<a href="{relocatable:/doc/scheduler.page}">scheduler</a>, but can be
-<a href="{relocatable:/doc/manual-invocation.page}">invoked manually</a>,
+<a href="{relocatable:/doc/scheduler.html}">scheduler</a>, but can be
+<a href="{relocatable:/doc/manual-invocation.html}">invoked manually</a>,
 as a regular executable with parameters. All tests follow the
 same format (which is described in
-<a href="{relocatable:/doc/test-format.page}">test format</a> section).
+<a href="{relocatable:/doc/test-format.html}">test format</a> section).
 
 Current version of Inquisitor includes the following tests:
 
@@ -37,7 +40,7 @@ __EOF__
 		f.puts "<tr>
 		<td style=\"text-align: right\">#{n}</td>
 		<td>#{k}</td>
-		<td><a href=\"{relocatable:#{k}.page}\">#{v[:name]}</a></td>
+		<td><a href=\"{relocatable:#{k}.html}\">#{v[:name]}</a></td>
 		<td>#{v[:depends].join(', ') if v[:depends]}</td>
 		</tr>"
 	}
@@ -49,18 +52,18 @@ File.open('src/doc/tests/index.ru.page', 'w') { |f|
 ---
 title: Каталог тестов
 directoryName: Тесты
-inMenu: true
-orderInfo: 30
+in_menu: true
+sort_info: 30
 ---
 h2. Тесты
 
 Тесты - модули Inquisitor, которые занимаются непосредственно
 тестированием. Обычно они делают какую-то одну простую проверку и
 возвращают результат: тест пройден или нет. Тесты обычно запускаются
-автоматически с помощью <a href="{relocatable:/doc/scheduler.page}">планировщика</a>, но, кроме
-того, их можно <a href="{relocatable:/doc/manual-invocation.page}">запускать вручную</a>,
+автоматически с помощью <a href="{relocatable:/doc/scheduler.html}">планировщика</a>, но, кроме
+того, их можно <a href="{relocatable:/doc/manual-invocation.html}">запускать вручную</a>,
 как обычный исполнямый файл. Все тесты написаны в одном и том же формате
-(который описывается в секции <a href="{relocatable:/doc/test-format.page}">формат тестов</a>).
+(который описывается в секции <a href="{relocatable:/doc/test-format.html}">формат тестов</a>).
 
 Текущая версия Inquisitor включает в себя следующие тесты:
 
@@ -75,7 +78,7 @@ __EOF__
 		f.puts "<tr>
 		<td style=\"text-align: right\">#{n}</td>
 		<td>#{k}</td>
-		<td><a href=\"{relocatable:#{k}.page}\">#{v[:name]}</a></td>
+		<td><a href=\"{relocatable:#{k}.html}\">#{v[:name]}</a></td>
 		<td>#{v[:depends].join(', ') if v[:depends]}</td>
 		</tr>"
 	}
@@ -88,7 +91,7 @@ $TESTS.keys.sort.each { |k|
 		ft.puts <<__EOF__
 ---
 title: "#{v[:name]}"
-inMenu: true
+in_menu: true
 ---
 __EOF__
 		ft.puts "h2. #{v[:name]} (#{k})"
@@ -114,7 +117,7 @@ __EOF__
 		ft.puts <<__EOF__
 ---
 title: "#{v[:name]}"
-inMenu: true
+in_menu: true
 ---
 __EOF__
 		ft.puts "h2. #{v[:name]} (#{k})"
@@ -146,8 +149,8 @@ File.open('src/doc/detects/index.page', 'w') { |f|
 	f.puts <<__EOF__
 ---
 title: Detects directory
-inMenu: true
-orderInfo: 30
+in_menu: true
+sort_info: 30
 ---
 h2. Detects
 
@@ -169,7 +172,7 @@ __EOF__
 		f.puts "<tr>
 		<td style=\"text-align: right\">#{n}</td>
 		<td>#{k}</td>
-		<td><a href=\"{relocatable:#{k}.page}\">#{v[:name]}</a></td>
+		<td><a href=\"{relocatable:#{k}.html}\">#{v[:name]}</a></td>
 		<td>#{v[:depends].join(', ') if v[:depends]}</td>
 		</tr>"
 	}
@@ -181,8 +184,8 @@ File.open('src/doc/detects/index.ru.page', 'w') { |f|
 ---
 title: Каталог детектов
 directoryName: Детекты
-inMenu: true
-orderInfo: 30
+in_menu: true
+sort_info: 30
 ---
 h2. Детекты
 
@@ -205,7 +208,7 @@ __EOF__
 		f.puts "<tr>
 		<td style=\"text-align: right\">#{n}</td>
 		<td>#{k}</td>
-		<td><a href=\"{relocatable:#{k}.page}\">#{v[:name]}</a></td>
+		<td><a href=\"{relocatable:#{k}.html}\">#{v[:name]}</a></td>
 		<td>#{v[:depends].join(', ') if v[:depends]}</td>
 		</tr>"
 	}
@@ -218,7 +221,7 @@ $DETECTS.keys.sort.each { |k|
 		ft.puts <<__EOF__
 ---
 title: "#{v[:name]}"
-inMenu: true
+in_menu: true
 ---
 __EOF__
 		ft.puts "h2. #{v[:name]} (#{k})"
@@ -233,7 +236,7 @@ __EOF__
 		ft.puts <<__EOF__
 ---
 title: "#{v[:name]}"
-inMenu: true
+in_menu: true
 ---
 __EOF__
 		ft.puts "h2. #{v[:name]} (#{k})"
@@ -254,8 +257,8 @@ File.open('src/doc/software-detects/index.page', 'w') { |f|
 	f.puts <<__EOF__
 ---
 title: Software detects directory
-inMenu: true
-orderInfo: 30
+in_menu: true
+sort_info: 30
 ---
 h2. Software detects
 
@@ -276,7 +279,7 @@ __EOF__
 		f.puts "<tr>
 		<td style=\"text-align: right\">#{n}</td>
 		<td>#{k}</td>
-		<td><a href=\"{relocatable:#{k}.page}\">#{v[:name]}</a></td>
+		<td><a href=\"{relocatable:#{k}.html}\">#{v[:name]}</a></td>
 		</tr>"
 	}
 	f.puts "</table>\n\n"
@@ -287,8 +290,8 @@ File.open('src/doc/software-detects/index.ru.page', 'w') { |f|
 ---
 title: Каталог программных детектов
 directoryName: Программные детекты
-inMenu: true
-orderInfo: 30
+in_menu: true
+sort_info: 30
 ---
 h2. Программные детекты
 
@@ -311,7 +314,7 @@ __EOF__
 		f.puts "<tr>
 		<td style=\"text-align: right\">#{n}</td>
 		<td>#{k}</td>
-		<td><a href=\"{relocatable:#{k}.page}\">#{v[:name]}</a></td>
+		<td><a href=\"{relocatable:#{k}.html}\">#{v[:name]}</a></td>
 		</tr>"
 	}
 	f.puts "</table>\n\n"
@@ -323,7 +326,7 @@ $SOFTWARE_DETECTS.keys.sort.each { |k|
 		ft.puts <<__EOF__
 ---
 title: "#{v[:name]}"
-inMenu: true
+in_menu: true
 ---
 __EOF__
 		ft.puts "h2. #{v[:name]} (#{k})"
@@ -335,7 +338,7 @@ __EOF__
 		ft.puts <<__EOF__
 ---
 title: "#{v[:name]}"
-inMenu: true
+in_menu: true
 ---
 __EOF__
 		ft.puts "h2. #{v[:name]} (#{k})"
@@ -354,8 +357,8 @@ File.open('src/doc/monitorings/index.page', 'w') { |f|
 	f.puts <<__EOF__
 ---
 title: Monitorings directory
-inMenu: true
-orderInfo: 30
+in_menu: true
+sort_info: 30
 ---
 h2. Monitorings
 
@@ -380,7 +383,7 @@ __EOF__
 		f.puts "<tr>
 		<td style=\"text-align: right\">#{n}</td>
 		<td>#{k}</td>
-		<td><a href=\"{relocatable:#{k}.page}\">#{v[:name]}</a></td>
+		<td><a href=\"{relocatable:#{k}.html}\">#{v[:name]}</a></td>
 		<td>#{v[:measurement]}</td>
 		</tr>"
 	}
@@ -392,8 +395,8 @@ File.open('src/doc/monitorings/index.ru.page', 'w') { |f|
 ---
 title: Каталог мониторингов
 directoryName: Мониторинги
-inMenu: true
-orderInfo: 30
+in_menu: true
+sort_info: 30
 ---
 h2. Мониторинги
 
@@ -419,7 +422,7 @@ __EOF__
 		f.puts "<tr>
 		<td style=\"text-align: right\">#{n}</td>
 		<td>#{k}</td>
-		<td><a href=\"{relocatable:#{k}.page}\">#{v[:name]}</a></td>
+		<td><a href=\"{relocatable:#{k}.html}\">#{v[:name]}</a></td>
 		<td>#{v[:measurement]}</td>
 		</tr>"
 	}
@@ -432,7 +435,7 @@ $MONITORINGS.keys.sort.each { |k|
 		ft.puts <<__EOF__
 ---
 title: "#{v[:name]}"
-inMenu: true
+in_menu: true
 ---
 __EOF__
 		ft.puts "h2. #{v[:name]} (#{k})"
@@ -446,7 +449,7 @@ __EOF__
 		ft.puts <<__EOF__
 ---
 title: "#{v[:name]}"
-inMenu: true
+in_menu: true
 ---
 __EOF__
 		ft.puts "h2. #{v[:name]} (#{k})"
