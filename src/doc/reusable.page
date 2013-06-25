@@ -7,5 +7,8 @@ h2. Reusable components
 
 Inquisitor includes following reusable components:
 
-* <a href="{relocatable:einarc/index.page}">Einarc</a> - a unified
+* <a href="{relocatable:einarc/index.html}">Einarc</a> - a unified
 storage RAID command line interface and an API.
+* <a href="{relocatable:shelldoc.html}">ShellDoc</a> - a simple format
+for *nix shell script embedded-in-comments documentation and a
+reference implementation of utility that collects.

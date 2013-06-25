@@ -1,0 +1,21 @@
+---
+title: ShellDoc - shell script documentation format
+in_menu: false
+---
+h2. ShellDoc: shell script documentation format
+
+ShellDoc is a simple format for *nix shell script embedded-in-comments
+documentation and a reference implementation of utility that collects.
+
+ShellDoc is highly inspired with lookalike tools and formats for other
+languages, such as:
+
+* <a href="http://perldoc.perl.org/perlpod.html">POD (Plain Old Documentation)</a> for Perl (1994)
+* <a href="http://www.oracle.com/technetwork/java/javase/documentation/index-jsp-135444.html">JavaDoc</a> for Java (1995)
+* <a href="http://doxygen.org/">Doxygen</a> for C/C++ (1997)
+* <a href="http://www.cppdoc.com/">CppDoc</a> for C++ (1998)
+* <a href="http://rdoc.sourceforge.net/">RDoc</a> for Ruby (2001)
+
+ShellDoc utility is a document generator - lots of other
+<a href="http://en.wikipedia.org/wiki/Comparison_of_documentation_generators">document generators</a>
+are compared in Wikipedia.

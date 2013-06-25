@@ -33,4 +33,6 @@ h3. Developer documentation
 * <a href="{relocatable:reusable.html}">Reusable components</a>
 ** <a href="{relocatable:einarc/index.html}">Einarc</a> - a unified
 storage RAID command line interface and an API.
-** Shelldoc
+** <a href="{relocatable:shelldoc.html}">ShellDoc</a> - a simple format
+for *nix shell script embedded-in-comments documentation and a
+reference implementation of utility that collects.
