@@ -10,21 +10,21 @@ Inquisitor - достаточно сложная система, состоящ�
 
 h3. Документация для конечного пользователя и системного администратора
 
-* <a href="{relocatable:flavours.page}">Выбор варианта Inquisitor</a>
-* <a href="{relocatable:installation.page}">Быстрая инсталляция</a>
-* <a href="{relocatable:server.page}">Развертывание сервера</a>
-** <a href="{relocatable:server-hardware-requirements.page}">Требования к серверу</a>
+* <a href="{relocatable:flavours.html}">Выбор варианта Inquisitor</a>
+* <a href="{relocatable:installation.html}">Быстрая инсталляция</a>
+* <a href="{relocatable:server.html}">Развертывание сервера</a>
+** <a href="{relocatable:server-hardware-requirements.html}">Требования к серверу</a>
 
 h3. Документация разработчика
 
-* <a href="{relocatable:build-system.page}">Система сборки</a>
+* <a href="{relocatable:build-system.html}">Система сборки</a>
 * Доступные модули
-** <a href="{relocatable:booting.page}">Загрузка</a>
-** <a href="{relocatable:self-id.page}">Самоидентификация</a>
-** <a href="{relocatable:detect.page}">Детекты</a>
-** <a href="{relocatable:tests/index.page}">Тесты</a>
-** <a href="{relocatable:monitor.page}">Мониторинги</a>
-* <a href="{relocatable:reusable.page}">Повторно используемые компоненты</a>
-** <a href="{relocatable:einarc/index.page}">Einarc</a> -
+** <a href="{relocatable:booting.html}">Загрузка</a>
+** <a href="{relocatable:self-id.html}">Самоидентификация</a>
+** <a href="{relocatable:detect.html}">Детекты</a>
+** <a href="{relocatable:tests/index.html}">Тесты</a>
+** <a href="{relocatable:monitor.html}">Мониторинги</a>
+* <a href="{relocatable:reusable.html}">Повторно используемые компоненты</a>
+** <a href="{relocatable:einarc/index.html}">Einarc</a> -
 унифицированный интерфейс командной строки и API для доступа к
 аппаратным устройствам хранения/RAID.

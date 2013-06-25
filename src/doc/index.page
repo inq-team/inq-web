@@ -11,26 +11,26 @@ components.
 
 h3. End-user and system administrator documentation
 
-* <a href="{relocatable:flavours.page}">Choosing the right flavour</a>
-* <a href="{relocatable:installation.page}">Quick-start installation</a>
-* <a href="{relocatable:server.page}">Deploying a server</a>
-** <a href="{relocatable:server-hardware-requirements.page}">Server hardware requirements</a>
-** <a href="{relocatable:debian-enterprise-client-chroot.page}">Enterprise client chroot under Debian</a>
-** <a href="{relocatable:debian-server-rails.page}">Rails application server under Debian</a>
+* <a href="{relocatable:flavours.html}">Choosing the right flavour</a>
+* <a href="{relocatable:installation.html}">Quick-start installation</a>
+* <a href="{relocatable:server.html}">Deploying a server</a>
+** <a href="{relocatable:server-hardware-requirements.html}">Server hardware requirements</a>
+** <a href="{relocatable:debian-enterprise-client-chroot.html}">Enterprise client chroot under Debian</a>
+** <a href="{relocatable:debian-server-rails.html}">Rails application server under Debian</a>
 * Available modules
-** <a href="{relocatable:tests/index.page}">Tests</a>
-** <a href="{relocatable:detects/index.page}">Detects</a>
-** <a href="{relocatable:monitorings/index.page}">Monitorings</a>
-** <a href="{relocatable:booting.page}">Booting</a>
-** <a href="{relocatable:self-id.page}">Self ID</a>
+** <a href="{relocatable:tests/index.html}">Tests</a>
+** <a href="{relocatable:detects/index.html}">Detects</a>
+** <a href="{relocatable:monitorings/index.html}">Monitorings</a>
+** <a href="{relocatable:booting.html}">Booting</a>
+** <a href="{relocatable:self-id.html}">Self ID</a>
 
 h3. Developer documentation
 
-* <a href="{relocatable:build-system.page}">Build system</a>
-* <a href="{relocatable:coding-style.page}">Coding style guidelines</a>
-** <a href="{relocatable:coding-style-shell.page}">Coding style guidelines: Shell script</a>
-* <a href="{relocatable:api/index.page}">API reference</a>
-* <a href="{relocatable:reusable.page}">Reusable components</a>
-** <a href="{relocatable:einarc/index.page}">Einarc</a> - a unified
+* <a href="{relocatable:build-system.html}">Build system</a>
+* <a href="{relocatable:coding-style.html}">Coding style guidelines</a>
+** <a href="{relocatable:coding-style-shell.html}">Coding style guidelines: Shell script</a>
+* <a href="{relocatable:api/index.html}">API reference</a>
+* <a href="{relocatable:reusable.html}">Reusable components</a>
+** <a href="{relocatable:einarc/index.html}">Einarc</a> - a unified
 storage RAID command line interface and an API.
 ** Shelldoc
