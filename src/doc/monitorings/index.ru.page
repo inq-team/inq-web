@@ -22,49 +22,49 @@ h2. Мониторинги
 <tr>
 		<td style="text-align: right">1</td>
 		<td>cpu-temp-ipmi</td>
-		<td><a href="{relocatable:cpu-temp-ipmi.page}">CPU temperature (ipmi)</a></td>
+		<td><a href="{relocatable:cpu-temp-ipmi.html}">CPU temperature (ipmi)</a></td>
 		<td>temperature</td>
 		</tr>
 <tr>
 		<td style="text-align: right">2</td>
 		<td>cpu-temp-sensors</td>
-		<td><a href="{relocatable:cpu-temp-sensors.page}">CPU temperature (sensors)</a></td>
+		<td><a href="{relocatable:cpu-temp-sensors.html}">CPU temperature (sensors)</a></td>
 		<td>temperature</td>
 		</tr>
 <tr>
 		<td style="text-align: right">3</td>
 		<td>cpu-vcore-ipmi</td>
-		<td><a href="{relocatable:cpu-vcore-ipmi.page}">CPU core voltage (ipmi)</a></td>
+		<td><a href="{relocatable:cpu-vcore-ipmi.html}">CPU core voltage (ipmi)</a></td>
 		<td>voltage</td>
 		</tr>
 <tr>
 		<td style="text-align: right">4</td>
 		<td>cpu-vcore-sensors</td>
-		<td><a href="{relocatable:cpu-vcore-sensors.page}">CPU core voltage (sensors)</a></td>
+		<td><a href="{relocatable:cpu-vcore-sensors.html}">CPU core voltage (sensors)</a></td>
 		<td>voltage</td>
 		</tr>
 <tr>
 		<td style="text-align: right">5</td>
 		<td>hdd-smart</td>
-		<td><a href="{relocatable:hdd-smart.page}">HDD temperature</a></td>
+		<td><a href="{relocatable:hdd-smart.html}">HDD temperature</a></td>
 		<td>temperature</td>
 		</tr>
 <tr>
 		<td style="text-align: right">6</td>
 		<td>loadavg</td>
-		<td><a href="{relocatable:loadavg.page}">OS load average</a></td>
+		<td><a href="{relocatable:loadavg.html}">OS load average</a></td>
 		<td>load</td>
 		</tr>
 <tr>
 		<td style="text-align: right">7</td>
 		<td>odd-read</td>
-		<td><a href="{relocatable:odd-read.page}">ODD read speed</a></td>
+		<td><a href="{relocatable:odd-read.html}">ODD read speed</a></td>
 		<td>speed</td>
 		</tr>
 <tr>
 		<td style="text-align: right">8</td>
 		<td>thermo</td>
-		<td><a href="{relocatable:thermo.page}">FTDI thermometer</a></td>
+		<td><a href="{relocatable:thermo.html}">FTDI thermometer</a></td>
 		<td>temperature</td>
 		</tr>
 </table>
