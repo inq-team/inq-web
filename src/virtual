@@ -1,0 +1,5 @@
+\--- !omap
+- sf-project.html:
+    title: SF.net project
+    in_menu: true
+    url: http://www.sourceforge.net/projects/inq/
