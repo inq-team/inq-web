@@ -4,7 +4,7 @@ in_menu: false
 ---
 h2. ShellDoc: shell script documentation format
 
-ShellDoc is a simple format for *nix shell script embedded-in-comments
+ShellDoc is a simple format for Unix shell script embedded-in-comments
 documentation and a reference implementation of utility that collects.
 
 ShellDoc is highly inspired with lookalike tools and formats for other
@@ -19,3 +19,35 @@ languages, such as:
 ShellDoc utility is a document generator - lots of other
 <a href="http://en.wikipedia.org/wiki/Comparison_of_documentation_generators">document generators</a>
 are compared in Wikipedia.
+
+h3. Format
+
+ShellDoc can be used to add embedded human-readable documentation (in
+comments) in shell script function libraries. Basic form of function documentation is illustrated below:
+
+<pre>
+# Starts a monitoring in background, ensuring that running monitoring
+# is unique.
+#
+# Input:
+# $1 - name of monitoring script
+# $2 - time period
+# $3 - if true, then this monitoring will be time-limited
+# MON_OUTPUT - if set, logging output of monitoring would be sent to designated file
+#
+# Output:
+# number of monitorings successfully started
+start_monitoring_with_period()
+{
+    # code here
+}
+</pre>
+
+Formally, all ShellDoc documentation should be included right before
+function declartion, escaped with @# @ comments. There are 3
+sections:
+
+* General description - default, not designated by anything in particular
+* Input - description of input values (call arguments, global
+variables), started with @Input:@ declaration
+* Output - description of output value(s), started with @Output:@ declaration
