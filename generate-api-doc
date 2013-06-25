@@ -1,16 +1,25 @@
 #!/bin/sh
 
-CLIENT_DIR=../trunk/client
+. ./config
+
 API_DIR=src/doc/api
 
-SRC='main/functions main/functions-test main/functions-test-tui main/functions-monitoring main/outformat communication/local communication/rest communication/ssh'
+SRC='
+	main/functions
+	main/functions-test
+	main/functions-test-tui
+	main/functions-monitoring
+	main/outformat
+	communication/local
+	communication/rest
+	communication/ssh
+'
 
 cat >$API_DIR/index.page <<__EOF__
 ---
 title: API Index
 inMenu: false
-orderInfo: 150
-directoryName: API
+sort_info: 150
 ---
 h2. API Index
 
@@ -21,5 +30,5 @@ for I in $SRC; do
 	echo $I
 	N=`basename $I`
 	./shelldoc $CLIENT_DIR/$I >$API_DIR/$N.page
-	echo "* <a href=\"{relocatable: $N.page}\">$I</a>" >>$API_DIR/index.page
+	echo "* <a href=\"{relocatable: $N.html}\">$I</a>" >>$API_DIR/index.page
 done

@@ -1,0 +1,2 @@
+INQ_CODE_DIR=$HOME/inq/trunk
+CLIENT_DIR=$INQ_CODE_DIR/client
