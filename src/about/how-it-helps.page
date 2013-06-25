@@ -46,7 +46,7 @@ testing and monitoring.
 
 Even if you don't need to test / detect hardware directly, Inquisitor
 itself includes lots of 
-<a href="{relocatable:/doc/reusable.page}">reusable components</a> that
+<a href="{relocatable:/doc/reusable.html}">reusable components</a> that
 can be used in other projects.
 
-<p class="readmore"><a href="{relocatable:/download.page}">Start with a download</a> &raquo;</p>
+<p class="readmore"><a href="{relocatable:/download.html}">Start with a download</a> &raquo;</p>

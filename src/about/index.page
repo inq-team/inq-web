@@ -14,7 +14,7 @@ suitable for both enterprise and home use, customizable, modular and
 available in both serverless Live CD/DVD format and server-controlled
 network boot production system.
 
-It can <a href="{relocatable: /doc/detect.page}">analyse</a> and <a href="{relocatable: /doc/tests/index.page}">test</a>
+It can <a href="{relocatable: /doc/detect.html}">analyse</a> and <a href="{relocatable: /doc/tests/index.html}">test</a>
 your hardware from top to the bottom and assure that it won't fail easily under the production
 stress.
 
@@ -40,7 +40,7 @@ computers in manufacturing enterprise.
 under active development since 2004. There are <a href="../shots/installations.html">multiple production enterprise installations</a>
 relying on it.
 
-<p class="readmore"><a href="{relocatable:how-it-helps.page}">How can it help you?</a> &raquo;</p>
+<p class="readmore"><a href="{relocatable: how-it-helps.html}">How can it help you?</a> &raquo;</p>
 
 --- name:sidebar, pipeline:html
 {news: {filename: src/news.yaml, dateTag: h3, contentTag: div class='item', options: {maxEntries: 3, maxParagraphs: 2}}}
