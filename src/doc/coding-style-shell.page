@@ -150,7 +150,7 @@ monitoring_start()
 
 Globally useful functions should be declared in
 @client/lib/main/functions@ or similar file. All these functions should
-have a descriptive comment in <a href="{relocatable: shelldoc.page}">ShellDoc</a>
+have a descriptive comment in <a href="{relocatable: shelldoc.html}">ShellDoc</a>
 format.
 
 Function names *SHOULD* be descriptive and *SHOULD* be generated as
@@ -292,7 +292,7 @@ h3. Inquisitor-specific style notes
 
 See additional style guidelines, specific for various kinds of Inquisitor scripts:
 
-* <a href="{relocatable: test-format.page}">Test scripts</a>
+* <a href="{relocatable: test-format.html}">Test scripts</a>
 
 h3. Links to other shell script coding style guidelines
 

@@ -41,7 +41,7 @@ h3. Live
 
 *Live* flavour is a Linux <a href="http://en.wikipedia.org/wiki/Live_CD">Live
 CD</a> (or DVD) that you can just boot from and get
-<a href="{relocatable:/doc/tests/index.page}">all the tests</a> and
+<a href="{relocatable:/doc/tests/index.html}">all the tests</a> and
 features in a sterile environment. It doesn't require you to have an
 installed Linux system, in fact, just the opposite: it's best to have
 your HDDs blank - this way they could be tested throughly with
@@ -59,7 +59,7 @@ have to gather testings results manually, etc.
 
 *Enterprise* version alleviates these problems. If you have to test
 multiple computers on regular basis, it's possible to
-<a href="{relocatable:server.page}">set up a dedicated testing server</a>
+<a href="{relocatable:server.html}">set up a dedicated testing server</a>
 that would allow any computer to boot from network using
 <a href="http://en.wikipedia.org/wiki/Preboot_Execution_Environment">PXE protocol</a>
 and then would control it to execute the tests you'd want,

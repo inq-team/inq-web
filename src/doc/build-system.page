@@ -9,7 +9,7 @@ Inquisitor is supported with flexible build system that allows both
 straightforward quick start and long-term development comfort.
 
 For a quick start instructions, see
-<a href="{relocatable:installation.page}">installation</a>.
+<a href="{relocatable:installation.html}">installation</a>.
 
 h3. Basic build structure
 

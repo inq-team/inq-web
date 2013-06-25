@@ -79,7 +79,7 @@ historical purposes.
 - optional progress measurement fields; they may be filled by a long
 test script that wants to report its progress. 
 
-Testings are created by a resolution of <a href="{relocatable:scheduler.page}">scheduler</a>,
+Testings are created by a resolution of <a href="{relocatable:scheduler.html}">scheduler</a>,
 based on complex algorithm that determines if we should create a new
 testing or resume the last one. *test_start*, *profile_id*,
 *computer_id* are assigned on creation.

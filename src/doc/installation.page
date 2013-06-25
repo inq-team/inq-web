@@ -7,10 +7,10 @@ h2. Quick-start installation
 
 This section gives quick hints to those who wants to build Inquisitor
 from source. Note that you don't <em>have</em> to do it: you can
-<a href="{relocatable:/download.page}">download and run a pre-built Live CD</a>.
+<a href="{relocatable:/download.html}">download and run a pre-built Live CD</a>.
 
 For complete build system documentation, see
-<a href="{relocatable:build-system.page}">build system</a>.
+<a href="{relocatable:build-system.html}">build system</a>.
 
 h3. Requirements
 
@@ -30,7 +30,7 @@ h3. Configure
 
 Untar Inquisitor source code. Edit @Makefile.config@ to choose:
 
-* *FLAVOUR* - one of three <a href="{relocatable:flavours.page}">flavours</a>.
+* *FLAVOUR* - one of three <a href="{relocatable:flavours.html}">flavours</a>.
 * *TARGET* - set your target architecture to build a client for (i586,
 x86_64).
 * *CLIENT_BASE* - which distribution would should we build client for
@@ -57,8 +57,8 @@ ready to be served from NFS server.
 h3. Running
 
 * <b>Standalone</b> - run @/usr/bin/inq-live@ for a nice text
-UI or <a href="{relocatable:manual-invocation.page}">invoke individual tests manually</a>.
+UI or <a href="{relocatable:manual-invocation.html}">invoke individual tests manually</a>.
 * <b>Live</b> - burn a resulting ISO on a CD and boot from it.
 * <b>Enterprise</b> - running an enterprise version is more complex than
-other flavours; please refer to <a href="{relocatable:server.page}">server deployment guide</a>
+other flavours; please refer to <a href="{relocatable:server.html}">server deployment guide</a>
 for more information.
