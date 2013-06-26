@@ -57,4 +57,4 @@ command:
 h3. Documentation and support
 
 * <a href="https://inq.svn.sourceforge.net/svnroot/inq/trunk/client/lib/einarc/README">A quick-start README</a> is provided inside the source package
-* <a href="{relocatable: xhtml/manual.page}">Reference manual</a>
+* <a href="{relocatable: xhtml/manual.html}">Reference manual</a>

@@ -71,4 +71,4 @@ Subversion, используя следующую команду:
 h3. Документация и поддержка
 
 * <a href="https://inq.svn.sourceforge.net/svnroot/inq/trunk/client/lib/einarc/README">Файл README</a>, распространяемый внутри пакета
-* <a href="{relocatable: xhtml/manual.page}">Руководство пользователя и программиста Einarc</a>
+* <a href="{relocatable: xhtml/manual.html}">Руководство пользователя и программиста Einarc</a>
