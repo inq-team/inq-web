@@ -1,0 +1,88 @@
+---
+title: Manual invocation of tests
+in_menu: false
+---
+h2. Manual invocation of tests
+
+<a href="{relocatable: test-format.html}">Test scripts</a> in
+Inquisitor are normal executable Unix shell scripts. While usually
+they are run with <a href="{relocatable: scheduler.html}">scheduler</a>
+automatically, it's quite easy to run any test manually, supplying
+required test parameters.
+
+The most basic way to run tests is just to enter its name; however,
+test scripts are usually outside of user's @PATH@, so it's necessary
+to use full path to script, such as @/usr/share/inquisitor/test/@, for
+example:
+
+<pre>/usr/share/inquisitor/test/stress-compress</pre>
+
+Alternatively, one can add test's directory to @PATH@ and just run
+test by its name, although it's not recommended:
+
+<pre>
+export PATH=/usr/share/inquisitor/test:$PATH
+stress-compress
+</pre>
+
+This command launches <a href="{relocatable:
+tests/stress-compress.html}">stress-compress</a> test. Test will
+present a text user interface with editable test parameter fields, for
+example:
+
+<img src="{relocatable: manual-invocation-tui.png}" width="568" height="408" alt="Text user interface with test parameters" />
+
+Tests automatically support basic GNU options. One can check version
+and copyright info with @-V@ / @--version@:
+
+<pre>
+Inquisitor test: Stress compression
+Test's version: 0.1
+A part of Inquisitor platform, version {include_file: {filename: src/version.txt}}
+
+Copyright (C) 2004-<%= Time.now.year %> by Inquisitor team
+This is free software.  You may redistribute copies of it under the terms of
+the GNU General Public License <http://www.gnu.org/licenses/gpl.html>.
+There is NO WARRANTY, to the extent permitted by law.
+</pre>
+
+One can invoke test with @-h@ / @--help@ to displaying help on all the
+supported test parameters, for example:
+
+<pre>
+Inquisitor test: Stress compression
+A part of Inquisitor platform, version {include_file: {filename: src/version.txt}}
+
+This test runs many jobs on a hard drive simultaneously with background
+syncer. Each jobs performs compression/decompression together with
+taring/untaring of a big archive (Linux source code for example) in
+infinite loop. Syncer simply makes sync call each specified number of
+seconds. After specified time amount passed all jobs will be killed with
+syncer. Test will post benchmark results and successfully finish.
+
+Usage: [variables] /usr/share/inquisitor/test/stress-compress [options]
+
+Options:
+  -h, --help            display this help and exit
+  -V, --version         output version information and exit
+
+Variables:
+  TESTTIME              Total time of stress testing, sec (600)
+  STRESS_TREE           Gzipped tarball file containing stress test tree (stress.tar.gz)
+  JOBS                  Number of parallely running jobs during stress test (16)
+  SYNCTIME              Sync time period, sec (8)
+
+WARNING! This test would destroy the contents of all your hard drives!
+</pre>
+
+It's possible to pre-enter some or all of the test parameters as normal shell
+variables, for example:
+
+<pre>
+TESTTIME=900 JOBS=2 /usr/share/inquisitor/test/stress-compress
+</pre>
+
+Note that it will still display text user inteface and require
+confirmation(s) to start. If one wants to completely automatize test
+running, it's better to <a href="{relocatable: scheduler.html}">run
+tests using a scheduler</a>.
