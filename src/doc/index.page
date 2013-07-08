@@ -17,6 +17,7 @@ h3. End-user and system administrator documentation
 ** <a href="{relocatable:server-hardware-requirements.html}">Server hardware requirements</a>
 ** <a href="{relocatable:debian-enterprise-client-chroot.html}">Enterprise client chroot under Debian</a>
 ** <a href="{relocatable:debian-server-rails.html}">Rails application server under Debian</a>
+* <a href="{relocatable:manual-invocation.html}">Manual invocation of tests</a>
 * Available modules
 ** <a href="{relocatable:tests/index.html}">Tests</a>
 ** <a href="{relocatable:detects/index.html}">Detects</a>
@@ -29,6 +30,7 @@ h3. Developer documentation
 * <a href="{relocatable:build-system.html}">Build system</a>
 * <a href="{relocatable:coding-style.html}">Coding style guidelines</a>
 ** <a href="{relocatable:coding-style-shell.html}">Coding style guidelines: Shell script</a>
+* <a href="{relocatable:database.html}">Database structure</a>
 * <a href="{relocatable:api/index.html}">API reference</a>
 * <a href="{relocatable:reusable.html}">Reusable components</a>
 ** <a href="{relocatable:einarc/index.html}">Einarc</a> - a unified
