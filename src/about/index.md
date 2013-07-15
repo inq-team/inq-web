@@ -1,4 +1,5 @@
 ---
+layout: base
 title: About Inquisitor
 in_menu: false
 description: Free hardware diagnostics, stress testing, benchmarking and certification platform, based on Linux, suitable for both enterprise and home use, customizable, modular and available in both serverless Live CD/DVD format and server-controlled network boot production system.
@@ -6,17 +7,19 @@ keywords: Inquisitor,linux,hardware,testing,monitoring,certification,control,rai
 sort_info: 0
 directoryName: About
 ---
-h2. Inquisitor
+# Inquisitor
 
-<img src="{relocatable: /images/inq-box.jpg}" style="padding-right: 20px; padding-bottom: 10px; float: left" alt="" />
+![Inquisitor box](/images/inq-box.jpg){.centered}
+
+<img src="{relocatable: }" style="padding-right: 20px; padding-bottom: 10px; float: left" alt="" />
 Inquisitor is an open-source hardware testing and certification system,
 suitable for both enterprise and home use, customizable, modular and
 available in both serverless Live CD/DVD format and server-controlled
 network boot production system.
 
-It can <a href="{relocatable: /doc/detect.html}">analyse</a> and <a href="{relocatable: /doc/tests/index.html}">test</a>
-your hardware from top to the bottom and assure that it won't fail easily under the production
-stress.
+It can [analyse](/doc/detect.html) and [test](/doc/tests/index.html)
+your hardware from top to the bottom and assure that it won't fail
+easily under the production stress.
 
 Inquisitor is:
 
@@ -40,7 +43,7 @@ computers in manufacturing enterprise.
 under active development since 2004. There are <a href="../shots/installations.html">multiple production enterprise installations</a>
 relying on it.
 
-<p class="readmore"><a href="{relocatable: how-it-helps.html}">How can it help you?</a> &raquo;</p>
+<p class="readmore">[How can it help you?](how-it-helps.html) &raquo;</p>
 
 --- name:sidebar, pipeline:html
 {news: {filename: src/news.yaml, dateTag: h3, contentTag: div class='item', options: {maxEntries: 3, maxParagraphs: 2}}}
