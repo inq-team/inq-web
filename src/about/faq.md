@@ -1,13 +1,14 @@
 ---
+layout: base
 title: FAQ
 in_menu: true
 description: Frequently asked questions about Inquisitor Linux hardware testing and monitoring platform
 keywords: faq,frequently,asked,questions,Inquisitor,linux,hardware,testing,monitoring,certification
 sort_info: 90
 ---
-h2. Frequently asked questions
+# Frequently asked questions
 
-h3. Why it is called Inquisitor?
+## Why it is called Inquisitor?
 
 This name originates from 2004, when ALT Linux was building its new
 installer/configuration system. All its components' names finished with
@@ -22,7 +23,7 @@ like *cpuburn*.
 There's <a href="http://lists.altlinux.org/pipermail/devel-conf/2004-February/003069.html">a
 message in ALT Linux devel-conf mailing list</a> that started it all :)
 
-h3. Is Inquisitor a Linux distribution or what?
+## Is Inquisitor a Linux distribution or what?
 
 Well, yes and no. Inquisitor is somewhat you might call
 meta-distribution. Sure, it boasts separate Live CD that one can
@@ -54,7 +55,7 @@ distributions/repositories -- in terms of hardware support, performance,
 stability, etc. For example, one could easily compare performance of
 video card X on various distributions and choose the fastest one.
 
-h3. Is it correct the web framework requires an LDAP server to authenticate?
+## Is it correct the web framework requires an LDAP server to authenticate?
 
 Web framework uses standard Ruby on Rails modular authentication scheme
 that allows to plug in just about anything possible as an authentication
@@ -63,7 +64,7 @@ ActiveDirectory. It doesn't any any MS-specific fields and should work
 with just about any LDAP source that stores users and can authenticate
 their passwords. All roles and security data is stored in a table.
 
-h3. How to disable authorization in Web interface?
+## How to disable authorization in Web interface?
 
 It's better to switch authorization to SQL table based one, adding
 something like a password in SQL user's table schema.
@@ -74,7 +75,7 @@ authenticate(login, password)" method there. It returns a Person object
 from user's table in database (named "people"), so you can short-circuit
 the checks there to return always some user without real LDAP checks.
 
-h3. Where do the scanner A P S T and C variable stand for, considering the scanner?
+## Where do the scanner A P S T and C variable stand for, considering the scanner?
 
 Scanner daemon is really required only if you have a barcode scanner and
 want to do some high-level automation of database entry. Using a
@@ -91,7 +92,7 @@ These codes (A P S T C), etc, all match starts of particular barcodes
 his badge with something like "T123" on it -- and then the scanner daemon
 knows that it's a test operator working with scanner).
 
-h3. Do I need to configure additional IP ranges for the shelves?
+## Do I need to configure additional IP ranges for the shelves?
 
 IP ranges and shelf locations are a pretty complex thing. IP ranges and
 shelf locations currently require managed switches that can assign a
@@ -104,7 +105,7 @@ test by its IP net. Then you have to write these ranges down into
 application server's shelf configuration and finally you'll get a nice
 grid with all your shelf locations.
 
-h3. How to create a new order?
+## How to create a new order?
 
 Sadly, there's currently no way to create order manually from web UI. In
 all systems that we've implemented it was not necessary: the orders were
@@ -139,7 +140,7 @@ INSERT INTO computers (id) VALUES (1);
 
 And then you can go to /computers/show/1 and behold that one.
 
-h3. How does computer know it's ID?
+## How does computer know it's ID?
 
 Well, you've done all the job of server manually. Let me try to explain
 whole ID process. It goes like that:
@@ -180,14 +181,14 @@ insert components, component_models and other stuff like that by hand.
 It's something wrong with steps #1-5, so I'd advise to check them all
 step-by-step and find by it fails to work properly somewhere in between.
 
-h3. What is computer ID?
+## What is computer ID?
 
 Computer ID is a simple integer counter, counting from 1 up. If you've
 created computer manually by inserting a row into computers, then you've
 inserted ID value with that row. It has nothing in common with MAC for
 example.
 
-h3. What exactly is the deal with features upon creation of a profile?
+## What exactly is the deal with features upon creation of a profile?
 
 The thing is simple: each profile is a collection of tests described in
 XML document _AND_ some metadata (model, features) which aid proper
@@ -219,7 +220,7 @@ suited for particular task (i.e. "benchmarking", "servicing", "extremely
 hard test"), etc. It's guaranteed that this profile won't be selected by
 default, so you won't run any "special" profile accidentally.
 
-h3. What is model used for? Is this to bind tests to a certain model?
+## What is model used for? Is this to bind tests to a certain model?
 
 "Models" is a simple dictionary, ID <-> name. You can access a simple
 editor for models by accessing http://127.0.0.1:3000/models/ (it's very
@@ -246,7 +247,7 @@ profile for future testings. It won't change any past or current
 testings' profile on fly, they are permanently stored
 testings.profile_id.
 
-h3. What is "images directory" / IMAGE_DIR (in config file)?
+## What is "images directory" / IMAGE_DIR (in config file)?
 
 Images directory works pretty simple and straightforward. "Tarball" is a
 convenient form of storing/delivering lots of files as one, with full
