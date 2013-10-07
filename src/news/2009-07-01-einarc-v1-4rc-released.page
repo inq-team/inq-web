@@ -1,0 +1,23 @@
+---
+title: Einarc v1.4rc released
+sort_info: 2009-07-01
+created_at: 2009-07-01 10:00:00 +04:00
+modified_at: 2009-07-01 10:00:00 +04:00
+---
+Release candidate of a new version of Einarc, a subproject of
+Inquisitor that provides unified interface to all proprietary RAID
+(storage) controllers, announced today.
+
+Focus points that would be fully represented in final release:
+
+* Support for post-build reconfiguration of proprietary CLIs and
+supporting modules. This allows Einarc to be supplied via usual binary
+packaging methods (rpm/deb): proprietary CLIs can be installed after
+binary package installation using special setup tool "einarc-install".
+
+* Experimental support for hardware RAID autodetection in both
+build-time (configure) and run-time (einarc-install).
+
+* Many stability fixes and bug fixes.
+
+<p class="readmore"><a href="https://sourceforge.net/project/showfiles.php?group_id=100064&package_id=107466&release_id=693751">Download now!</a></p>

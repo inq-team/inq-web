@@ -1,0 +1,17 @@
+---
+title: Project infrastructure upgraded
+sort_info: 2009-11-30
+created_at: 2009-11-30 10:00:00 +04:00
+modified_at: 2009-11-30 10:00:00 +04:00
+---
+We've made a couple of adjustments that would benefit the project in
+long term.
+
+* <a href="{relocatable:/forum.page}">Official Inquisitor forums</a> (gated with
+mailing lists) using Nabble embedded forum service should make it
+easier for some users to communicate.
+
+* <a href="http://github.com/gvy/inq">Inquisitor git mirrored repository at github</a>
+simplifies collaboration on Inquisitor for git users.
+
+* Updated contact form with captcha.

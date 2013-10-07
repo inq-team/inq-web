@@ -1,0 +1,13 @@
+---
+title: Einarc v1.0 released
+sort_info: 2007-10-03
+created_at: 2007-10-03 10:00:00 +04:00
+modified_at: 2007-10-03 10:00:00 +04:00
+---
+Full-fledged Inquisitor is still not quite ready, but we'd like to
+release parts of it that could already prove themselves useful. Today's
+release is *<a href="{relocatable:/doc/einarc/}">Einarc</a>*. Einarc is a
+subproject of Inquisitor that provides unified interface to all
+proprietary RAID (storage) controllers.
+
+<p class="readmore"><a href="http://sourceforge.net/project/showfiles.php?group_id=100064&package_id=107466">Download now!</a></p>

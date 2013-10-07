@@ -1,0 +1,23 @@
+---
+title: Einarc v1.1 released
+sort_info: 2007-11-21
+created_at: 2007-11-21 10:00:00 +04:00
+modified_at: 2007-11-21 10:00:00 +04:00
+---
+<a href="{relocatable:/doc/einarc/}">Einarc</a> is a subproject of
+Inquisitor that provides unified interface to all proprietary RAID
+(storage) controllers. 
+
+Version 1.1 has following changes: 
+
+* Added documentation in the package 
+* Brand-new configure: now everything can be controlled from 
+command-line parameters, individual modules can be enabled/disabled at 
+compile time. 
+* Updated download/build mechanism: it asks for license agreement 
+interactively. For non-interactive builds, just touch proprietary/agreed 
+file. 
+* Bugfixes in lsi_megarc, adaptec_aaccli modules 
+* Compatibility with older Ruby (<1.8.6) 
+
+<p class="readmore"><a href="http://sourceforge.net/project/showfiles.php?group_id=100064&package_id=107466">Download now!</a></p>

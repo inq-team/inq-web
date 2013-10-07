@@ -1,0 +1,61 @@
+---
+title: Inquisitor v3.0-rc release
+sort_info: 2008-04-09
+created_at: 2008-04-09 10:00:00 +04:00
+modified_at: 2008-04-09 10:00:00 +04:00
+---
+Inquisitor team is proud to release v3.0-rc today, both in source and
+LiveCD builds.
+
+h3. New features
+
+* Added new flavour: "standalone". Inquisitor Standalone is packaged in
+normal rpm/dpkg to be installed and ran in normal running system. It is
+limited in functionality, but can be used to demonstrate Inquisitor
+principles well.
+
+* Added monitorings API, server-side support and graphing support and one
+sample client-side monitoring: hdd-smart.
+
+* New detects: BMCs, tape drives.
+
+* New tests: hardware audit step for manual comparison of order with
+computers ("what was required by documents" vs "what hardware is really
+there"), "offline" firmware flashing.
+
+* New server-side features: current order and search views, new sticker
+print system with XML sticker profiles, intellectual computer creation,
+simple profile editor, general navigation on all pages, shell IPs
+showing, new version of stages progress bars (with icons, packed
+information and comment/overdue markings), added "checking"
+computer_stage and logic for it, computers' log viewing using iframe,
+special tftp version for loading one-shot firmware disk images.
+
+h3. Fixes
+
+* Detect fixes: quad-core / multi-core processors, Mitsumi OSDs, memory
+without DMI, multiple HDDs, Hitach HDDs, new IPMI FRU memory detect
+method, SPD vs DMI memory detects (broken i2c bus quantity), USB
+FDD/ODD.
+
+* Test fixes: large rewrites in stress HDD and memory tests: greater
+testing stability and predictable results, stability (and longer flash
+disk life) fixes in usb-flash-drive, skip virtual drives in HDD tests.
+
+* Multiple server-side fixes: proper device detection while publishing
+self IP, datetime comparison in server watchdog daemon, showing current
+computers under test, starting a new testing always sets a profile for
+testing, improved planner, general usability and design fixes.
+
+h3. Miscellaneous
+
+* General cleanup (removed obsolete functions, server methods, templates,
+refactoring, etc), compatibility with earlier versions of Ruby and
+REXML, BSD terminals, ascetic shells.
+
+* General fixes: visual improvements, database indexing improvements,
+proper Debian architecture names, CSS fixes, move to Rails 2.0.2, lots
+of AJAX magic, added client hard reboot/poweroff method, added working
+test units.
+
+<p class="readmore"><a href="http://sourceforge.net/project/shownotes.php?release_id=590661&group_id=100064">ChangeLog</a> | <a href="http://sourceforge.net/project/showfiles.php?group_id=100064&package_id=263662&release_id=590661">Download now!</a></p>

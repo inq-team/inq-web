@@ -1,0 +1,38 @@
+---
+title: Einarc v1.2 released
+sort_info: 2008-06-09
+created_at: 2008-06-09 10:00:00 +04:00
+modified_at: 2008-06-09 10:00:00 +04:00
+---
+After a half of year development cycle, new version of Einarc gets
+released today.
+
+<a href="{relocatable:/doc/einarc/}">Einarc</a> is a subproject of
+Inquisitor that provides unified interface to all proprietary RAID
+(storage) controllers. 
+
+h3. What's new
+
+* Support for new RAID devices: newer Adaptec adapters using *arcconf*.
+
+* New objects "bbu" and "firmware" are introduced: now it's possible to
+get information about BBU and read/write firmware to supported adapters.
+
+* More strict "adapter info" report: it outputs serial number and tries
+to pinpoint a particular adapter using PCI IDs, if possible.
+
+* Updates for existing devices:
+** *aaccli*: now it downloads and uses later, more acceptable version,
+not linked against arts library. Note, however, that
+Adaptec_Storage_Manager-Linux_v2.10.00 is a huge ~36M download.
+** *areca*: update to v1.80A_71012.
+** *megacli*: updated to v1.01.27.
+
+* Multiple stability, metadata and rare occurance fixes for all modules.
+
+* Improved build system.
+
+* "raid-wizard-passthrough" can be used to handle smaller groups of
+HDDs (not all available devices).
+
+<p class="readmore"><a href="http://sourceforge.net/project/showfiles.php?group_id=100064&package_id=107466">Download now!</a></p>

@@ -1,0 +1,41 @@
+---
+title: Inquisitor v3.0 release
+sort_info: 2008-07-20
+created_at: 2008-07-20 10:00:00 +04:00
+modified_at: 2008-07-20 10:00:00 +04:00
+---
+Inquisitor team is pleased to announce Inquisitor v3.0 - a first major
+open-source version of the platform. After initial announcement of
+Inquisitor branch 3.x in August 2007, it's a fruit of almost a year of
+labor.
+
+Inquisitor version 3 is a major redesign of older 1.x and 2.x systems.
+New features:
+
+* Modularity: it consists of dozens of interconnected and
+interchangeable modules with well-defined API; one can easily add new
+modules to add new tests, detections, production steps, etc.
+
+* Three varieties: standalone (runs on top of already installed OS),
+live CD (can be used to analyse/test just one home computer), enterprise
+(server-controller network boot).
+
+* Flexibility: every test parameter can be adjusted, all system can be
+customized.
+
+* Server-controlled testing: server-based version includes a database
+that stores all the data on all computers that were tested by
+Inquisitor. If only some parts of hardware will change, clever scheduler
+won’t redo all the long testing, but only tests relevant to hardware
+changes.
+
+* Distributed workload: due to modular architecture, Inquisitor can be
+easily distributed across a cluster to distribute load or make a
+geographically distributed system.
+
+For those who would like to try Inquisitor, the easiest way is to download
+a 130MB ISO, available for both x86 and x86_64 from http://www.inquisitor.ru/.
+
+Comments and especially bug reports are welcome.
+
+<p class="readmore"><a href="{relocatable:/download.page}">Download now!</a></p>

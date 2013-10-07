@@ -1,0 +1,21 @@
+---
+title: Inquisitor takes part in RootConf'2009 conference
+sort_info: 2009-04-14
+created_at: 2009-04-14 10:00:00 +04:00
+modified_at: 2009-04-14 10:00:00 +04:00
+---
+Andrew Sapronov of Inquisitor team gave talk on <a href="http://rootconf.ru/papers2009/12065.html">Inquisitor usage in
+datacenter maintenance</a> at RootConf'2009.
+
+RootConf'2009 is a professional conference of system administrators
+held in Moscow, Russia in April 13-14th, 2009.
+
+Andrew's talk discusses possibilities of using Inquisitor in the
+datacenter for managing life cycle of a computer equipment and possible
+interactions / integrations of Inquisitor with other systems for
+datacenter management, such as support center ticketing system, billing
+databases, monitoring, virtualization management systems, etc.
+
+Thesis and presentations are available online.
+
+<p class="readmore"><a href="http://rootconf.ru/papers2009/12065.html">Thesis</a> | <a href="http://www.slideshare.net/Dolce727/2009-inquisitor-3?type=powerpoint">Presentation</a></p>

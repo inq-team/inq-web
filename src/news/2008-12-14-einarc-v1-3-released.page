@@ -1,0 +1,27 @@
+---
+title: Einarc v1.3 released
+sort_info: 2008-12-14
+created_at: 2008-12-14 10:00:00 +04:00
+modified_at: 2008-12-14 10:00:00 +04:00
+---
+Einarc, a subproject of Inquisitor that provides unified interface to
+all proprietary RAID (storage) controllers, gets a long-awaited
+facelift.
+
+* Support for 3ware / AMCC controllers by Andras Horvath.
+
+* Full read/write support of Linux software RAIDs.
+
+* Updated all proprietary utilities URLs, pumped up version numbers,
+fixed wrapper regular expressions to support new versions of CLIs.
+
+* Added new calculated fields in adapter_info: PCI product/subproduct
+and vendor/subvendor IDs. These allow precise identification of PCI
+devices related to adapters shown by Einarc.
+
+* Fuller BBU support for Adaptec adapters.
+
+* Multiple stability and build fixes (Makefile now supports parallel
+execution with "make -j").
+
+<p class="readmore"><a href="http://sourceforge.net/project/showfiles.php?group_id=100064&package_id=107466">Download now!</a></p>
