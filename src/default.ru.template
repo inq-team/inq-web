@@ -33,7 +33,7 @@
 		</div>
 		<div id="left">
 			<div id="navigation">
-{menu: {max_levels: 2}}
+{menu: {options: {mi: {in_menu: true}, sort: true, siblings: [0, -1], lang: node}}}
 			</div>
 			<div id="sidebar">
 				<webgen:block name="sidebar" notfound="ignore" />
