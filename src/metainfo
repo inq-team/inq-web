@@ -8,3 +8,6 @@ about/in_media:
   title: In the media
 doc/api:
   title: API
+--- paths
+/**/*.page:
+  blocks: {defaults: {pipeline: [erb,tags,redcloth,blocks,fragments]}}
