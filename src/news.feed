@@ -1,0 +1,10 @@
+---
+title: Inquisitor news
+description: Inquisitor hardware testing platform
+site_url: http://www.inquisitor.ru/
+author: Inquisitor team
+author_url: http://www.inquisitor.ru/
+number_of_entries: 10
+versions:
+  atom:
+entries: {alcn: /news/*.html, sort: sort_info, reverse: true, limit: 10}
