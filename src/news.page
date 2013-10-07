@@ -4,5 +4,27 @@ in_menu: true
 sort_info: 8
 description: News about Inquisitor Linux hardware testing and monitoring platform
 keywords: Inquisitor,linux,hardware,testing,monitoring,certification,control,raid,news
----
-{news: {filename: src/news.yaml, dateTag: h6}}
+--- pipeline:erb,fragments
+<%
+opts = {:alcn => '/news/*.html', :sort => 'sort_info', :reverse => true, :flatten => true}
+context.website.ext.item_tracker.add(context.dest_node, :nodes, :node_finder_option_set,
+  {:opts => opts, :ref_alcn => context.node.alcn}, :content)
+
+title_to_id = lambda {|title| title.tr('. ', '-')}
+
+context.website.ext.node_finder.find(opts, context.node).each do |node|
+
+content = context.render_block(:name => 'content', :chain => [node])
+content.gsub!(/<(h[1-6])([^>]*)>/) do |match|
+  header = $1
+  h_content = $2.sub(/id=(["']).*?\1/, '')
+  "<#{header} class=\"subheader\" #{h_content}>"
+end
+%>
+
+  <h6><%= node['created_at'].strftime("%Y-%m-%d") %></h6>
+  <h2 itemprop="name" id="<%= title_to_id.call(node['title']) %>"><%= node['title'] %></h2>
+
+  <%= content %>
+
+<% end %>
