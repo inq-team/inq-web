@@ -1,0 +1,19 @@
+---
+title: Moving code to GitHub
+sort_info: 2013-10-07
+created_at: 2013-10-07 10:00:00 +04:00
+modified_at: 2013-10-07 10:00:00 +04:00
+---
+All repositories are converted from Subversion to Git and moved to GitHub.
+
+After a long discussion, finally, Inquisitor project is ready to
+present new structure for its multiple repositories. All code base,
+documentation and web site were converted from Subversion to Git and are
+available at GitHub now:
+
+* <a href="https://github.com/inq-team/inq">Main Inquisitor code repository</a>, includes client, server and build system.
+* <a href="https://github.com/inq-team/inq-web/">Inquisitor web site repository</a>, includes web site sources and official documentation.
+* <a href="https://github.com/inq-team/einarc">Einarc subproject</a>, a storage management API & CLI
+
+We invite you to check them out and feel free to use new opportunities
+provided by GitHub, such as pull requests.
