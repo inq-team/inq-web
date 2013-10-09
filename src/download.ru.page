@@ -23,7 +23,7 @@ h3. Все остальное
 
 Кроме этого, можно:
 
-* Скачать себе репозитарий Subversion командой: <p><code>svn co https://inq.svn.sourceforge.net/svnroot/inq/trunk inq</code></p>
+* Скачать себе репозитарий Git командой: <p><code>git clone --recursive https://github.com/inq-team/inq</code></p>
 
 * Скачать <a href="{relocatable:/doc/einarc/}">Einarc</a>, подпроект
 Inquisitor - унифицированный интерфейс управления аппаратными RAID.

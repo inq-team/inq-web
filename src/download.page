@@ -21,7 +21,7 @@ For older versions, please refer to <a href="https://sourceforge.net/project/sho
 
 Also, you can:
 
-* Check out the Subversion repository using command: <p><code>svn co https://inq.svn.sourceforge.net/svnroot/inq/trunk inq</code></p>
+* Check out the Git repository using command: <p><code>git clone --recursive https://github.com/inq-team/inq</code></p>
 
 * Visit <a href="{relocatable:doc/einarc/}">Einarc</a>, a unified storage
 management Inquisitor sub-project.
