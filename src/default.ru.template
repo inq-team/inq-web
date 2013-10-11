@@ -33,7 +33,7 @@
 		</div>
 		<div id="left">
 			<div id="navigation">
-{menu: {options: {mi: {in_menu: true}, sort: true, siblings: [0, -1], lang: node}}}
+{menu: {options: {mi: {in_menu: true}, sort: true, absolute_levels: [1, 2], lang: node}}}
 			</div>
 			<div id="sidebar">
 				<webgen:block name="sidebar" notfound="ignore" />
@@ -69,7 +69,9 @@
 	</div>
 </div>
 
-<div id="footer-deco2"></div>
+<div id="footer-deco2">
+	<a href="https://github.com/inq-team/inq"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://s3.amazonaws.com/github/ribbons/forkme_right_red_aa0000.png" alt="Fork me on GitHub" /></a>
+</div>
 
 <a href="https://github.com/inq-team/inq"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://s3.amazonaws.com/github/ribbons/forkme_right_red_aa0000.png" alt="Fork me on GitHub"></a>
 
