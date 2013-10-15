@@ -8,6 +8,8 @@ about/in_media:
   title: In the media
 doc/api:
   title: API
+shots/gallery.template:
+  template: ~
 --- paths
 /**/*.page:
   blocks: {defaults: {pipeline: [erb,tags,redcloth,blocks,fragments]}}

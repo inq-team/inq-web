@@ -8,6 +8,6 @@ directoryName: Screenshots
 ---
 h2. Screenshots
 
-* <a href="live.html">Live</a>
-* <a href="enterprise.html">Enterprise</a>
-* <a href="installations.html">Installations</a>
+* <a href="{relocatable: live.html}">Live</a>
+* <a href="{relocatable: enterprise.html}">Enterprise</a>
+* <a href="{relocatable: installations.html}">Installations</a>
