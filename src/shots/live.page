@@ -1,6 +1,7 @@
 ---
 title: Live
 template: gallery.template
+in_menu: true
 ---
 <ul class="gallery">
 <li><div>LiveCD booting</div><div><a href="live/boot.png" title="LiveCD booting" rel="lightbox-live"><img src="_thumb/live_boot.png" width="320" height="240" /></a><div>This is how it looks like when it boots.</div></li>
@@ -10,6 +11,6 @@ template: gallery.template
 <li><div>CPU test finished</div><div><a href="live/cpu_test_results.png" title="CPU test finished" rel="lightbox-live"><img src="_thumb/live_cpu_test_results.png" width="320" height="240" /></a><div>Successfull finishing of CPU test.</div></li>
 <li><div>HDD-Passthrough starting</div><div><a href="live/hdd_passthrough_test_menu.png" title="HDD-Passthrough starting" rel="lightbox-live"><img src="_thumb/live_hdd_passthrough_test_menu.png" width="320" height="240" /></a><div>Configuring of test variables to start it after.</div></li>
 <li><div>components.xml view</div><div><a href="live/view_test_results-components.xml.png" title="components.xml view" rel="lightbox-live"><img src="_thumb/live_view_test_results-components.xml.png" width="320" height="240" /></a><div>Viewing components.xml file after detects finished.</div></li>
-<li><div>View test reuslts</div><div><a href="live/view_test_results.png" title="View test reuslts" rel="lightbox-live"><img src="_thumb/live_view_test_results.png" width="320" height="240" /></a><div>Menu where we can see all detects, benchmarks, monitorings and tests results.</div></li>
+<li><div>View test results</div><div><a href="live/view_test_results.png" title="View test results" rel="lightbox-live"><img src="_thumb/live_view_test_results.png" width="320" height="240" /></a><div>Menu where we can see all detects, benchmarks, monitorings and tests results.</div></li>
 <li><div>Whetstone benchmark finished</div><div><a href="live/whetstone_benchmark_results.png" title="Whetstone benchmark finished" rel="lightbox-live"><img src="_thumb/live_whetstone_benchmark_results.png" width="320" height="240" /></a><div>Sucessfull finishing of whetstone benchmark.</div></li>
 </ul>

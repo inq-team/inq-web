@@ -1,6 +1,7 @@
 ---
 title: Installations
 template: gallery.template
+in_menu: true
 ---
 <ul class="gallery">
 <li><div>Testing notebooks</div><div><a href="installations/notebook-inq-1.jpg" title="Testing notebooks" rel="lightbox-installations"><img src="_thumb/installations_notebook-inq-1.jpg" width="320" height="240" /></a><div>A production installation of Inquisitor at MaxSelect, operators are testing notebooks.</div></li>

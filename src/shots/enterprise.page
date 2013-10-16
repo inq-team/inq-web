@@ -1,6 +1,7 @@
 ---
 title: Enterprise
 template: gallery.template
+in_menu: true
 ---
 <ul class="gallery">
 <li><div>Tested computer hardware</div><div><a href="enterprise/hardware-1.png" title="Tested computer hardware" rel="lightbox-enterprise"><img src="_thumb/enterprise_hardware-1.png" width="320" height="240" /></a><div>Computer components detected on a fully tested computer.</div></li>
