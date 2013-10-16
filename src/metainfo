@@ -8,6 +8,9 @@ about/in_media:
   title: In the media
 doc/api:
   title: API
+shots/:
+  title: Screenshots
+  in_menu: true
 shots/gallery.template:
   template: ~
 --- paths
