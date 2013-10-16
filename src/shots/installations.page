@@ -1,0 +1,8 @@
+---
+title: Installations
+template: gallery.template
+---
+<ul class="gallery">
+<li><div>Testing notebooks</div><div><a href="installations/notebook-inq-1.jpg" title="Testing notebooks" rel="lightbox-installations"><img src="_thumb/installations_notebook-inq-1.jpg" width="320" height="240" /></a><div>A production installation of Inquisitor at MaxSelect, operators are testing notebooks.</div></li>
+<li><div>Comm rack</div><div><a href="installations/notebook-inq-2.jpg" title="Comm rack" rel="lightbox-installations"><img src="_thumb/installations_notebook-inq-2.jpg" width="320" height="240" /></a><div>It's all it takes to properly distribute network for a 160+ testing shelves.</div></li>
+</ul>

@@ -1,0 +1,19 @@
+---
+title: Enterprise
+template: gallery.template
+---
+<ul class="gallery">
+<li><div>Tested computer hardware</div><div><a href="enterprise/hardware-1.png" title="Tested computer hardware" rel="lightbox-enterprise"><img src="_thumb/enterprise_hardware-1.png" width="320" height="240" /></a><div>Computer components detected on a fully tested computer.</div></li>
+<li><div>Nearly finished computer hardware</div><div><a href="enterprise/hardware-2.png" title="Nearly finished computer hardware" rel="lightbox-enterprise"><img src="_thumb/enterprise_hardware-2.png" width="320" height="240" /></a><div>Hardware components of another computer.</div></li>
+<li><div>Sticker section</div><div><a href="enterprise/sticker.png" title="Sticker section" rel="lightbox-enterprise"><img src="_thumb/enterprise_sticker.png" width="320" height="240" /></a><div>Creating, viewing and prining of a sticker.</div></li>
+<li><div>NICs benchmarks</div><div><a href="enterprise/marks.png" title="NICs benchmarks" rel="lightbox-enterprise"><img src="_thumb/enterprise_marks.png" width="320" height="240" /></a><div>Viewing speed benchmark results of NICs after their testing.</div></li>
+<li><div>CPU core voltage graph</div><div><a href="enterprise/cpu_core_voltage_graph.png" title="CPU core voltage graph" rel="lightbox-enterprise"><img src="_thumb/enterprise_cpu_core_voltage_graph.png" width="320" height="240" /></a><div>Viewing of CPU core voltage graph.</div></li>
+<li><div>CPU temperature graph</div><div><a href="enterprise/cpu_temperature_graph.png" title="CPU temperature graph" rel="lightbox-enterprise"><img src="_thumb/enterprise_cpu_temperature_graph.png" width="320" height="240" /></a><div>Viewing of CPU temperature graph.</div></li>
+<li><div>Multi graphs</div><div><a href="enterprise/multi_graph.png" title="Multi graphs" rel="lightbox-enterprise"><img src="_thumb/enterprise_multi_graph.png" width="320" height="240" /></a><div>Viewing of a multigraph with CPU's and HDD's temperature and CPU's core voltage.</div></li>
+<li><div>Multi graphs with failed tests</div><div><a href="enterprise/multi_graph_with_fails.png" title="Multi graphs with failed tests" rel="lightbox-enterprise"><img src="_thumb/enterprise_multi_graph_with_fails.png" width="320" height="240" /></a><div>Trying to make a decision about failing hdd-array test.</div></li>
+<li><div>Orders</div><div><a href="enterprise/orders.png" title="Orders" rel="lightbox-enterprise"><img src="_thumb/enterprise_orders.png" width="320" height="240" /></a><div>A list of all orders showing their brief info and progress on each stage.</div></li>
+<li><div>Orders search</div><div><a href="enterprise/orders_search.png" title="Orders search" rel="lightbox-enterprise"><img src="_thumb/enterprise_orders_search.png" width="320" height="240" /></a><div>Orders search form.</div></li>
+<li><div>Show multicomputer orders</div><div><a href="enterprise/orders_show_multiple.png" title="Show multicomputer orders" rel="lightbox-enterprise"><img src="_thumb/enterprise_orders_show_multiple.png" width="320" height="240" /></a><div>Viewing an order with many computers in it and its detailed information.</div></li>
+<li><div>Orders show</div><div><a href="enterprise/orders_show.png" title="Orders show" rel="lightbox-enterprise"><img src="_thumb/enterprise_orders_show.png" width="320" height="240" /></a><div>Viewing an order with single computer in it and its detailed information.</div></li>
+<li><div>Profile show</div><div><a href="enterprise/profile_show.png" title="Profile show" rel="lightbox-enterprise"><img src="_thumb/enterprise_profile_show.png" width="320" height="240" /></a><div>Viewing default testing profile that is applied for all computers if no specified.</div></li>
+</ul>

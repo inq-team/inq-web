@@ -1,14 +1,15 @@
 ---
 title: Live
-sort_order: 10
 template: gallery.template
 ---
-<a href="live/boot.png" title="LiveCD booting" rel="lightbox-live"><img src="live/boot.png" width="320" height="240" /></a>
-<a href="live/main_menu.png" title="Main menu" rel="lightbox-live"><img src="live/main_menu.png" width="320" height="240" /></a>
-<a href="live/single_test_menu.png" title="Starting a single test" rel="lightbox-live"><img src="live/single_test_menu.png" width="320" height="240" /></a>
-<a href="live/detects_called.png" title="Detects finished" rel="lightbox-live"><img src="live/detects_called.png" width="320" height="240" /></a>
-<a href="live/cpu_test_results.png" title="CPU test finished" rel="lightbox-live"><img src="live/cpu_test_results.png" width="320" height="240" /></a>
-<a href="live/hdd_passthrough_test_menu.png" title="HDD-Passthrough starting" rel="lightbox-live"><img src="live/hdd_passthrough_test_menu.png" width="320" height="240" /></a>
-<a href="live/view_test_results-components.xml.png" title="components.xml view" rel="lightbox-live"><img src="live/view_test_results-components.xml.png" width="320" height="240" /></a>
-<a href="live/view_test_results.png" title="View test reuslts" rel="lightbox-live"><img src="live/view_test_results.png" width="320" height="240" /></a>
-<a href="live/whetstone_benchmark_results.png" title="Whetstone benchmark finished" rel="lightbox-live"><img src="live/whetstone_benchmark_results.png" width="320" height="240" /></a>
+<ul class="gallery">
+<li><div>LiveCD booting</div><div><a href="live/boot.png" title="LiveCD booting" rel="lightbox-live"><img src="_thumb/live_boot.png" width="320" height="240" /></a><div>This is how it looks like when it boots.</div></li>
+<li><div>Main menu</div><div><a href="live/main_menu.png" title="Main menu" rel="lightbox-live"><img src="_thumb/live_main_menu.png" width="320" height="240" /></a><div>A main menu of Live CD - it's what you get after successful booting.</div></li>
+<li><div>Starting a single test</div><div><a href="live/single_test_menu.png" title="Starting a single test" rel="lightbox-live"><img src="_thumb/live_single_test_menu.png" width="320" height="240" /></a><div>A list of tests to choose from when starting a single test.</div></li>
+<li><div>Detects finished</div><div><a href="live/detects_called.png" title="Detects finished" rel="lightbox-live"><img src="_thumb/live_detects_called.png" width="320" height="240" /></a><div>All detects finished, later we can see their results.</div></li>
+<li><div>CPU test finished</div><div><a href="live/cpu_test_results.png" title="CPU test finished" rel="lightbox-live"><img src="_thumb/live_cpu_test_results.png" width="320" height="240" /></a><div>Successfull finishing of CPU test.</div></li>
+<li><div>HDD-Passthrough starting</div><div><a href="live/hdd_passthrough_test_menu.png" title="HDD-Passthrough starting" rel="lightbox-live"><img src="_thumb/live_hdd_passthrough_test_menu.png" width="320" height="240" /></a><div>Configuring of test variables to start it after.</div></li>
+<li><div>components.xml view</div><div><a href="live/view_test_results-components.xml.png" title="components.xml view" rel="lightbox-live"><img src="_thumb/live_view_test_results-components.xml.png" width="320" height="240" /></a><div>Viewing components.xml file after detects finished.</div></li>
+<li><div>View test reuslts</div><div><a href="live/view_test_results.png" title="View test reuslts" rel="lightbox-live"><img src="_thumb/live_view_test_results.png" width="320" height="240" /></a><div>Menu where we can see all detects, benchmarks, monitorings and tests results.</div></li>
+<li><div>Whetstone benchmark finished</div><div><a href="live/whetstone_benchmark_results.png" title="Whetstone benchmark finished" rel="lightbox-live"><img src="_thumb/live_whetstone_benchmark_results.png" width="320" height="240" /></a><div>Sucessfull finishing of whetstone benchmark.</div></li>
+</ul>
