@@ -11,6 +11,7 @@ doc/api:
 shots/:
   title: Screenshots
   in_menu: true
+  sort_info: 9
 shots/gallery.template:
   template: ~
 --- paths
