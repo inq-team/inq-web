@@ -17,6 +17,7 @@ galleries.each_pair { |name, gal|
 ---
 title: #{title}
 template: gallery.template
+in_menu: true
 ---
 <ul class="gallery">
 __EOF__
