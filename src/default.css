@@ -364,3 +364,22 @@ form {
 #sflogo img {
 	vertical-align: -3px;
 }
+
+/* Gallery */
+ul.gallery {
+	margin: 0px;
+	padding: 0px;
+}
+
+ul.gallery li {
+	display: block;
+	list-style-type: none;
+	float: left;
+	width: 320px;
+	height: 320px;
+	padding-right: 3px;
+}
+
+ul.gallery li img {
+	border: 1px solid #E0E0E0;
+}
