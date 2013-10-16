@@ -1,0 +1,13 @@
+#!/bin/sh -ef
+
+OUT1=out
+OUT2=out2
+
+rm -rf $OUT2
+cp -r $OUT1 $OUT2
+
+find $OUT2 -name '*.html' | while read FN; do
+	BN=$(basename $FN)
+	sed -i "s!<a [^>]*href=\"$BN\"[^>]*>\([^<]*\)</a>!<span>\1</span>!g" $FN
+	echo $FN
+done
