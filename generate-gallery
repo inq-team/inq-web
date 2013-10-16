@@ -1,0 +1,37 @@
+#!/usr/bin/env ruby
+
+require 'fileutils'
+require 'yaml'
+
+SCREENSHOT_DIR = 'src/shots'
+THUMB_DIR = '_thumb'
+
+galleries = YAML.load(File.open('gallery.yaml'))
+
+FileUtils.mkdir_p("#{SCREENSHOT_DIR}/#{THUMB_DIR}")
+
+galleries.each_pair { |name, gal|
+	title = name.capitalize
+	File.open("src/shots/#{name}.page", 'w') { |f|
+		f.puts <<__EOF__
+---
+title: #{title}
+template: gallery.template
+---
+<ul class="gallery">
+__EOF__
+		gal.each { |img|
+			fn = img['fn']
+			mangled_fn = fn.tr('/', '_')
+			thumb_fn = "#{THUMB_DIR}/#{mangled_fn}"
+
+			# Generate thumbnail
+			system("convert #{SCREENSHOT_DIR}/#{fn} -thumbnail '320x240>' -unsharp 0x1 -background transparent -gravity north -extent 320x240 #{SCREENSHOT_DIR}/#{thumb_fn}")
+
+			f.puts "<li><div>#{img['title']}</div><div><a href=\"#{fn}\" title=\"#{img['title']}\" rel=\"lightbox-#{name}\"><img src=\"#{thumb_fn}\" width=\"320\" height=\"240\" /></a><div>#{img['description']}</div></li>"
+
+			puts fn
+		}
+		f.puts '</ul>'
+	}
+}

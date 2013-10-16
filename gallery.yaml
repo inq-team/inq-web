@@ -1,0 +1,75 @@
+live:
+  - fn: live/boot.png
+    title: LiveCD booting
+    description: This is how it looks like when it boots.
+  - fn: live/main_menu.png
+    title: Main menu
+    description: A main menu of Live CD - it's what you get after successful booting.
+  - fn: live/single_test_menu.png
+    title: Starting a single test
+    description: A list of tests to choose from when starting a single test.
+  - fn: live/detects_called.png
+    title: Detects finished
+    description: All detects finished, later we can see their results.
+  - fn: live/cpu_test_results.png
+    title: CPU test finished
+    description: Successfull finishing of CPU test.
+  - fn: live/hdd_passthrough_test_menu.png
+    title: HDD-Passthrough starting
+    description: Configuring of test variables to start it after.
+  - fn: live/view_test_results-components.xml.png
+    title: components.xml view
+    description: Viewing components.xml file after detects finished.
+  - fn: live/view_test_results.png
+    title: View test results
+    description: Menu where we can see all detects, benchmarks, monitorings and tests results.
+  - fn: live/whetstone_benchmark_results.png
+    title: Whetstone benchmark finished
+    description: Sucessfull finishing of whetstone benchmark.
+enterprise:
+  - fn: enterprise/hardware-1.png
+    title: Tested computer hardware
+    description: Computer components detected on a fully tested computer.
+  - fn: enterprise/hardware-2.png
+    title: Nearly finished computer hardware
+    description: Hardware components of another computer.
+  - fn: enterprise/sticker.png
+    title: Sticker section
+    description: Creating, viewing and prining of a sticker.
+  - fn: enterprise/marks.png
+    title: NICs benchmarks
+    description: Viewing speed benchmark results of NICs after their testing.
+  - fn: enterprise/cpu_core_voltage_graph.png
+    title: CPU core voltage graph
+    description: Viewing of CPU core voltage graph.
+  - fn: enterprise/cpu_temperature_graph.png
+    title: CPU temperature graph
+    description: Viewing of CPU temperature graph.
+  - fn: enterprise/multi_graph.png
+    title: Multi graphs
+    description: Viewing of a multigraph with CPU's and HDD's temperature and CPU's core voltage.
+  - fn: enterprise/multi_graph_with_fails.png
+    title: Multi graphs with failed tests
+    description: Trying to make a decision about failing hdd-array test.
+  - fn: enterprise/orders.png
+    title: Orders
+    description: A list of all orders showing their brief info and progress on each stage.
+  - fn: enterprise/orders_search.png
+    title: Orders search
+    description: Orders search form.
+  - fn: enterprise/orders_show_multiple.png
+    title: Show multicomputer orders
+    description: Viewing an order with many computers in it and its detailed information.
+  - fn: enterprise/orders_show.png
+    title: Orders show
+    description: Viewing an order with single computer in it and its detailed information.
+  - fn: enterprise/profile_show.png
+    title: Profile show
+    description: Viewing default testing profile that is applied for all computers if no specified.
+installations:
+  - fn: installations/notebook-inq-1.jpg
+    title: Testing notebooks
+    description: A production installation of Inquisitor at MaxSelect, operators are testing notebooks.
+  - fn: installations/notebook-inq-2.jpg
+    title: Comm rack
+    description: It's all it takes to properly distribute network for a 160+ testing shelves.
